@@ -48,12 +48,12 @@
             lblTexto2.TabIndex = 0;
             lblTexto2.Text = "O que deseja?";
             lblTexto2.TextAlign = ContentAlignment.MiddleCenter;
-//            lblTexto2.Click += this.label1_Click;
             // 
             // btnMuseu
             // 
             btnMuseu.BackgroundImage = (Image)resources.GetObject("btnMuseu.BackgroundImage");
             btnMuseu.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMuseu.ForeColor = Color.Black;
             btnMuseu.Location = new Point(12, 145);
             btnMuseu.Name = "btnMuseu";
             btnMuseu.Size = new Size(180, 170);
@@ -86,6 +86,7 @@
             // btnQuestionario
             // 
             btnQuestionario.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuestionario.ForeColor = Color.Black;
             btnQuestionario.Image = (Image)resources.GetObject("btnQuestionario.Image");
             btnQuestionario.Location = new Point(447, 145);
             btnQuestionario.Name = "btnQuestionario";
