@@ -86,12 +86,8 @@
             // 
             // tbxIdade
             // 
-<<<<<<< HEAD
-            textBox3.Location = new Point(216, 142);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(228, 23);
-            textBox3.TabIndex = 6;
-=======
+          
+
             tbxIdade.Location = new Point(247, 189);
             tbxIdade.Margin = new Padding(3, 4, 3, 4);
             tbxIdade.MaxLength = 3;
@@ -99,7 +95,7 @@
             tbxIdade.Size = new Size(260, 27);
             tbxIdade.TabIndex = 6;
             tbxIdade.Click += textBox1_TextChanged;
->>>>>>> c08307b76d401029f40449609fe3508415456918
+
             // 
             // btnVoltarInstrucao
             // 

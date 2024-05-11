@@ -24,8 +24,6 @@ namespace TecladoVirtual
             F_OqueDeseja oqueDeseja = new F_OqueDeseja(this);
             oqueDeseja.Show();
         }
-<<<<<<< HEAD
-
         private void Timer_Tick(object? sender, EventArgs e)
         {
             timer.Interval -= 1000;
@@ -40,11 +38,8 @@ namespace TecladoVirtual
         {
 
         }
-=======
     }
-      
->>>>>>> c08307b76d401029f40449609fe3508415456918
-    }
+
 
 }
 
