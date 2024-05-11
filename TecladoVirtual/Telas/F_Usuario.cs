@@ -34,6 +34,7 @@ namespace TecladoVirtual.Telas
         {
             F_Teclado teclado = new F_Teclado(this);
             teclado.Show();
+            
         }
 
         private void btnVoltarInstrucao_Click(object sender, EventArgs e)
