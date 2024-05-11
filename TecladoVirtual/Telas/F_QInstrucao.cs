@@ -12,11 +12,12 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_QInstrucao : Form
     {
-     
+
         public F_QInstrucao()
         {
             InitializeComponent();
-     
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void btnAvancarInstrucao_Click(object sender, EventArgs e)
@@ -32,6 +33,16 @@ namespace TecladoVirtual.Telas
             this.Close();
             F_OqueDeseja oqueDeseja = new F_OqueDeseja();
             oqueDeseja.Show();
+        }
+
+        private void lblTextoInstrucao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F_QInstrucao_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

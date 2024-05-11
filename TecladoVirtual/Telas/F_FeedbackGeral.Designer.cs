@@ -39,10 +39,9 @@
             btnRetornar.BackColor = Color.FromArgb(64, 64, 64);
             btnRetornar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRetornar.ForeColor = SystemColors.Window;
-            btnRetornar.Location = new Point(322, 403);
-            btnRetornar.Margin = new Padding(3, 4, 3, 4);
+            btnRetornar.Location = new Point(282, 302);
             btnRetornar.Name = "btnRetornar";
-            btnRetornar.Size = new Size(97, 49);
+            btnRetornar.Size = new Size(85, 37);
             btnRetornar.TabIndex = 11;
             btnRetornar.Text = "RETORNAR";
             btnRetornar.UseVisualStyleBackColor = false;
@@ -52,9 +51,9 @@
             // 
             lblTextoFeedbackGeral.AutoSize = true;
             lblTextoFeedbackGeral.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedbackGeral.Location = new Point(219, 12);
+            lblTextoFeedbackGeral.Location = new Point(192, 9);
             lblTextoFeedbackGeral.Name = "lblTextoFeedbackGeral";
-            lblTextoFeedbackGeral.Size = new Size(390, 31);
+            lblTextoFeedbackGeral.Size = new Size(301, 25);
             lblTextoFeedbackGeral.TabIndex = 12;
             lblTextoFeedbackGeral.Text = "RELATÓRIO DE RESPOSTAS";
             lblTextoFeedbackGeral.TextAlign = ContentAlignment.MiddleCenter;
@@ -63,9 +62,9 @@
             // 
             lblVisitantes.AutoSize = true;
             lblVisitantes.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblVisitantes.Location = new Point(105, 68);
+            lblVisitantes.Location = new Point(92, 51);
             lblVisitantes.Name = "lblVisitantes";
-            lblVisitantes.Size = new Size(133, 31);
+            lblVisitantes.Size = new Size(106, 25);
             lblVisitantes.TabIndex = 13;
             lblVisitantes.Text = "Visitantes";
             lblVisitantes.TextAlign = ContentAlignment.MiddleCenter;
@@ -75,25 +74,28 @@
             // 
             lblAcertos.AutoSize = true;
             lblAcertos.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAcertos.Location = new Point(509, 68);
+            lblAcertos.Location = new Point(445, 51);
             lblAcertos.Name = "lblAcertos";
-            lblAcertos.Size = new Size(149, 31);
+            lblAcertos.Size = new Size(118, 25);
             lblAcertos.TabIndex = 14;
             lblAcertos.Text = "Acertos(%)";
             lblAcertos.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // F_FeedbackGeral
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(730, 468);
+            ClientSize = new Size(639, 351);
             Controls.Add(lblAcertos);
             Controls.Add(lblVisitantes);
             Controls.Add(lblTextoFeedbackGeral);
             Controls.Add(btnRetornar);
-            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "F_FeedbackGeral";
             Text = "F_FeedbackGeral";
+            Load += F_FeedbackGeral_Load;
             ResumeLayout(false);
             PerformLayout();
         }

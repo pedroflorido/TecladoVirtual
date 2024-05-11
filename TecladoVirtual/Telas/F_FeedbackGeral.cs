@@ -17,16 +17,17 @@ namespace TecladoVirtual.Telas
         public F_FeedbackGeral(F_TelaPrincipal f1)
         {
             InitializeComponent();
-            this. f1 = f1;
+            this.f1 = f1;
         }
 
         public F_FeedbackGeral()
         {
             InitializeComponent();
-           
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
-        
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -38,6 +39,11 @@ namespace TecladoVirtual.Telas
             this.Close();
             F_TelaPrincipal telaPriicipal = new F_TelaPrincipal();
             telaPriicipal.Show();
+        }
+
+        private void F_FeedbackGeral_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

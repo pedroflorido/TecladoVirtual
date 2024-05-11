@@ -15,6 +15,7 @@ namespace TecladoVirtual.Telas
         public F_Perguntas3()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnFinalizarPerguntas_Click(object sender, EventArgs e)
@@ -22,6 +23,11 @@ namespace TecladoVirtual.Telas
             this.Close();
             F_Feedback fedbacks = new F_Feedback();
             fedbacks.Show();
+        }
+
+        private void F_Perguntas3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

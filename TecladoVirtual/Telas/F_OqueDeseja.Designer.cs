@@ -44,7 +44,7 @@
             lblTexto2.ForeColor = SystemColors.Window;
             lblTexto2.Location = new Point(257, 32);
             lblTexto2.Name = "lblTexto2";
-            lblTexto2.Size = new Size(189, 31);
+            lblTexto2.Size = new Size(152, 25);
             lblTexto2.TabIndex = 0;
             lblTexto2.Text = "O que deseja?";
             lblTexto2.TextAlign = ContentAlignment.MiddleCenter;
@@ -101,7 +101,7 @@
             // 
             // F_OqueDeseja
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(36, 74, 121);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
@@ -113,8 +113,12 @@
             Controls.Add(lblTexto2);
             Font = new Font("Microsoft Sans Serif", 8.25F);
             ForeColor = SystemColors.ControlText;
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "F_OqueDeseja";
             Text = "OqueDeseja";
+            Load += F_OqueDeseja_Load;
             ResumeLayout(false);
             PerformLayout();
         }

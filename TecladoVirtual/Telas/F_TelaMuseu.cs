@@ -15,6 +15,7 @@ namespace TecladoVirtual.Telas
         public F_TelaMuseu()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void lblTextoMuseu1_Click(object sender, EventArgs e)
@@ -32,6 +33,11 @@ namespace TecladoVirtual.Telas
             this.Close();
             F_OqueDeseja oqueDeseja = new F_OqueDeseja();
             oqueDeseja.Show();
+
+        }
+
+        private void F_TelaMuseu_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -18,12 +18,15 @@ namespace TecladoVirtual.Telas
         {
             InitializeComponent();
             f1 = f1;
-            
+
+            this.WindowState = FormWindowState.Maximized;
+
         }
         public F_OqueDeseja()
         {
             InitializeComponent();
-            
+
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnVoltar1_Click(object sender, EventArgs e)
@@ -54,8 +57,9 @@ namespace TecladoVirtual.Telas
             intrucao.Show();
         }
 
+        private void F_OqueDeseja_Load(object sender, EventArgs e)
+        {
 
-       
-        
+        }
     }
 }

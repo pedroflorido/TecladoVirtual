@@ -38,9 +38,9 @@
             // 
             lblPergunta3.AutoSize = true;
             lblPergunta3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPergunta3.Location = new Point(101, 165);
+            lblPergunta3.Location = new Point(88, 124);
             lblPergunta3.Name = "lblPergunta3";
-            lblPergunta3.Size = new Size(615, 58);
+            lblPergunta3.Size = new Size(482, 48);
             lblPergunta3.TabIndex = 2;
             lblPergunta3.Text = "O nome da missão Apollo 11 se deu por meio da figura \r\ndo deus grego Apolo como símbolo da missão espacial.";
             lblPergunta3.TextAlign = ContentAlignment.MiddleCenter;
@@ -50,10 +50,9 @@
             btnFinalizarPerguntas.BackColor = Color.FromArgb(64, 64, 64);
             btnFinalizarPerguntas.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFinalizarPerguntas.ForeColor = SystemColors.Window;
-            btnFinalizarPerguntas.Location = new Point(318, 403);
-            btnFinalizarPerguntas.Margin = new Padding(3, 4, 3, 4);
+            btnFinalizarPerguntas.Location = new Point(278, 302);
             btnFinalizarPerguntas.Name = "btnFinalizarPerguntas";
-            btnFinalizarPerguntas.Size = new Size(97, 49);
+            btnFinalizarPerguntas.Size = new Size(85, 37);
             btnFinalizarPerguntas.TabIndex = 11;
             btnFinalizarPerguntas.Text = "FINALIZAR";
             btnFinalizarPerguntas.UseVisualStyleBackColor = false;
@@ -64,10 +63,9 @@
             btnVerdadeiro5.BackColor = Color.DimGray;
             btnVerdadeiro5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVerdadeiro5.ForeColor = Color.PaleGreen;
-            btnVerdadeiro5.Location = new Point(142, 299);
-            btnVerdadeiro5.Margin = new Padding(3, 4, 3, 4);
+            btnVerdadeiro5.Location = new Point(124, 224);
             btnVerdadeiro5.Name = "btnVerdadeiro5";
-            btnVerdadeiro5.Size = new Size(97, 49);
+            btnVerdadeiro5.Size = new Size(85, 37);
             btnVerdadeiro5.TabIndex = 12;
             btnVerdadeiro5.Text = "Verdadeiro";
             btnVerdadeiro5.UseVisualStyleBackColor = false;
@@ -77,26 +75,28 @@
             btnFalso5.BackColor = Color.DimGray;
             btnFalso5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFalso5.ForeColor = Color.LightCoral;
-            btnFalso5.Location = new Point(507, 299);
-            btnFalso5.Margin = new Padding(3, 4, 3, 4);
+            btnFalso5.Location = new Point(444, 224);
             btnFalso5.Name = "btnFalso5";
-            btnFalso5.Size = new Size(97, 49);
+            btnFalso5.Size = new Size(85, 37);
             btnFalso5.TabIndex = 13;
             btnFalso5.Text = "Falso";
             btnFalso5.UseVisualStyleBackColor = false;
             // 
             // F_Perguntas3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(730, 468);
+            ClientSize = new Size(639, 351);
             Controls.Add(btnFalso5);
             Controls.Add(btnVerdadeiro5);
             Controls.Add(btnFinalizarPerguntas);
             Controls.Add(lblPergunta3);
-            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "F_Perguntas3";
             Text = "F_Perguntas3";
+            Load += F_Perguntas3_Load;
             ResumeLayout(false);
             PerformLayout();
         }

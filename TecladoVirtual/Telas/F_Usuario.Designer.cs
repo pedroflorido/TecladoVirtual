@@ -44,9 +44,9 @@
             lblTextoUsuario.BackColor = Color.Transparent;
             lblTextoUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoUsuario.ForeColor = SystemColors.Window;
-            lblTextoUsuario.Location = new Point(247, 43);
+            lblTextoUsuario.Location = new Point(216, 32);
             lblTextoUsuario.Name = "lblTextoUsuario";
-            lblTextoUsuario.Size = new Size(279, 50);
+            lblTextoUsuario.Size = new Size(227, 40);
             lblTextoUsuario.TabIndex = 0;
             lblTextoUsuario.Text = "Para salvar suas respostas, \r\ninforme-nos seu Nome e Idade";
             lblTextoUsuario.TextAlign = ContentAlignment.MiddleCenter;
@@ -57,19 +57,18 @@
             lblNomeUsuario.BackColor = Color.Transparent;
             lblNomeUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNomeUsuario.ForeColor = SystemColors.Window;
-            lblNomeUsuario.Location = new Point(176, 144);
+            lblNomeUsuario.Location = new Point(154, 108);
             lblNomeUsuario.Name = "lblNomeUsuario";
-            lblNomeUsuario.Size = new Size(70, 25);
+            lblNomeUsuario.Size = new Size(55, 20);
             lblNomeUsuario.TabIndex = 1;
             lblNomeUsuario.Text = "Nome:";
             lblNomeUsuario.Click += label1_Click;
             // 
             // tbxNome
             // 
-            tbxNome.Location = new Point(247, 139);
-            tbxNome.Margin = new Padding(3, 4, 3, 4);
+            tbxNome.Location = new Point(216, 104);
             tbxNome.Name = "tbxNome";
-            tbxNome.Size = new Size(260, 27);
+            tbxNome.Size = new Size(228, 23);
             tbxNome.TabIndex = 2;
             tbxNome.TextChanged += textBox1_TextChanged;
             // 
@@ -79,27 +78,25 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Window;
-            label1.Location = new Point(179, 189);
+            label1.Location = new Point(157, 142);
             label1.Name = "label1";
-            label1.Size = new Size(67, 25);
+            label1.Size = new Size(54, 20);
             label1.TabIndex = 5;
             label1.Text = "Idade:";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(247, 189);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
+            textBox3.Location = new Point(216, 142);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(260, 27);
+            textBox3.Size = new Size(228, 23);
             textBox3.TabIndex = 6;
             // 
             // btnVoltarInstrucao
             // 
             btnVoltarInstrucao.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarInstrucao.Location = new Point(14, 403);
-            btnVoltarInstrucao.Margin = new Padding(3, 4, 3, 4);
+            btnVoltarInstrucao.Location = new Point(12, 302);
             btnVoltarInstrucao.Name = "btnVoltarInstrucao";
-            btnVoltarInstrucao.Size = new Size(97, 49);
+            btnVoltarInstrucao.Size = new Size(85, 37);
             btnVoltarInstrucao.TabIndex = 7;
             btnVoltarInstrucao.Text = "VOLTAR";
             btnVoltarInstrucao.UseVisualStyleBackColor = true;
@@ -108,10 +105,9 @@
             // btnAvancarInstrucao
             // 
             btnAvancarInstrucao.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAvancarInstrucao.Location = new Point(619, 403);
-            btnAvancarInstrucao.Margin = new Padding(3, 4, 3, 4);
+            btnAvancarInstrucao.Location = new Point(542, 302);
             btnAvancarInstrucao.Name = "btnAvancarInstrucao";
-            btnAvancarInstrucao.Size = new Size(97, 49);
+            btnAvancarInstrucao.Size = new Size(85, 37);
             btnAvancarInstrucao.TabIndex = 8;
             btnAvancarInstrucao.Text = "AVANÇAR";
             btnAvancarInstrucao.UseVisualStyleBackColor = true;
@@ -119,11 +115,11 @@
             // 
             // F_Usuario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowText;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(730, 468);
+            ClientSize = new Size(639, 351);
             Controls.Add(btnAvancarInstrucao);
             Controls.Add(btnVoltarInstrucao);
             Controls.Add(textBox3);
@@ -131,9 +127,12 @@
             Controls.Add(tbxNome);
             Controls.Add(lblNomeUsuario);
             Controls.Add(lblTextoUsuario);
-            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "F_Usuario";
             Text = "F_Usuario";
+            Load += F_Usuario_Load;
             ResumeLayout(false);
             PerformLayout();
         }

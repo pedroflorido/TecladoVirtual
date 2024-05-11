@@ -14,11 +14,12 @@ namespace TecladoVirtual
         public F_TelaPrincipal()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            
+
             this.Visible = false;
             F_OqueDeseja oqueDeseja = new F_OqueDeseja(this);
             oqueDeseja.Show();
@@ -33,15 +34,17 @@ namespace TecladoVirtual
         {
             timer.Interval -= 1000;
 
-            if(timer.Interval <= 0)
+            if (timer.Interval <= 0)
             {
                 this.Close();
             }
         }
 
-        
-    
+        private void F_TelaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-      
-    }
+
+}
 

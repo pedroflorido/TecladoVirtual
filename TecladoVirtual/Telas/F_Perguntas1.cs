@@ -15,6 +15,7 @@ namespace TecladoVirtual.Telas
         public F_Perguntas1()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,6 +28,11 @@ namespace TecladoVirtual.Telas
             this.Close();
             F_Perguntas2 p2 = new F_Perguntas2();
             p2.Show();
+        }
+
+        private void F_Perguntas1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

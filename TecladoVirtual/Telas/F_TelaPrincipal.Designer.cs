@@ -35,11 +35,12 @@
             // 
             // lblTextoPrincipal
             // 
+            lblTextoPrincipal.Anchor = AnchorStyles.None;
             lblTextoPrincipal.AutoSize = true;
             lblTextoPrincipal.BackColor = Color.Transparent;
             lblTextoPrincipal.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoPrincipal.ForeColor = SystemColors.Window;
-            lblTextoPrincipal.Location = new Point(132, 90);
+            lblTextoPrincipal.Location = new Point(144, 65);
             lblTextoPrincipal.Name = "lblTextoPrincipal";
             lblTextoPrincipal.Size = new Size(361, 125);
             lblTextoPrincipal.TabIndex = 0;
@@ -48,10 +49,11 @@
             // 
             // btnAvancar1
             // 
+            btnAvancar1.Anchor = AnchorStyles.Bottom;
             btnAvancar1.FlatAppearance.BorderColor = SystemColors.MenuText;
             btnAvancar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancar1.ForeColor = SystemColors.ControlText;
-            btnAvancar1.Location = new Point(273, 303);
+            btnAvancar1.Location = new Point(279, 259);
             btnAvancar1.Margin = new Padding(3, 2, 3, 2);
             btnAvancar1.Name = "btnAvancar1";
             btnAvancar1.Size = new Size(85, 37);
@@ -75,6 +77,7 @@
             MinimizeBox = false;
             Name = "F_TelaPrincipal";
             Text = "Totem Museu";
+            Load += F_TelaPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -36,9 +36,9 @@
             // 
             lblTextoFeedback.AutoSize = true;
             lblTextoFeedback.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedback.Location = new Point(145, 135);
+            lblTextoFeedback.Location = new Point(127, 101);
             lblTextoFeedback.Name = "lblTextoFeedback";
-            lblTextoFeedback.Size = new Size(520, 93);
+            lblTextoFeedback.Size = new Size(416, 75);
             lblTextoFeedback.TabIndex = 0;
             lblTextoFeedback.Text = "Parabéns por concluir nosso questionário!\r\n\r\nVocê acertou:";
             lblTextoFeedback.TextAlign = ContentAlignment.MiddleCenter;
@@ -48,10 +48,9 @@
             btnAvancarFeedbackGeral.BackColor = Color.FromArgb(64, 64, 64);
             btnAvancarFeedbackGeral.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancarFeedbackGeral.ForeColor = SystemColors.Window;
-            btnAvancarFeedbackGeral.Location = new Point(328, 403);
-            btnAvancarFeedbackGeral.Margin = new Padding(3, 4, 3, 4);
+            btnAvancarFeedbackGeral.Location = new Point(287, 302);
             btnAvancarFeedbackGeral.Name = "btnAvancarFeedbackGeral";
-            btnAvancarFeedbackGeral.Size = new Size(97, 49);
+            btnAvancarFeedbackGeral.Size = new Size(85, 37);
             btnAvancarFeedbackGeral.TabIndex = 11;
             btnAvancarFeedbackGeral.Text = "AVANÇAR";
             btnAvancarFeedbackGeral.UseVisualStyleBackColor = false;
@@ -59,14 +58,17 @@
             // 
             // F_Feedback
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(730, 468);
+            ClientSize = new Size(639, 351);
             Controls.Add(btnAvancarFeedbackGeral);
             Controls.Add(lblTextoFeedback);
-            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "F_Feedback";
             Text = "F_Feedback";
+            Load += F_Feedback_Load;
             ResumeLayout(false);
             PerformLayout();
         }

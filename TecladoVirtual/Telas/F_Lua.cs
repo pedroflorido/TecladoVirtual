@@ -15,6 +15,7 @@ namespace TecladoVirtual.Telas
         public F_Lua()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnVoltarLua_Click(object sender, EventArgs e)
@@ -22,6 +23,11 @@ namespace TecladoVirtual.Telas
             this.Close();
             F_OqueDeseja oqueDeseja = new F_OqueDeseja();
             oqueDeseja.Show();
+        }
+
+        private void F_Lua_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
