@@ -8,7 +8,7 @@ namespace TecladoVirtual.Modelos
 {
     internal class Respostas
     {
-        private Boolean[] perguntas = {true,false,false,true,true};
+        private Boolean[] perguntas = {true,false,true,false,false};
         public int[] acertos = new int[4];
         public int[] erros = new int[4];
         Pessoa usuario;

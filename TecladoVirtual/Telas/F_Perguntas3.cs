@@ -16,5 +16,12 @@ namespace TecladoVirtual.Telas
         {
             InitializeComponent();
         }
+
+        private void btnFinalizarPerguntas_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            F_Feedback fedbacks = new F_Feedback();
+            fedbacks.Show();
+        }
     }
 }

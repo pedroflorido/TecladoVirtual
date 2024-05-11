@@ -21,5 +21,12 @@ namespace TecladoVirtual.Telas
         {
 
         }
+
+        private void btnAvancarPerguntas1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            F_Perguntas2 p2 = new F_Perguntas2();
+            p2.Show();
+        }
     }
 }

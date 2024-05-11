@@ -16,5 +16,12 @@ namespace TecladoVirtual.Telas
         {
             InitializeComponent();
         }
+
+        private void btnVoltarLua_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            F_OqueDeseja oqueDeseja = new F_OqueDeseja();
+            oqueDeseja.Show();
+        }
     }
 }

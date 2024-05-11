@@ -1,3 +1,5 @@
+using TecladoVirtual.Telas;
+
 namespace TecladoVirtual
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace TecladoVirtual
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new F_TelaPrincipal());
+            F_TelaPrincipal  tela = new F_TelaPrincipal();
+            Application.Run(tela);
         }
     }
 }

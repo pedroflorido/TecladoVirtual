@@ -17,6 +17,7 @@ namespace TecladoVirtual.Modelos
         
             this._acertos = acertos;
             this._erros = erros;
+            CalcularAcertos();
         }
 
         private double CalcularAcertos()
@@ -34,6 +35,11 @@ namespace TecladoVirtual.Modelos
             }
 
             return resutadoAcertos / 5 * 100;
+        }
+
+        public override string ToString()
+        {
+            return Convert.ToString(CalcularAcertos());
         }
     }
 }

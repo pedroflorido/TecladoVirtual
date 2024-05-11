@@ -12,9 +12,26 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_QInstrucao : Form
     {
+     
         public F_QInstrucao()
         {
             InitializeComponent();
+     
+        }
+
+        private void btnAvancarInstrucao_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            F_Usuario usuario = new F_Usuario();
+            usuario.Show();
+
+        }
+
+        private void btnVoltarInstrucao_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            F_OqueDeseja oqueDeseja = new F_OqueDeseja();
+            oqueDeseja.Show();
         }
     }
 }

@@ -41,32 +41,35 @@
             // 
             lblTextoLua.AutoSize = true;
             lblTextoLua.BackColor = Color.Transparent;
-            lblTextoLua.Font = new Font("Roboto Bk", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoLua.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoLua.ForeColor = SystemColors.Window;
-            lblTextoLua.Location = new Point(12, 9);
+            lblTextoLua.Location = new Point(14, 12);
             lblTextoLua.Name = "lblTextoLua";
-            lblTextoLua.Size = new Size(536, 180);
+            lblTextoLua.Size = new Size(676, 240);
             lblTextoLua.TabIndex = 0;
             lblTextoLua.Text = resources.GetString("lblTextoLua.Text");
             lblTextoLua.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btnVoltarLua
             // 
-            btnVoltarLua.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarLua.Location = new Point(542, 302);
+            btnVoltarLua.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltarLua.Location = new Point(619, 403);
+            btnVoltarLua.Margin = new Padding(3, 4, 3, 4);
             btnVoltarLua.Name = "btnVoltarLua";
-            btnVoltarLua.Size = new Size(85, 37);
+            btnVoltarLua.Size = new Size(97, 49);
             btnVoltarLua.TabIndex = 3;
             btnVoltarLua.Text = "VOLTAR";
             btnVoltarLua.UseVisualStyleBackColor = true;
+            btnVoltarLua.Click += btnVoltarLua_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Location = new Point(301, 210);
+            pictureBox1.Location = new Point(344, 280);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(178, 129);
+            pictureBox1.Size = new Size(203, 171);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
@@ -74,22 +77,24 @@
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox2.Location = new Point(117, 210);
+            pictureBox2.Location = new Point(134, 280);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(178, 129);
+            pictureBox2.Size = new Size(203, 171);
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
             // F_Lua
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(639, 351);
+            ClientSize = new Size(730, 468);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnVoltarLua);
             Controls.Add(lblTextoLua);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "F_Lua";
             Text = "F_Lua";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

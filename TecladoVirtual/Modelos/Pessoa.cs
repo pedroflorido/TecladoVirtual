@@ -8,13 +8,13 @@ namespace TecladoVirtual.Modelos
 {
     internal class Pessoa
     {
-        private String _nomeCompleto;
+        private String _nome;
         private int _idade;
         private Boolean[] _respostas;
 
-        public Pessoa(string nome, string sobrenome, int idade)
+        public Pessoa(string nome, int idade)
         {
-            _nomeCompleto = nome + sobrenome;
+            _nome = nome;
             _idade = idade;
         }
 
