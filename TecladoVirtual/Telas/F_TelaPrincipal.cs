@@ -24,16 +24,7 @@ namespace TecladoVirtual
             F_OqueDeseja oqueDeseja = new F_OqueDeseja(this);
             oqueDeseja.Show();
         }
-        private void Timer_Tick(object? sender, EventArgs e)
-        {
-            timer.Interval -= 1000;
-
-            if (timer.Interval <= 0)
-            {
-                this.Close();
-            }
-        }
-
+       
         private void F_TelaPrincipal_Load(object sender, EventArgs e)
         {
 

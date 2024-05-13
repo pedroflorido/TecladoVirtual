@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TecladoVirtual.Modelos
 {
-    internal class Pessoa
+     public class Pessoa
     {
         private String _nome;
         private int _idade;
