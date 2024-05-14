@@ -19,8 +19,9 @@ namespace TecladoVirtual.Telas
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.controle = controle;
+            lblNumeroAcerto.Text = controle.mensagem + "%";
         }
-
+       
         private void btnAvancarFeedbackGeral_Click(object sender, EventArgs e)
         {
             this.Close();

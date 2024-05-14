@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using TecladoVirtual.Telas;
@@ -10,6 +11,9 @@ namespace TecladoVirtual.Modelos
 {
     public class Controle : Pessoa
     {
+        public string mensagem;
+        public int pessoa;
+        public double media;
         bool p1;
         bool p2;
         bool p3;
@@ -26,7 +30,9 @@ namespace TecladoVirtual.Modelos
             this.setRespostas(p1, p2, p3, p4, p5);
             Respostas respostas = new Respostas(this);
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
-           
+            pessoa = respostas.numeroVisitante;
+            media = pessoa / verificarAcertos._acertos.Length * 100;
+            mensagem = verificarAcertos.ToString();
         }
 
         public void ReceberP1(bool p1)
