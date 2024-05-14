@@ -23,9 +23,11 @@ namespace TecladoVirtual.Telas
 
         private void btnFinalizarPerguntas_Click(object sender, EventArgs e)
         {
+            this.controle.executar();
             this.Close();
             F_Feedback fedbacks = new F_Feedback(this.controle);
             fedbacks.Show();
+            this.controle.executar();
         }
 
         private void F_Perguntas3_Load(object sender, EventArgs e)

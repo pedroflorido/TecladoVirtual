@@ -18,10 +18,10 @@ namespace TecladoVirtual.Modelos
 
         public Controle(String nome, int idade) : base (nome,idade)
         {
-            executar();
+            
         }
-
-        private void executar()
+        
+        public void executar()
         {
             this.setRespostas(p1, p2, p3, p4, p5);
             Respostas respostas = new Respostas(this);
