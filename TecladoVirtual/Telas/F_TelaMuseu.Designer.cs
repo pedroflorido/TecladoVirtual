@@ -36,34 +36,39 @@
             // 
             // lblTextoMuseu1
             // 
+            lblTextoMuseu1.Anchor = AnchorStyles.None;
             lblTextoMuseu1.AutoSize = true;
             lblTextoMuseu1.BackColor = Color.Transparent;
-            lblTextoMuseu1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTextoMuseu1.Font = new Font("Arial Narrow", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTextoMuseu1.ForeColor = SystemColors.Window;
             lblTextoMuseu1.Location = new Point(12, 9);
             lblTextoMuseu1.Name = "lblTextoMuseu1";
-            lblTextoMuseu1.Size = new Size(426, 80);
+            lblTextoMuseu1.Size = new Size(719, 124);
             lblTextoMuseu1.TabIndex = 0;
             lblTextoMuseu1.Text = resources.GetString("lblTextoMuseu1.Text");
+            lblTextoMuseu1.TextAlign = ContentAlignment.MiddleLeft;
             lblTextoMuseu1.Click += lblTextoMuseu1_Click;
             // 
             // lblTextoMuseu2
             // 
+            lblTextoMuseu2.Anchor = AnchorStyles.None;
             lblTextoMuseu2.AutoSize = true;
             lblTextoMuseu2.BackColor = Color.Transparent;
-            lblTextoMuseu2.Font = new Font("Arial Narrow", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTextoMuseu2.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTextoMuseu2.ForeColor = SystemColors.Window;
-            lblTextoMuseu2.Location = new Point(12, 98);
+            lblTextoMuseu2.Location = new Point(12, 157);
             lblTextoMuseu2.Name = "lblTextoMuseu2";
-            lblTextoMuseu2.Size = new Size(486, 180);
+            lblTextoMuseu2.Size = new Size(687, 225);
             lblTextoMuseu2.TabIndex = 1;
             lblTextoMuseu2.Text = resources.GetString("lblTextoMuseu2.Text");
+            lblTextoMuseu2.TextAlign = ContentAlignment.MiddleLeft;
             lblTextoMuseu2.Click += lblTextoMuseu2_Click;
             // 
             // btnVoltarMuseu
             // 
-            btnVoltarMuseu.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarMuseu.Location = new Point(542, 302);
+            btnVoltarMuseu.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnVoltarMuseu.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltarMuseu.Location = new Point(631, 344);
             btnVoltarMuseu.Name = "btnVoltarMuseu";
             btnVoltarMuseu.Size = new Size(85, 37);
             btnVoltarMuseu.TabIndex = 2;
@@ -75,9 +80,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.WindowFrame;
+            BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(639, 351);
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(784, 441);
             Controls.Add(btnVoltarMuseu);
             Controls.Add(lblTextoMuseu2);
             Controls.Add(lblTextoMuseu1);

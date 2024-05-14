@@ -34,21 +34,23 @@
             // 
             // lblTextoFeedback
             // 
+            lblTextoFeedback.Anchor = AnchorStyles.None;
             lblTextoFeedback.AutoSize = true;
-            lblTextoFeedback.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedback.Location = new Point(127, 101);
+            lblTextoFeedback.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoFeedback.Location = new Point(199, 107);
             lblTextoFeedback.Name = "lblTextoFeedback";
-            lblTextoFeedback.Size = new Size(416, 75);
+            lblTextoFeedback.Size = new Size(411, 75);
             lblTextoFeedback.TabIndex = 0;
             lblTextoFeedback.Text = "Parabéns por concluir nosso questionário!\r\n\r\nVocê acertou:";
             lblTextoFeedback.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnAvancarFeedbackGeral
             // 
+            btnAvancarFeedbackGeral.Anchor = AnchorStyles.None;
             btnAvancarFeedbackGeral.BackColor = Color.FromArgb(64, 64, 64);
-            btnAvancarFeedbackGeral.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancarFeedbackGeral.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancarFeedbackGeral.ForeColor = SystemColors.Window;
-            btnAvancarFeedbackGeral.Location = new Point(287, 302);
+            btnAvancarFeedbackGeral.Location = new Point(359, 308);
             btnAvancarFeedbackGeral.Name = "btnAvancarFeedbackGeral";
             btnAvancarFeedbackGeral.Size = new Size(85, 37);
             btnAvancarFeedbackGeral.TabIndex = 11;
@@ -60,7 +62,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(639, 351);
+            ClientSize = new Size(784, 441);
             Controls.Add(btnAvancarFeedbackGeral);
             Controls.Add(lblTextoFeedback);
             MaximizeBox = false;

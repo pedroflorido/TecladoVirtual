@@ -38,23 +38,25 @@
             // 
             // lblTexto2
             // 
+            lblTexto2.Anchor = AnchorStyles.None;
             lblTexto2.AutoSize = true;
-            lblTexto2.BackColor = Color.Transparent;
-            lblTexto2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTexto2.BackColor = SystemColors.Desktop;
+            lblTexto2.Font = new Font("Roboto Bk", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTexto2.ForeColor = SystemColors.Window;
-            lblTexto2.Location = new Point(257, 32);
+            lblTexto2.Location = new Point(232, 117);
             lblTexto2.Name = "lblTexto2";
-            lblTexto2.Size = new Size(152, 25);
+            lblTexto2.Size = new Size(325, 58);
             lblTexto2.TabIndex = 0;
             lblTexto2.Text = "O que deseja?";
             lblTexto2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnMuseu
             // 
+            btnMuseu.Anchor = AnchorStyles.Bottom;
             btnMuseu.BackgroundImage = (Image)resources.GetObject("btnMuseu.BackgroundImage");
-            btnMuseu.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMuseu.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnMuseu.ForeColor = Color.Black;
-            btnMuseu.Location = new Point(12, 145);
+            btnMuseu.Location = new Point(85, 205);
             btnMuseu.Name = "btnMuseu";
             btnMuseu.Size = new Size(180, 170);
             btnMuseu.TabIndex = 1;
@@ -64,8 +66,8 @@
             // 
             // btnVoltar1
             // 
-            btnVoltar1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltar1.Location = new Point(31, 25);
+            btnVoltar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltar1.Location = new Point(85, 45);
             btnVoltar1.Name = "btnVoltar1";
             btnVoltar1.Size = new Size(73, 32);
             btnVoltar1.TabIndex = 4;
@@ -75,10 +77,11 @@
             // 
             // btnLua
             // 
+            btnLua.Anchor = AnchorStyles.Bottom;
             btnLua.BackgroundImage = (Image)resources.GetObject("btnLua.BackgroundImage");
-            btnLua.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLua.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLua.ForeColor = Color.Black;
-            btnLua.Location = new Point(231, 145);
+            btnLua.Location = new Point(304, 205);
             btnLua.Name = "btnLua";
             btnLua.Size = new Size(180, 170);
             btnLua.TabIndex = 5;
@@ -88,10 +91,11 @@
             // 
             // btnQuestionario
             // 
-            btnQuestionario.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuestionario.Anchor = AnchorStyles.Bottom;
+            btnQuestionario.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuestionario.ForeColor = Color.Black;
             btnQuestionario.Image = (Image)resources.GetObject("btnQuestionario.Image");
-            btnQuestionario.Location = new Point(447, 145);
+            btnQuestionario.Location = new Point(520, 205);
             btnQuestionario.Name = "btnQuestionario";
             btnQuestionario.Size = new Size(180, 170);
             btnQuestionario.TabIndex = 6;
@@ -103,9 +107,10 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(36, 74, 121);
+            BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(639, 351);
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(784, 441);
             Controls.Add(btnQuestionario);
             Controls.Add(btnLua);
             Controls.Add(btnVoltar1);
