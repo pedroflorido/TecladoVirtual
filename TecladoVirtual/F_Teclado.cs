@@ -14,11 +14,11 @@ namespace TecladoVirtual
     public partial class F_Teclado : Form
     {
         F_Usuario u;
+        
         public F_Teclado(F_Usuario u)
         {
             InitializeComponent();
             this.u = u;
-            u.tbxIdade.MaxLength = 3;
         }
 
         private void button1_Click(object sender, EventArgs e)

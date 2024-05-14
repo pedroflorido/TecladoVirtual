@@ -88,7 +88,7 @@
             btnUm.TabIndex = 2;
             btnUm.Text = "1";
             btnUm.UseVisualStyleBackColor = true;
-            //btnUm.Click += btnUm_Click;
+            btnUm.Click += btnUm_Click;
             // 
             // btnDois
             // 

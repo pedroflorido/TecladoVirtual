@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TecladoVirtual.Modelos;
 
 namespace TecladoVirtual.Telas
 {
@@ -22,9 +23,11 @@ namespace TecladoVirtual.Telas
 
         private void btnAvancarInstrucao_Click(object sender, EventArgs e)
         {
+           
             this.Close();
             F_Usuario usuario = new F_Usuario();
             usuario.Show();
+
 
         }
 

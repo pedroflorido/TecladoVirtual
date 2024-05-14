@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,9 +9,10 @@ namespace TecladoVirtual.Modelos
 {
     internal class Respostas
     {
-        private Boolean[] perguntas = {true,false,true,false,false};
-        public int[] acertos = new int[4];
-        public int[] erros = new int[4];
+        private Boolean[] perguntas = { true, false, true, false, false };
+        public int[] acertos = {0,0,0,0,0};
+        public int[] erros = {0,0,0,0,0};
+        int cont = 0;
         Pessoa usuario;
         
         public Respostas(Pessoa usuario)
@@ -22,23 +24,20 @@ namespace TecladoVirtual.Modelos
 
         private void verificarResposta()
         {
-            int cont = 0;
-           foreach(bool p in this.usuario.getRespostas())
+            for(int cont = 0; cont < perguntas.Length;cont++)
             {
-                foreach(bool q in perguntas)
+                if (perguntas[cont] == usuario.getRespostas()[cont])
                 {
-                    if(q == p)
-                    {
-                        this.acertos[cont] += 1 ;
-                        cont++;
-                    }
-                    else
-                    {
-                        this.erros[cont] += 1 ;
-                        cont++;
-                    }
+                    acertos[cont] += 1;
+                }
+                else
+                {
+                    erros[cont] += 1;
                 }
             }
+           
+                
+         
                 
         }
     }

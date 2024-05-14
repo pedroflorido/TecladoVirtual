@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TecladoVirtual.Modelos;
 using static System.Windows.Forms.DataFormats;
 
 namespace TecladoVirtual.Telas
@@ -46,8 +47,9 @@ namespace TecladoVirtual.Telas
 
         private void btnAvancarInstrucao_Click(object sender, EventArgs e)
         {
+            Controle controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
             this.Close();
-            F_Perguntas1 p1 = new F_Perguntas1();
+            F_Perguntas1 p1 = new F_Perguntas1(controle);
             p1.Show();
         }
 

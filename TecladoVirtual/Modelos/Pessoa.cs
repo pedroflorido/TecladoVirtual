@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TecladoVirtual.Modelos
 {
-    internal class Pessoa
+     public class Pessoa
     {
         private String _nome;
         private int _idade;
-        private Boolean[] _respostas;
+        private Boolean[] _respostas = {false,false,false,false,false};
 
         public Pessoa(string nome, int idade)
         {

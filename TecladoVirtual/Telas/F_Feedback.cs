@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TecladoVirtual.Modelos;
 
 namespace TecladoVirtual.Telas
 {
     public partial class F_Feedback : Form
     {
-        public F_Feedback()
+        Controle controle;
+        public F_Feedback(Controle controle)
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            this.controle = controle;
         }
 
         private void btnAvancarFeedbackGeral_Click(object sender, EventArgs e)
@@ -29,5 +32,6 @@ namespace TecladoVirtual.Telas
         {
 
         }
+        
     }
 }
