@@ -63,6 +63,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 441);
+            ControlBox = false;
             Controls.Add(btnAvancarFeedbackGeral);
             Controls.Add(lblTextoFeedback);
             MaximizeBox = false;
