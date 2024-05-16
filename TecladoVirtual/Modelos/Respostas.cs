@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using System.Linq;
 using System.Numerics;
 using System.Text;
@@ -9,6 +10,7 @@ namespace TecladoVirtual.Modelos
 {
     internal class Respostas
     {
+        public int numeroVisitante = 0;
         private Boolean[] perguntas = { true, false, true, false, false };
         public int[] acertos = {0,0,0,0,0};
         public int[] erros = {0,0,0,0,0};
@@ -20,26 +22,26 @@ namespace TecladoVirtual.Modelos
             this.usuario = usuario;
             verificarResposta();
         }
-       
+
 
         private void verificarResposta()
         {
-            for(int cont = 0; cont < perguntas.Length;cont++)
+            for (int cont = 0; cont < perguntas.Length; cont++)
             {
                 if (perguntas[cont] == usuario.getRespostas()[cont])
                 {
                     acertos[cont] += 1;
+                    numeroVisitante++;
                 }
                 else
                 {
                     erros[cont] += 1;
+                    numeroVisitante++;
                 }
             }
-           
-                
-         
-                
+        
         }
+       
     }
 }
 

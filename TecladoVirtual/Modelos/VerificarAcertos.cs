@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -9,9 +10,7 @@ namespace TecladoVirtual.Modelos
 {
     internal class VerificarAcertos
     {
-        String acertos = "Parabens vc Acertou as perguntas : ";
-        String erros = "E seus erros foram mas perguntas : ";
-        int[] _acertos;
+        public int[] _acertos;
         int[] _erros;
         public VerificarAcertos(int[] acertos, int[] erros) {
         
@@ -20,7 +19,7 @@ namespace TecladoVirtual.Modelos
             CalcularAcertos();
         }
 
-        private double CalcularAcertos()
+        private  double CalcularAcertos()
         {
             double resutadoAcertos = 0;
             double resutadoErros = 0;

@@ -8,22 +8,27 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TecladoVirtual.Modelos;
 
 namespace TecladoVirtual.Telas
 {
     public partial class F_FeedbackGeral : Form
     {
-        private Form f1;
-        public F_FeedbackGeral(F_TelaPrincipal f1)
+        private Controle controle;
+        public F_FeedbackGeral(Controle controle)
         {
             InitializeComponent();
-            this.f1 = f1;
+            this.controle = controle;
+            lblNumeroVisitante.Text = Convert.ToString(controle.pessoa);
+            lblNumeroAcertos.Text = Convert.ToString(controle.media) + "%";
         }
 
         public F_FeedbackGeral()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            
+
 
         }
 

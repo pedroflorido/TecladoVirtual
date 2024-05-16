@@ -30,16 +30,17 @@
         {
             lblTextoFeedback = new Label();
             btnAvancarFeedbackGeral = new Button();
+            lblNumeroAcerto = new Label();
             SuspendLayout();
             // 
             // lblTextoFeedback
             // 
             lblTextoFeedback.Anchor = AnchorStyles.None;
             lblTextoFeedback.AutoSize = true;
-            lblTextoFeedback.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedback.Location = new Point(199, 107);
+            lblTextoFeedback.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoFeedback.Location = new Point(227, 143);
             lblTextoFeedback.Name = "lblTextoFeedback";
-            lblTextoFeedback.Size = new Size(411, 75);
+            lblTextoFeedback.Size = new Size(520, 93);
             lblTextoFeedback.TabIndex = 0;
             lblTextoFeedback.Text = "Parabéns por concluir nosso questionário!\r\n\r\nVocê acertou:";
             lblTextoFeedback.TextAlign = ContentAlignment.MiddleCenter;
@@ -48,24 +49,40 @@
             // 
             btnAvancarFeedbackGeral.Anchor = AnchorStyles.None;
             btnAvancarFeedbackGeral.BackColor = Color.FromArgb(64, 64, 64);
-            btnAvancarFeedbackGeral.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancarFeedbackGeral.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancarFeedbackGeral.ForeColor = SystemColors.Window;
-            btnAvancarFeedbackGeral.Location = new Point(359, 308);
+            btnAvancarFeedbackGeral.Location = new Point(410, 411);
+            btnAvancarFeedbackGeral.Margin = new Padding(3, 4, 3, 4);
             btnAvancarFeedbackGeral.Name = "btnAvancarFeedbackGeral";
-            btnAvancarFeedbackGeral.Size = new Size(85, 37);
+            btnAvancarFeedbackGeral.Size = new Size(97, 49);
             btnAvancarFeedbackGeral.TabIndex = 11;
             btnAvancarFeedbackGeral.Text = "AVANÇAR";
             btnAvancarFeedbackGeral.UseVisualStyleBackColor = false;
             btnAvancarFeedbackGeral.Click += btnAvancarFeedbackGeral_Click;
             // 
+            // lblNumeroAcerto
+            // 
+            lblNumeroAcerto.AutoSize = true;
+            lblNumeroAcerto.Location = new Point(468, 279);
+            lblNumeroAcerto.Name = "lblNumeroAcerto";
+            lblNumeroAcerto.Size = new Size(17, 20);
+            lblNumeroAcerto.TabIndex = 12;
+            lblNumeroAcerto.Text = "0";
+            // 
             // F_Feedback
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(784, 441);
             ControlBox = false;
+=======
+            ClientSize = new Size(896, 588);
+            Controls.Add(lblNumeroAcerto);
+>>>>>>> 1a5b3fbd2a010c3673e7c63120654ea7746c5b6d
             Controls.Add(btnAvancarFeedbackGeral);
             Controls.Add(lblTextoFeedback);
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
@@ -80,5 +97,7 @@
 
         private Label lblTextoFeedback;
         private Button btnAvancarFeedbackGeral;
+        private Label lblNumeroAcerto;
+        
     }
 }

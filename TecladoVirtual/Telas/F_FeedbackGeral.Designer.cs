@@ -32,17 +32,20 @@
             lblTextoFeedbackGeral = new Label();
             lblVisitantes = new Label();
             lblAcertos = new Label();
+            lblNumeroVisitante = new Label();
+            lblNumeroAcertos = new Label();
             SuspendLayout();
             // 
             // btnRetornar
             // 
             btnRetornar.Anchor = AnchorStyles.None;
             btnRetornar.BackColor = Color.FromArgb(64, 64, 64);
-            btnRetornar.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRetornar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRetornar.ForeColor = SystemColors.Window;
-            btnRetornar.Location = new Point(354, 330);
+            btnRetornar.Location = new Point(405, 440);
+            btnRetornar.Margin = new Padding(3, 4, 3, 4);
             btnRetornar.Name = "btnRetornar";
-            btnRetornar.Size = new Size(85, 37);
+            btnRetornar.Size = new Size(97, 49);
             btnRetornar.TabIndex = 11;
             btnRetornar.Text = "RETORNAR";
             btnRetornar.UseVisualStyleBackColor = false;
@@ -52,10 +55,10 @@
             // 
             lblTextoFeedbackGeral.Anchor = AnchorStyles.None;
             lblTextoFeedbackGeral.AutoSize = true;
-            lblTextoFeedbackGeral.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedbackGeral.Location = new Point(254, 39);
+            lblTextoFeedbackGeral.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoFeedbackGeral.Location = new Point(290, 52);
             lblTextoFeedbackGeral.Name = "lblTextoFeedbackGeral";
-            lblTextoFeedbackGeral.Size = new Size(276, 25);
+            lblTextoFeedbackGeral.Size = new Size(390, 31);
             lblTextoFeedbackGeral.TabIndex = 12;
             lblTextoFeedbackGeral.Text = "RELATÓRIO DE RESPOSTAS";
             lblTextoFeedbackGeral.TextAlign = ContentAlignment.MiddleCenter;
@@ -64,10 +67,10 @@
             // 
             lblVisitantes.Anchor = AnchorStyles.None;
             lblVisitantes.AutoSize = true;
-            lblVisitantes.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblVisitantes.Location = new Point(154, 81);
+            lblVisitantes.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblVisitantes.Location = new Point(176, 108);
             lblVisitantes.Name = "lblVisitantes";
-            lblVisitantes.Size = new Size(107, 25);
+            lblVisitantes.Size = new Size(133, 31);
             lblVisitantes.TabIndex = 13;
             lblVisitantes.Text = "Visitantes";
             lblVisitantes.TextAlign = ContentAlignment.MiddleCenter;
@@ -77,24 +80,49 @@
             // 
             lblAcertos.Anchor = AnchorStyles.None;
             lblAcertos.AutoSize = true;
-            lblAcertos.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAcertos.Location = new Point(529, 81);
+            lblAcertos.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblAcertos.Location = new Point(605, 108);
             lblAcertos.Name = "lblAcertos";
-            lblAcertos.Size = new Size(114, 25);
+            lblAcertos.Size = new Size(149, 31);
             lblAcertos.TabIndex = 14;
             lblAcertos.Text = "Acertos(%)";
             lblAcertos.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // lblNumeroVisitante
+            // 
+            lblNumeroVisitante.AutoSize = true;
+            lblNumeroVisitante.Location = new Point(223, 198);
+            lblNumeroVisitante.Name = "lblNumeroVisitante";
+            lblNumeroVisitante.Size = new Size(17, 20);
+            lblNumeroVisitante.TabIndex = 15;
+            lblNumeroVisitante.Text = "0";
+            // 
+            // lblNumeroAcertos
+            // 
+            lblNumeroAcertos.AutoSize = true;
+            lblNumeroAcertos.Location = new Point(658, 198);
+            lblNumeroAcertos.Name = "lblNumeroAcertos";
+            lblNumeroAcertos.Size = new Size(17, 20);
+            lblNumeroAcertos.TabIndex = 16;
+            lblNumeroAcertos.Text = "0";
+            // 
             // F_FeedbackGeral
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(784, 441);
             ControlBox = false;
+=======
+            ClientSize = new Size(896, 588);
+            Controls.Add(lblNumeroAcertos);
+            Controls.Add(lblNumeroVisitante);
+>>>>>>> 1a5b3fbd2a010c3673e7c63120654ea7746c5b6d
             Controls.Add(lblAcertos);
             Controls.Add(lblVisitantes);
             Controls.Add(lblTextoFeedbackGeral);
             Controls.Add(btnRetornar);
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
@@ -111,5 +139,7 @@
         private Label lblTextoFeedbackGeral;
         private Label lblVisitantes;
         private Label lblAcertos;
+        private Label lblNumeroVisitante;
+        private Label lblNumeroAcertos;
     }
 }
