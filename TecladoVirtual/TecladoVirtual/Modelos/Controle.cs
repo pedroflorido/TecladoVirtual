@@ -32,7 +32,7 @@ namespace TecladoVirtual.Modelos
             usuario.setRespostas(p1, p2, p3, p4, p5);
             Respostas respostas = new Respostas(usuario);
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
-            pessoa = respostas.numeroVisitante;
+            pessoa = Estatica.numeroDePessoas;
             media = pessoa / verificarAcertos._acertos.Length * 100;
             mensagem = verificarAcertos.ToString();
         }

@@ -12,15 +12,15 @@ namespace TecladoVirtual.Modelos
     {
         public int[] _acertos;
         int[] _erros;
+        double resutadoAcertos = 0;
+        double resutadoErros = 0;
         public VerificarAcertos(int[] acertos, int[] erros) {
         
             this._acertos = acertos;
             this._erros = erros;
             CalcularAcertos();
-        }
-        double resutadoAcertos = 0;
-        double resutadoErros = 0;
-
+        } 
+       
         private  double CalcularAcertos()
         {
              this.resutadoAcertos = 0;
@@ -39,7 +39,7 @@ namespace TecladoVirtual.Modelos
 
         }
 
-        private void Atribuicaodovalores()
+        private void AtribuicaodovaloresStatic()
         {
             Estatica.totaldeAcertos += Convert.ToInt32(resutadoAcertos); 
             Estatica.numeroDePessoas += Convert.ToInt32(resutadoAcertos + resutadoErros) / 5;
@@ -47,7 +47,7 @@ namespace TecladoVirtual.Modelos
         }
         public override string ToString()
         {
-            Atribuicaodovalores();
+            AtribuicaodovaloresStatic();
             return Convert.ToString(CalcularAcertos());
         }
     }
