@@ -13,21 +13,21 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_Perguntas3 : Form
     {
-        Controle controle;
-        public F_Perguntas3(Controle controle)
+       
+        public F_Perguntas3()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            this.controle = controle;
+            
         }
 
         private void btnFinalizarPerguntas_Click(object sender, EventArgs e)
         {
-            this.controle.executar();
+            Estatica.controle.executar();
             this.Close();
-            F_Feedback fedbacks = new F_Feedback(this.controle);
+            F_Feedback fedbacks = new F_Feedback();
             fedbacks.Show();
-            this.controle.executar();
+            
         }
 
         private void F_Perguntas3_Load(object sender, EventArgs e)
@@ -37,12 +37,12 @@ namespace TecladoVirtual.Telas
 
         private void btnVerdadeiro5_Click(object sender, EventArgs e)
         {
-            this.controle.ReceberP5(true);
+            Estatica.controle.ReceberP5(true);
         }
 
         private void btnFalso5_Click(object sender, EventArgs e)
         {
-            this.controle.ReceberP5(false);
+            Estatica.controle.ReceberP5(false);
         }
     }
 }

@@ -18,11 +18,13 @@ namespace TecladoVirtual.Modelos
             this._erros = erros;
             CalcularAcertos();
         }
+        double resutadoAcertos = 0;
+        double resutadoErros = 0;
 
         private  double CalcularAcertos()
         {
-            double resutadoAcertos = 0;
-            double resutadoErros = 0;
+             this.resutadoAcertos = 0;
+             this.resutadoErros = 0;
 
             for (int cont = 0;  cont < _acertos.Length; cont++)
             {
@@ -34,10 +36,18 @@ namespace TecladoVirtual.Modelos
             }
 
             return resutadoAcertos / 5 * 100;
+
         }
 
+        private void Atribuicaodovalores()
+        {
+            Estatica.totaldeAcertos += Convert.ToInt32(resutadoAcertos); 
+            Estatica.numeroDePessoas += Convert.ToInt32(resutadoAcertos + resutadoErros) / 5;
+            Estatica.mediaGeral = Estatica.totaldeAcertos * 100 / Estatica.numeroDePessoas /5;
+        }
         public override string ToString()
         {
+            Atribuicaodovalores();
             return Convert.ToString(CalcularAcertos());
         }
     }

@@ -35,7 +35,7 @@ namespace TecladoVirtual.Telas
         {
             F_Teclado teclado = new F_Teclado(this);
             teclado.Show();
-            
+
         }
 
         private void btnVoltarInstrucao_Click(object sender, EventArgs e)
@@ -47,15 +47,25 @@ namespace TecladoVirtual.Telas
 
         private void btnAvancarInstrucao_Click(object sender, EventArgs e)
         {
-            Controle controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
+            Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
             this.Close();
-            F_Perguntas1 p1 = new F_Perguntas1(controle);
+            F_Perguntas1 p1 = new F_Perguntas1();
             p1.Show();
         }
 
         private void F_Usuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLIMPARnome_Click(object sender, EventArgs e)
+        {
+            tbxNome.Text = "";
+        }
+
+        private void btnLIMPARidade_Click(object sender, EventArgs e)
+        {
+            tbxIdade.Text = "";
         }
     }
 }

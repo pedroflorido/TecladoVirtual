@@ -19,20 +19,20 @@ namespace TecladoVirtual.Telas
         {
             InitializeComponent();
             this.controle = controle;
-            lblNumeroVisitante.Text = Convert.ToString(controle.pessoa);
-            lblNumeroAcertos.Text = Convert.ToString(controle.media) + "%";
+            
         }
 
         public F_FeedbackGeral()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            
 
+            lblNumeroVisitante.Text = Convert.ToString(Estatica.numeroDePessoas);
+            lblNumeroAcertos.Text = Convert.ToString(Estatica.mediaGeral) + "%";
 
         }
 
-
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
