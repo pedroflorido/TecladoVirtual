@@ -38,6 +38,9 @@
             btnAvancarInstrucao = new Button();
             btnLIMPARnome = new Button();
             btnLIMPARidade = new Button();
+            alertaPainel = new Panel();
+            label2 = new Label();
+            alertaPainel.SuspendLayout();
             SuspendLayout();
             // 
             // lblTextoUsuario
@@ -156,6 +159,28 @@
             btnLIMPARidade.UseVisualStyleBackColor = false;
             btnLIMPARidade.Click += btnLIMPARidade_Click;
             // 
+            // alertaPainel
+            // 
+            alertaPainel.BackColor = SystemColors.Info;
+            alertaPainel.Controls.Add(label2);
+            alertaPainel.Location = new Point(490, 28);
+            alertaPainel.Name = "alertaPainel";
+            alertaPainel.Size = new Size(263, 99);
+            alertaPainel.TabIndex = 11;
+            alertaPainel.Visible = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.Info;
+            label2.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(5, 24);
+            label2.Name = "label2";
+            label2.Size = new Size(255, 54);
+            label2.TabIndex = 0;
+            label2.Text = "Todos os campos devem \r\n        ser Preenchidos!";
+            label2.Click += label2_Click;
+            // 
             // F_Usuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -164,6 +189,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(896, 588);
+            Controls.Add(alertaPainel);
             Controls.Add(btnLIMPARidade);
             Controls.Add(btnLIMPARnome);
             Controls.Add(btnAvancarInstrucao);
@@ -180,6 +206,8 @@
             Name = "F_Usuario";
             Text = "F_Usuario";
             Load += F_Usuario_Load;
+            alertaPainel.ResumeLayout(false);
+            alertaPainel.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +223,7 @@
         public Button btnAvancarInstrucao;
         private Button btnLIMPARnome;
         private Button btnLIMPARidade;
+        private Panel alertaPainel;
+        private Label label2;
     }
 }
