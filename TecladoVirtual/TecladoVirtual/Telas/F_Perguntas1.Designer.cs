@@ -41,17 +41,12 @@
             // 
             lblPergunta1.Anchor = AnchorStyles.None;
             lblPergunta1.AutoSize = true;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             lblPergunta1.Font = new Font("Roboto Bk", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblPergunta1.Location = new Point(144, 46);
             lblPergunta1.Name = "lblPergunta1";
             lblPergunta1.Size = new Size(481, 46);
-=======
-            lblPergunta1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPergunta1.Location = new Point(164, 61);
-            lblPergunta1.Name = "lblPergunta1";
-            lblPergunta1.Size = new Size(604, 58);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             lblPergunta1.TabIndex = 0;
             lblPergunta1.Text = "O ano em que o homem pisou na Lua pela primeira vez\r\nfoi em 1969.";
             lblPergunta1.TextAlign = ContentAlignment.MiddleCenter;
@@ -60,17 +55,12 @@
             // 
             lblPergunta2.Anchor = AnchorStyles.None;
             lblPergunta2.AutoSize = true;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             lblPergunta2.Font = new Font("Roboto Bk", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblPergunta2.Location = new Point(176, 153);
             lblPergunta2.Name = "lblPergunta2";
             lblPergunta2.Size = new Size(413, 46);
-=======
-            lblPergunta2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPergunta2.Location = new Point(201, 204);
-            lblPergunta2.Name = "lblPergunta2";
-            lblPergunta2.Size = new Size(520, 58);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             lblPergunta2.TabIndex = 1;
             lblPergunta2.Text = "O nome da missão espacial dos Estado Unidos\r\nse chamava Luna 24.";
             lblPergunta2.TextAlign = ContentAlignment.MiddleCenter;
@@ -82,12 +72,11 @@
             btnAvancarPerguntas1.BackColor = Color.FromArgb(64, 64, 64);
             btnAvancarPerguntas1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancarPerguntas1.ForeColor = SystemColors.Window;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnAvancarPerguntas1.Location = new Point(317, 247);
-=======
-            btnAvancarPerguntas1.Location = new Point(362, 329);
+
+            
             btnAvancarPerguntas1.Margin = new Padding(3, 4, 3, 4);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
             btnAvancarPerguntas1.Name = "btnAvancarPerguntas1";
             btnAvancarPerguntas1.Size = new Size(85, 37);
             btnAvancarPerguntas1.TabIndex = 3;
@@ -101,12 +90,12 @@
             btnVerdadeiro2.BackColor = Color.DimGray;
             btnVerdadeiro2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVerdadeiro2.ForeColor = Color.PaleGreen;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnVerdadeiro2.Location = new Point(176, 190);
-=======
-            btnVerdadeiro2.Location = new Point(201, 253);
+
+            
             btnVerdadeiro2.Margin = new Padding(3, 4, 3, 4);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnVerdadeiro2.Name = "btnVerdadeiro2";
             btnVerdadeiro2.Size = new Size(85, 37);
             btnVerdadeiro2.TabIndex = 4;
@@ -120,12 +109,12 @@
             btnVerdadeiro1.BackColor = Color.DimGray;
             btnVerdadeiro1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVerdadeiro1.ForeColor = Color.PaleGreen;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnVerdadeiro1.Location = new Point(176, 82);
-=======
-            btnVerdadeiro1.Location = new Point(201, 110);
+
+            
             btnVerdadeiro1.Margin = new Padding(3, 4, 3, 4);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnVerdadeiro1.Name = "btnVerdadeiro1";
             btnVerdadeiro1.Size = new Size(85, 37);
             btnVerdadeiro1.TabIndex = 5;
@@ -139,12 +128,11 @@
             btnFalso1.BackColor = Color.DimGray;
             btnFalso1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFalso1.ForeColor = Color.LightCoral;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnFalso1.Location = new Point(463, 82);
-=======
-            btnFalso1.Location = new Point(529, 110);
+
+            
             btnFalso1.Margin = new Padding(3, 4, 3, 4);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
             btnFalso1.Name = "btnFalso1";
             btnFalso1.Size = new Size(85, 37);
             btnFalso1.TabIndex = 6;
@@ -158,12 +146,11 @@
             btnFalso2.BackColor = Color.DimGray;
             btnFalso2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFalso2.ForeColor = Color.LightCoral;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
             btnFalso2.Location = new Point(463, 190);
-=======
-            btnFalso2.Location = new Point(529, 253);
+
+            
             btnFalso2.Margin = new Padding(3, 4, 3, 4);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
             btnFalso2.Name = "btnFalso2";
             btnFalso2.Size = new Size(85, 37);
             btnFalso2.TabIndex = 7;
@@ -175,12 +162,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< HEAD:TecladoVirtual/Telas/F_Perguntas1.Designer.cs
             ClientSize = new Size(686, 331);
             ControlBox = false;
-=======
-            ClientSize = new Size(784, 441);
->>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Perguntas1.Designer.cs
+
+           
+
             Controls.Add(btnFalso2);
             Controls.Add(btnFalso1);
             Controls.Add(btnVerdadeiro1);
