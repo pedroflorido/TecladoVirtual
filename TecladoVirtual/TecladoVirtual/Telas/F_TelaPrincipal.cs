@@ -3,12 +3,14 @@ using System;
 using System.Windows.Forms;
 using Timer = System.Windows.Forms.Timer;
 using System.Drawing.Text;
+using TecladoVirtual.Modelos;
 
 
 namespace TecladoVirtual
 {
     public partial class F_TelaPrincipal : Form
     {
+       
         private System.Timers.Timer timer;
         int tempoRestante = 120;
         public F_TelaPrincipal()

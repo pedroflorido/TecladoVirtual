@@ -13,12 +13,12 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_Perguntas1 : Form
     {
-        Controle controle;
-        public F_Perguntas1(Controle controle)
+       
+        public F_Perguntas1()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            this.controle = controle;
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace TecladoVirtual.Telas
         private void btnAvancarPerguntas1_Click(object sender, EventArgs e)
         {
             this.Close();
-            F_Perguntas2 p2 = new F_Perguntas2(this.controle);
+            F_Perguntas2 p2 = new F_Perguntas2();
             p2.Show();
         }
 
@@ -40,22 +40,22 @@ namespace TecladoVirtual.Telas
 
         private void btnVerdadeiro1_Click(object sender, EventArgs e)
         {
-            this.controle.ReceberP1(true);
+           Estatica.controle.ReceberP1(true);
         }
 
         private void btnFalso1_Click(object sender, EventArgs e)
         {
-            this.controle.ReceberP1(false);
+            Estatica.controle.ReceberP1(false);
         }
 
         private void btnVerdadeiro2_Click(object sender, EventArgs e)
         {
-            this.controle.ReceberP2(true);
+            Estatica.controle.ReceberP2(true);
         }
 
         private void btnFalso2_Click(object sender, EventArgs e)
         {
-            this.controle.ReceberP3(false);
+            Estatica.controle.ReceberP3(false);
         }
     }
 }

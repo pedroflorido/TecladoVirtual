@@ -9,28 +9,30 @@ using TecladoVirtual.Telas;
 
 namespace TecladoVirtual.Modelos
 {
-    public class Controle : Pessoa
+    public class Controle 
     {
         public string mensagem;
         public int pessoa;
         public double media;
+        Pessoa usuario;
         bool p1;
         bool p2;
         bool p3;
         bool p4;
         bool p5;
 
-        public Controle(String nome, int idade) : base (nome,idade)
+        public Controle(String nome, int idade)
         {
-            
+            Pessoa usuario = new Pessoa(nome, idade);
+            this.usuario = usuario;
         }
         
         public void executar()
         {
-            this.setRespostas(p1, p2, p3, p4, p5);
-            Respostas respostas = new Respostas(this);
+            usuario.setRespostas(p1, p2, p3, p4, p5);
+            Respostas respostas = new Respostas(usuario);
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
-            pessoa = respostas.numeroVisitante;
+            pessoa = Estatica.numeroDePessoas;
             media = pessoa / verificarAcertos._acertos.Length * 100;
             mensagem = verificarAcertos.ToString();
         }

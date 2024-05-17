@@ -13,13 +13,12 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_Feedback : Form
     {
-        Controle controle;
-        public F_Feedback(Controle controle)
+        
+        public F_Feedback()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-            this.controle = controle;
-            lblNumeroAcerto.Text = controle.mensagem + "%";
+            lblNumeroAcerto.Text = Estatica.controle.mensagem + "%";
         }
        
         private void btnAvancarFeedbackGeral_Click(object sender, EventArgs e)

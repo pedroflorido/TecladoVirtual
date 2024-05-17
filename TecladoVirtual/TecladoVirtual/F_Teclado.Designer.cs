@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Teclado));
             btnSpace = new Button();
             btnUm = new Button();
             btnDois = new Button();
@@ -72,410 +73,288 @@
             // 
             // btnSpace
             // 
-            btnSpace.Location = new Point(12, 172);
+            resources.ApplyResources(btnSpace, "btnSpace");
             btnSpace.Name = "btnSpace";
-            btnSpace.Size = new Size(554, 43);
-            btnSpace.TabIndex = 0;
-            btnSpace.Text = "Space";
             btnSpace.UseVisualStyleBackColor = true;
-            //btnSpace.Click += button1_Click;
             // 
             // btnUm
             // 
-            btnUm.Location = new Point(12, 12);
+            resources.ApplyResources(btnUm, "btnUm");
             btnUm.Name = "btnUm";
-            btnUm.Size = new Size(50, 34);
-            btnUm.TabIndex = 2;
-            btnUm.Text = "1";
             btnUm.UseVisualStyleBackColor = true;
             btnUm.Click += btnUm_Click;
             // 
             // btnDois
             // 
-            btnDois.Location = new Point(68, 12);
+            resources.ApplyResources(btnDois, "btnDois");
             btnDois.Name = "btnDois";
-            btnDois.Size = new Size(50, 34);
-            btnDois.TabIndex = 3;
-            btnDois.Text = "2";
             btnDois.UseVisualStyleBackColor = true;
             btnDois.Click += btnDois_Click;
             // 
             // btnTres
             // 
-            btnTres.Location = new Point(124, 12);
+            resources.ApplyResources(btnTres, "btnTres");
             btnTres.Name = "btnTres";
-            btnTres.Size = new Size(50, 34);
-            btnTres.TabIndex = 4;
-            btnTres.Text = "3";
             btnTres.UseVisualStyleBackColor = true;
             btnTres.Click += btnTres_Click;
             // 
             // btnQuatro
             // 
-            btnQuatro.Location = new Point(180, 12);
+            resources.ApplyResources(btnQuatro, "btnQuatro");
             btnQuatro.Name = "btnQuatro";
-            btnQuatro.Size = new Size(50, 34);
-            btnQuatro.TabIndex = 5;
-            btnQuatro.Text = "4";
             btnQuatro.UseVisualStyleBackColor = true;
             btnQuatro.Click += btnQuatro_Click;
             // 
             // btnCinco
             // 
-            btnCinco.Location = new Point(236, 12);
+            resources.ApplyResources(btnCinco, "btnCinco");
             btnCinco.Name = "btnCinco";
-            btnCinco.Size = new Size(50, 34);
-            btnCinco.TabIndex = 6;
-            btnCinco.Text = "5";
             btnCinco.UseVisualStyleBackColor = true;
             btnCinco.Click += btnCinco_Click;
             // 
             // btnSeis
             // 
-            btnSeis.Location = new Point(292, 12);
+            resources.ApplyResources(btnSeis, "btnSeis");
             btnSeis.Name = "btnSeis";
-            btnSeis.Size = new Size(50, 34);
-            btnSeis.TabIndex = 7;
-            btnSeis.Text = "6";
             btnSeis.UseVisualStyleBackColor = true;
             btnSeis.Click += btnSeis_Click;
             // 
             // btnSete
             // 
-            btnSete.Location = new Point(348, 12);
+            resources.ApplyResources(btnSete, "btnSete");
             btnSete.Name = "btnSete";
-            btnSete.Size = new Size(50, 34);
-            btnSete.TabIndex = 8;
-            btnSete.Text = "7";
             btnSete.UseVisualStyleBackColor = true;
             btnSete.Click += btnSete_Click;
             // 
             // btnOito
             // 
-            btnOito.Location = new Point(404, 12);
+            resources.ApplyResources(btnOito, "btnOito");
             btnOito.Name = "btnOito";
-            btnOito.Size = new Size(50, 34);
-            btnOito.TabIndex = 9;
-            btnOito.Text = "8";
             btnOito.UseVisualStyleBackColor = true;
             btnOito.Click += btnOito_Click;
             // 
             // btnNove
             // 
-            btnNove.Location = new Point(460, 12);
+            resources.ApplyResources(btnNove, "btnNove");
             btnNove.Name = "btnNove";
-            btnNove.Size = new Size(50, 34);
-            btnNove.TabIndex = 10;
-            btnNove.Text = "9";
             btnNove.UseVisualStyleBackColor = true;
             btnNove.Click += btnNove_Click;
             // 
             // btnZero
             // 
-            btnZero.Location = new Point(516, 12);
+            resources.ApplyResources(btnZero, "btnZero");
             btnZero.Name = "btnZero";
-            btnZero.Size = new Size(50, 34);
-            btnZero.TabIndex = 11;
-            btnZero.Text = "0";
             btnZero.UseVisualStyleBackColor = true;
             btnZero.Click += btnZero_Click;
             // 
             // btnTab
             // 
-            btnTab.Location = new Point(404, 132);
+            resources.ApplyResources(btnTab, "btnTab");
             btnTab.Name = "btnTab";
-            btnTab.Size = new Size(82, 34);
-            btnTab.TabIndex = 12;
-            btnTab.Text = "Tab";
             btnTab.UseVisualStyleBackColor = true;
             btnTab.Click += btnTab_Click;
             // 
             // btnQ
             // 
-            btnQ.Location = new Point(12, 52);
+            resources.ApplyResources(btnQ, "btnQ");
             btnQ.Name = "btnQ";
-            btnQ.Size = new Size(50, 34);
-            btnQ.TabIndex = 13;
-            btnQ.Text = "Q";
             btnQ.UseVisualStyleBackColor = true;
             btnQ.Click += btnQ_Click;
             // 
             // btnW
             // 
-            btnW.Location = new Point(68, 52);
+            resources.ApplyResources(btnW, "btnW");
             btnW.Name = "btnW";
-            btnW.Size = new Size(50, 34);
-            btnW.TabIndex = 14;
-            btnW.Text = "W";
             btnW.UseVisualStyleBackColor = true;
             btnW.Click += btnW_Click;
             // 
             // btnE
             // 
-            btnE.Location = new Point(124, 52);
+            resources.ApplyResources(btnE, "btnE");
             btnE.Name = "btnE";
-            btnE.Size = new Size(50, 34);
-            btnE.TabIndex = 15;
-            btnE.Text = "E";
             btnE.UseVisualStyleBackColor = true;
             btnE.Click += btnE_Click;
             // 
             // btnR
             // 
-            btnR.Location = new Point(180, 52);
+            resources.ApplyResources(btnR, "btnR");
             btnR.Name = "btnR";
-            btnR.Size = new Size(50, 34);
-            btnR.TabIndex = 16;
-            btnR.Text = "R";
             btnR.UseVisualStyleBackColor = true;
             btnR.Click += btnR_Click;
             // 
             // btnT
             // 
-            btnT.Location = new Point(236, 52);
+            resources.ApplyResources(btnT, "btnT");
             btnT.Name = "btnT";
-            btnT.Size = new Size(50, 34);
-            btnT.TabIndex = 18;
-            btnT.Text = "T";
             btnT.UseVisualStyleBackColor = true;
             btnT.Click += btnT_Click;
             // 
             // btnY
             // 
-            btnY.Location = new Point(292, 52);
+            resources.ApplyResources(btnY, "btnY");
             btnY.Name = "btnY";
-            btnY.Size = new Size(50, 34);
-            btnY.TabIndex = 19;
-            btnY.Text = "Y";
             btnY.UseVisualStyleBackColor = true;
             btnY.Click += btnY_Click;
             // 
             // btnU
             // 
-            btnU.Location = new Point(348, 52);
+            resources.ApplyResources(btnU, "btnU");
             btnU.Name = "btnU";
-            btnU.Size = new Size(50, 34);
-            btnU.TabIndex = 20;
-            btnU.Text = "U";
             btnU.UseVisualStyleBackColor = true;
             btnU.Click += btnU_Click;
             // 
             // btnI
             // 
-            btnI.Location = new Point(404, 52);
+            resources.ApplyResources(btnI, "btnI");
             btnI.Name = "btnI";
-            btnI.Size = new Size(50, 34);
-            btnI.TabIndex = 21;
-            btnI.Text = "I";
             btnI.UseVisualStyleBackColor = true;
             btnI.Click += btnI_Click;
             // 
             // btnO
             // 
-            btnO.Location = new Point(460, 52);
+            resources.ApplyResources(btnO, "btnO");
             btnO.Name = "btnO";
-            btnO.Size = new Size(50, 34);
-            btnO.TabIndex = 22;
-            btnO.Text = "O";
             btnO.UseVisualStyleBackColor = true;
             btnO.Click += btnO_Click;
             // 
             // btnP
             // 
-            btnP.Location = new Point(516, 52);
+            resources.ApplyResources(btnP, "btnP");
             btnP.Name = "btnP";
-            btnP.Size = new Size(50, 34);
-            btnP.TabIndex = 23;
-            btnP.Text = "P";
             btnP.UseVisualStyleBackColor = true;
             btnP.Click += btnP_Click;
             // 
             // btnApagar
             // 
-            btnApagar.Location = new Point(492, 132);
+            resources.ApplyResources(btnApagar, "btnApagar");
             btnApagar.Name = "btnApagar";
-            btnApagar.Size = new Size(74, 34);
-            btnApagar.TabIndex = 24;
-            btnApagar.Text = "Clear";
             btnApagar.UseVisualStyleBackColor = true;
             btnApagar.Click += button1_Click_1;
             // 
             // btnZ
             // 
-            btnZ.Location = new Point(12, 132);
+            resources.ApplyResources(btnZ, "btnZ");
             btnZ.Name = "btnZ";
-            btnZ.Size = new Size(50, 34);
-            btnZ.TabIndex = 36;
-            btnZ.Text = "Z";
             btnZ.UseVisualStyleBackColor = true;
             btnZ.Click += btnZ_Click;
             // 
             // btnÇ
             // 
-            btnÇ.Location = new Point(516, 92);
+            resources.ApplyResources(btnÇ, "btnÇ");
             btnÇ.Name = "btnÇ";
-            btnÇ.Size = new Size(50, 34);
-            btnÇ.TabIndex = 35;
-            btnÇ.Text = "Ç";
             btnÇ.UseVisualStyleBackColor = true;
             btnÇ.Click += btnÇ_Click;
             // 
             // btnL
             // 
-            btnL.Location = new Point(460, 92);
+            resources.ApplyResources(btnL, "btnL");
             btnL.Name = "btnL";
-            btnL.Size = new Size(50, 34);
-            btnL.TabIndex = 34;
-            btnL.Text = "L";
             btnL.UseVisualStyleBackColor = true;
             btnL.Click += btnL_Click;
             // 
             // btnK
             // 
-            btnK.Location = new Point(404, 92);
+            resources.ApplyResources(btnK, "btnK");
             btnK.Name = "btnK";
-            btnK.Size = new Size(50, 34);
-            btnK.TabIndex = 33;
-            btnK.Text = "K";
             btnK.UseVisualStyleBackColor = true;
             btnK.Click += btnK_Click;
             // 
             // btnJ
             // 
-            btnJ.Location = new Point(348, 92);
+            resources.ApplyResources(btnJ, "btnJ");
             btnJ.Name = "btnJ";
-            btnJ.Size = new Size(50, 34);
-            btnJ.TabIndex = 32;
-            btnJ.Text = "J";
             btnJ.UseVisualStyleBackColor = true;
             btnJ.Click += btnJ_Click;
             // 
             // btnH
             // 
-            btnH.Location = new Point(292, 92);
+            resources.ApplyResources(btnH, "btnH");
             btnH.Name = "btnH";
-            btnH.Size = new Size(50, 34);
-            btnH.TabIndex = 31;
-            btnH.Text = "H";
             btnH.UseVisualStyleBackColor = true;
             btnH.Click += btnH_Click;
             // 
             // btnG
             // 
-            btnG.Location = new Point(236, 92);
+            resources.ApplyResources(btnG, "btnG");
             btnG.Name = "btnG";
-            btnG.Size = new Size(50, 34);
-            btnG.TabIndex = 30;
-            btnG.Text = "G";
             btnG.UseVisualStyleBackColor = true;
             btnG.Click += btnG_Click;
             // 
             // btnF
             // 
-            btnF.Location = new Point(180, 92);
+            resources.ApplyResources(btnF, "btnF");
             btnF.Name = "btnF";
-            btnF.Size = new Size(50, 34);
-            btnF.TabIndex = 29;
-            btnF.Text = "F";
             btnF.UseVisualStyleBackColor = true;
             btnF.Click += btnF_Click;
             // 
             // btnD
             // 
-            btnD.Location = new Point(124, 92);
+            resources.ApplyResources(btnD, "btnD");
             btnD.Name = "btnD";
-            btnD.Size = new Size(50, 34);
-            btnD.TabIndex = 28;
-            btnD.Text = "D";
             btnD.UseVisualStyleBackColor = true;
             btnD.Click += btnD_Click;
             // 
             // btnS
             // 
-            btnS.Location = new Point(68, 92);
+            resources.ApplyResources(btnS, "btnS");
             btnS.Name = "btnS";
-            btnS.Size = new Size(50, 34);
-            btnS.TabIndex = 27;
-            btnS.Text = "S";
             btnS.UseVisualStyleBackColor = true;
             btnS.Click += btnS_Click;
             // 
             // btnA
             // 
-            btnA.Location = new Point(12, 92);
+            resources.ApplyResources(btnA, "btnA");
             btnA.Name = "btnA";
-            btnA.Size = new Size(50, 34);
-            btnA.TabIndex = 26;
-            btnA.Text = "A";
             btnA.UseVisualStyleBackColor = true;
             btnA.Click += btnA_Click;
             // 
             // btnM
             // 
-            btnM.Location = new Point(348, 132);
+            resources.ApplyResources(btnM, "btnM");
             btnM.Name = "btnM";
-            btnM.Size = new Size(50, 34);
-            btnM.TabIndex = 42;
-            btnM.Text = "M";
             btnM.UseVisualStyleBackColor = true;
             btnM.Click += btnM_Click;
             // 
             // btnN
             // 
-            btnN.Location = new Point(292, 132);
+            resources.ApplyResources(btnN, "btnN");
             btnN.Name = "btnN";
-            btnN.Size = new Size(50, 34);
-            btnN.TabIndex = 41;
-            btnN.Text = "N";
             btnN.UseVisualStyleBackColor = true;
             btnN.Click += btnN_Click;
             // 
             // btnB
             // 
-            btnB.Location = new Point(236, 132);
+            resources.ApplyResources(btnB, "btnB");
             btnB.Name = "btnB";
-            btnB.Size = new Size(50, 34);
-            btnB.TabIndex = 40;
-            btnB.Text = "B";
             btnB.UseVisualStyleBackColor = true;
             btnB.Click += btnB_Click;
             // 
             // btnV
             // 
-            btnV.Location = new Point(180, 132);
+            resources.ApplyResources(btnV, "btnV");
             btnV.Name = "btnV";
-            btnV.Size = new Size(50, 34);
-            btnV.TabIndex = 39;
-            btnV.Text = "V";
             btnV.UseVisualStyleBackColor = true;
             btnV.Click += btnV_Click;
             // 
             // btnC
             // 
-            btnC.Location = new Point(124, 132);
+            resources.ApplyResources(btnC, "btnC");
             btnC.Name = "btnC";
-            btnC.Size = new Size(50, 34);
-            btnC.TabIndex = 38;
-            btnC.Text = "C";
             btnC.UseVisualStyleBackColor = true;
             btnC.Click += btnC_Click;
             // 
             // btnX
             // 
-            btnX.Location = new Point(68, 132);
+            resources.ApplyResources(btnX, "btnX");
             btnX.Name = "btnX";
-            btnX.Size = new Size(50, 34);
-            btnX.TabIndex = 37;
-            btnX.Text = "X";
             btnX.UseVisualStyleBackColor = true;
             btnX.Click += btnX_Click;
             // 
-            // Form2
+            // F_Teclado
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(576, 227);
             Controls.Add(btnM);
             Controls.Add(btnN);
             Controls.Add(btnB);
@@ -519,8 +398,7 @@
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
-            Name = "Form2";
-            Text = "Teclado";
+            Name = "F_Teclado";
             ResumeLayout(false);
         }
 
