@@ -92,6 +92,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 441);
+            ControlBox = false;
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnVoltarLua);

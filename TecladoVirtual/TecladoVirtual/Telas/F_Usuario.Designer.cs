@@ -188,7 +188,16 @@
             BackColor = SystemColors.WindowText;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
+<<<<<<< HEAD:TecladoVirtual/Telas/F_Usuario.Designer.cs
+            ClientSize = new Size(784, 441);
+            ControlBox = false;
+=======
             ClientSize = new Size(896, 588);
+<<<<<<< HEAD
+=======
+            Controls.Add(alertaPainel);
+>>>>>>> 6fa991fb5b921ad1ba1ca3b14363fe7ed0d50a5b:TecladoVirtual/TecladoVirtual/Telas/F_Usuario.Designer.cs
+>>>>>>> fe898e3d2833d413c78df10a93396e4ed97e22eb
             Controls.Add(btnLIMPARidade);
             Controls.Add(btnLIMPARnome);
             Controls.Add(btnAvancarInstrucao);

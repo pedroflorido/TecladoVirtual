@@ -111,6 +111,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 441);
+            ControlBox = false;
             Controls.Add(btnQuestionario);
             Controls.Add(btnLua);
             Controls.Add(btnVoltar1);

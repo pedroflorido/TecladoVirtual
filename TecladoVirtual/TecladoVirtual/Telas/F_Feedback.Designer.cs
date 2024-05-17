@@ -73,8 +73,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 588);
+
+            ClientSize = new Size(784, 441);
+            ControlBox = false;
+
+            
             Controls.Add(lblNumeroAcerto);
+
             Controls.Add(btnAvancarFeedbackGeral);
             Controls.Add(lblTextoFeedback);
             Margin = new Padding(3, 4, 3, 4);
