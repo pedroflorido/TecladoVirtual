@@ -189,7 +189,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(896, 588);
-            Controls.Add(alertaPainel);
             Controls.Add(btnLIMPARidade);
             Controls.Add(btnLIMPARnome);
             Controls.Add(btnAvancarInstrucao);
@@ -199,6 +198,7 @@
             Controls.Add(tbxNome);
             Controls.Add(lblNomeUsuario);
             Controls.Add(lblTextoUsuario);
+            Controls.Add(alertaPainel);
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;

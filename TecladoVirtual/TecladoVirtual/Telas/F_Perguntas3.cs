@@ -13,6 +13,7 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_Perguntas3 : Form
     {
+        int verificaSeRespondeu = 0;
        
         public F_Perguntas3()
         {
@@ -23,11 +24,19 @@ namespace TecladoVirtual.Telas
 
         private void btnFinalizarPerguntas_Click(object sender, EventArgs e)
         {
-            Estatica.controle.executar();
-            this.Close();
-            F_Feedback fedbacks = new F_Feedback();
-            fedbacks.Show();
-            
+            if (verificaSeRespondeu > 1)
+            {
+                verificaSeRespondeu = 0;
+            }
+            else if (verificaSeRespondeu == 1)
+            {
+                    Estatica.controle.executar();
+
+                    F_Feedback fedbacks = new F_Feedback();
+                    fedbacks.Show();
+                    this.Close();
+            }
+
         }
 
         private void F_Perguntas3_Load(object sender, EventArgs e)
@@ -38,11 +47,13 @@ namespace TecladoVirtual.Telas
         private void btnVerdadeiro5_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP5(true);
+            verificaSeRespondeu++;
         }
 
         private void btnFalso5_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP5(false);
+            verificaSeRespondeu++;
         }
     }
 }

@@ -20,9 +20,10 @@ namespace TecladoVirtual.Telas
 
         private void btnVoltarLua_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_OqueDeseja oqueDeseja = new F_OqueDeseja();
             oqueDeseja.Show();
+            this.Close();
         }
 
         private void F_Lua_Load(object sender, EventArgs e)

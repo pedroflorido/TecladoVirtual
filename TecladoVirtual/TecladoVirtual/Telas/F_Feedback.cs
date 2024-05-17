@@ -23,9 +23,10 @@ namespace TecladoVirtual.Telas
        
         private void btnAvancarFeedbackGeral_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
             F_FeedbackGeral relatorio = new F_FeedbackGeral();
             relatorio.Show();
+            this.Close();
         }
 
         private void F_Feedback_Load(object sender, EventArgs e)

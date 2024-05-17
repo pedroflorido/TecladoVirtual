@@ -13,8 +13,7 @@ namespace TecladoVirtual.Modelos
     {
         public string mensagem;
         public int pessoa;
-        public double media;
-        Pessoa usuario;
+        public Pessoa usuario;
         bool p1;
         bool p2;
         bool p3;
@@ -33,7 +32,6 @@ namespace TecladoVirtual.Modelos
             Respostas respostas = new Respostas(usuario);
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
             pessoa = Estatica.numeroDePessoas;
-            media = pessoa / verificarAcertos._acertos.Length * 100;
             mensagem = verificarAcertos.ToString();
         }
 

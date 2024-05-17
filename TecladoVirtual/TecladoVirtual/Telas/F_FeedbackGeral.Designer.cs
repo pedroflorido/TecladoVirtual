@@ -34,6 +34,9 @@
             lblAcertos = new Label();
             lblNumeroVisitante = new Label();
             lblNumeroAcertos = new Label();
+            lblNome = new Label();
+            lblIdade = new Label();
+            lblMedia = new Label();
             SuspendLayout();
             // 
             // btnRetornar
@@ -68,7 +71,7 @@
             lblVisitantes.Anchor = AnchorStyles.None;
             lblVisitantes.AutoSize = true;
             lblVisitantes.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblVisitantes.Location = new Point(176, 108);
+            lblVisitantes.Location = new Point(184, 222);
             lblVisitantes.Name = "lblVisitantes";
             lblVisitantes.Size = new Size(133, 31);
             lblVisitantes.TabIndex = 13;
@@ -81,7 +84,7 @@
             lblAcertos.Anchor = AnchorStyles.None;
             lblAcertos.AutoSize = true;
             lblAcertos.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAcertos.Location = new Point(605, 108);
+            lblAcertos.Location = new Point(613, 222);
             lblAcertos.Name = "lblAcertos";
             lblAcertos.Size = new Size(149, 31);
             lblAcertos.TabIndex = 14;
@@ -91,7 +94,7 @@
             // lblNumeroVisitante
             // 
             lblNumeroVisitante.AutoSize = true;
-            lblNumeroVisitante.Location = new Point(223, 198);
+            lblNumeroVisitante.Location = new Point(234, 279);
             lblNumeroVisitante.Name = "lblNumeroVisitante";
             lblNumeroVisitante.Size = new Size(17, 20);
             lblNumeroVisitante.TabIndex = 15;
@@ -100,17 +103,48 @@
             // lblNumeroAcertos
             // 
             lblNumeroAcertos.AutoSize = true;
-            lblNumeroAcertos.Location = new Point(658, 198);
+            lblNumeroAcertos.Location = new Point(669, 279);
             lblNumeroAcertos.Name = "lblNumeroAcertos";
             lblNumeroAcertos.Size = new Size(17, 20);
             lblNumeroAcertos.TabIndex = 16;
             lblNumeroAcertos.Text = "0";
+            // 
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(201, 139);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(50, 20);
+            lblNome.TabIndex = 17;
+            lblNome.Text = "Nome";
+            // 
+            // lblIdade
+            // 
+            lblIdade.AutoSize = true;
+            lblIdade.Location = new Point(366, 139);
+            lblIdade.Name = "lblIdade";
+            lblIdade.Size = new Size(47, 20);
+            lblIdade.TabIndex = 18;
+            lblIdade.Text = "idade";
+            // 
+            // lblMedia
+            // 
+            lblMedia.AutoSize = true;
+            lblMedia.Location = new Point(514, 139);
+            lblMedia.Name = "lblMedia";
+            lblMedia.Size = new Size(51, 20);
+            lblMedia.TabIndex = 19;
+            lblMedia.Text = "Media";
+            lblMedia.Click += label3_Click;
             // 
             // F_FeedbackGeral
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(896, 588);
+            Controls.Add(lblMedia);
+            Controls.Add(lblIdade);
+            Controls.Add(lblNome);
             Controls.Add(lblNumeroAcertos);
             Controls.Add(lblNumeroVisitante);
             Controls.Add(lblAcertos);
@@ -136,5 +170,8 @@
         private Label lblAcertos;
         private Label lblNumeroVisitante;
         private Label lblNumeroAcertos;
+        public Label lblNome;
+        public Label lblIdade;
+        public Label lblMedia;
     }
 }

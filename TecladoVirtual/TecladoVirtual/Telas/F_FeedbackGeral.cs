@@ -19,7 +19,7 @@ namespace TecladoVirtual.Telas
         {
             InitializeComponent();
             this.controle = controle;
-            
+
         }
 
         public F_FeedbackGeral()
@@ -29,10 +29,12 @@ namespace TecladoVirtual.Telas
 
             lblNumeroVisitante.Text = Convert.ToString(Estatica.numeroDePessoas);
             lblNumeroAcertos.Text = Convert.ToString(Estatica.mediaGeral) + "%";
-
+            lblNome.Text = Estatica.controle.usuario.getNome;
+            lblIdade.Text = Convert.ToString(Estatica.controle.usuario.getIdade);
+            lblMedia.Text = Convert.ToString(Estatica.controle.mensagem) + "%";
         }
 
-        
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -41,12 +43,18 @@ namespace TecladoVirtual.Telas
 
         private void btnRetornar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_TelaPrincipal telaPriicipal = new F_TelaPrincipal();
             telaPriicipal.Show();
+            this.Close();
         }
 
         private void F_FeedbackGeral_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

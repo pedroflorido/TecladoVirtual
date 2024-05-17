@@ -31,30 +31,34 @@ namespace TecladoVirtual.Telas
 
         private void btnVoltar1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_TelaPrincipal telaPrincipal = new F_TelaPrincipal();
             telaPrincipal.Show();
+            this.Close();
         }
 
         private void btnMuseu_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_TelaMuseu telaMuseu = new F_TelaMuseu();
             telaMuseu.Show();
+            this.Close();
         }
 
         private void btnLua_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_Lua telaLua = new F_Lua();
             telaLua.Show();
+            this.Close();
         }
 
         private void btnQuestionario_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
             F_QInstrucao intrucao = new F_QInstrucao();
             intrucao.Show();
+            this.Close();
         }
 
         private void F_OqueDeseja_Load(object sender, EventArgs e)

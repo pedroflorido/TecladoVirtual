@@ -10,7 +10,7 @@ namespace TecladoVirtual.Modelos
     {
         private String _nome;
         private int _idade;
-        private Boolean[] _respostas = {false,false,false,false,false};
+        private Boolean[] _respostas = {false, false , false , false , false};
 
         public Pessoa(string nome, int idade)
         {
@@ -31,7 +31,8 @@ namespace TecladoVirtual.Modelos
         {
             return _respostas;
         }
+        public string getNome { get => _nome; }
+        public int getIdade { get => _idade; }
 
-        
     }
 }

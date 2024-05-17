@@ -24,18 +24,20 @@ namespace TecladoVirtual.Telas
         private void btnAvancarInstrucao_Click(object sender, EventArgs e)
         {
            
-            this.Close();
+            
             F_Usuario usuario = new F_Usuario();
             usuario.Show();
+            this.Close();
 
 
         }
 
         private void btnVoltarInstrucao_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_OqueDeseja oqueDeseja = new F_OqueDeseja();
             oqueDeseja.Show();
+            this.Close();
         }
 
         private void lblTextoInstrucao_Click(object sender, EventArgs e)

@@ -40,29 +40,38 @@ namespace TecladoVirtual.Telas
 
         private void btnVoltarInstrucao_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             F_QInstrucao instrucao = new F_QInstrucao();
             instrucao.Show();
+            this.Close();
         }
 
         private void btnAvancarInstrucao_Click(object sender, EventArgs e)
         {
-            try
+            if (this.tbxNome.Text.Equals("ADMIN") && this.tbxIdade.Text.Equals("123456"))
             {
-                if (this.tbxNome.Equals("") || this.tbxIdade.Equals(""))
+                Application.Exit();
+            }
+            else
+            {
+                try
+                {
+                    if (this.tbxNome.Equals("") || this.tbxIdade.Equals(""))
+                    {
+                        alertaPainel.Visible = true;
+                    }
+                    else
+                    {
+                        Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
+                        this.Close();
+                        F_Perguntas1 p1 = new F_Perguntas1();
+                        p1.Show();
+                    }
+                }
+                catch (Exception err)
                 {
                     alertaPainel.Visible = true;
                 }
-                else
-                {
-                    Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
-                    this.Close();
-                    F_Perguntas1 p1 = new F_Perguntas1();
-                    p1.Show();
-                }
-            }catch(Exception err)
-            {
-                alertaPainel.Visible = true;
             }
         }
 
