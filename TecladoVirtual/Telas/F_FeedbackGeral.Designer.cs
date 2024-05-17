@@ -110,14 +110,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< HEAD
+
             ClientSize = new Size(784, 441);
             ControlBox = false;
-=======
-            ClientSize = new Size(896, 588);
+
+            
             Controls.Add(lblNumeroAcertos);
             Controls.Add(lblNumeroVisitante);
->>>>>>> 1a5b3fbd2a010c3673e7c63120654ea7746c5b6d
+
             Controls.Add(lblAcertos);
             Controls.Add(lblVisitantes);
             Controls.Add(lblTextoFeedbackGeral);
