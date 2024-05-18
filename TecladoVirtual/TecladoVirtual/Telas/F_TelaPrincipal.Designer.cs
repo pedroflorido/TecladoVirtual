@@ -38,11 +38,11 @@
             lblTextoPrincipal.Anchor = AnchorStyles.None;
             lblTextoPrincipal.AutoSize = true;
             lblTextoPrincipal.BackColor = Color.Transparent;
-            lblTextoPrincipal.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoPrincipal.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoPrincipal.ForeColor = SystemColors.Window;
-            lblTextoPrincipal.Location = new Point(171, 102);
+            lblTextoPrincipal.Location = new Point(195, 136);
             lblTextoPrincipal.Name = "lblTextoPrincipal";
-            lblTextoPrincipal.Size = new Size(466, 165);
+            lblTextoPrincipal.Size = new Size(584, 195);
             lblTextoPrincipal.TabIndex = 0;
             lblTextoPrincipal.Text = "Seja bem vindo(a) ao nosso Museu\r\nMultitemático!\r\n\r\nApresentaremos para você a primeira\r\nViagem do Homem à Lua";
             lblTextoPrincipal.TextAlign = ContentAlignment.MiddleCenter;
@@ -51,12 +51,11 @@
             // 
             btnAvancar1.Anchor = AnchorStyles.Bottom;
             btnAvancar1.FlatAppearance.BorderColor = SystemColors.MenuText;
-            btnAvancar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancar1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancar1.ForeColor = SystemColors.ControlText;
-            btnAvancar1.Location = new Point(352, 349);
-            btnAvancar1.Margin = new Padding(3, 2, 3, 2);
+            btnAvancar1.Location = new Point(402, 465);
             btnAvancar1.Name = "btnAvancar1";
-            btnAvancar1.Size = new Size(85, 37);
+            btnAvancar1.Size = new Size(97, 49);
             btnAvancar1.TabIndex = 1;
             btnAvancar1.Text = "AVANÇAR";
             btnAvancar1.UseVisualStyleBackColor = true;
@@ -64,15 +63,15 @@
             // 
             // F_TelaPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
+            ClientSize = new Size(896, 588);
             Controls.Add(btnAvancar1);
             Controls.Add(lblTextoPrincipal);
-            Margin = new Padding(3, 2, 3, 2);
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;

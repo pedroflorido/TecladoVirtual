@@ -41,9 +41,9 @@
             lblTextoMuseu1.BackColor = Color.Transparent;
             lblTextoMuseu1.Font = new Font("Arial Narrow", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTextoMuseu1.ForeColor = SystemColors.Window;
-            lblTextoMuseu1.Location = new Point(12, 9);
+            lblTextoMuseu1.Location = new Point(14, 12);
             lblTextoMuseu1.Name = "lblTextoMuseu1";
-            lblTextoMuseu1.Size = new Size(719, 124);
+            lblTextoMuseu1.Size = new Size(929, 160);
             lblTextoMuseu1.TabIndex = 0;
             lblTextoMuseu1.Text = resources.GetString("lblTextoMuseu1.Text");
             lblTextoMuseu1.TextAlign = ContentAlignment.MiddleLeft;
@@ -56,9 +56,9 @@
             lblTextoMuseu2.BackColor = Color.Transparent;
             lblTextoMuseu2.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTextoMuseu2.ForeColor = SystemColors.Window;
-            lblTextoMuseu2.Location = new Point(12, 157);
+            lblTextoMuseu2.Location = new Point(14, 209);
             lblTextoMuseu2.Name = "lblTextoMuseu2";
-            lblTextoMuseu2.Size = new Size(687, 225);
+            lblTextoMuseu2.Size = new Size(844, 279);
             lblTextoMuseu2.TabIndex = 1;
             lblTextoMuseu2.Text = resources.GetString("lblTextoMuseu2.Text");
             lblTextoMuseu2.TextAlign = ContentAlignment.MiddleLeft;
@@ -67,10 +67,11 @@
             // btnVoltarMuseu
             // 
             btnVoltarMuseu.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnVoltarMuseu.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarMuseu.Location = new Point(631, 344);
+            btnVoltarMuseu.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltarMuseu.Location = new Point(721, 459);
+            btnVoltarMuseu.Margin = new Padding(3, 4, 3, 4);
             btnVoltarMuseu.Name = "btnVoltarMuseu";
-            btnVoltarMuseu.Size = new Size(85, 37);
+            btnVoltarMuseu.Size = new Size(97, 49);
             btnVoltarMuseu.TabIndex = 2;
             btnVoltarMuseu.Text = "VOLTAR";
             btnVoltarMuseu.UseVisualStyleBackColor = true;
@@ -78,16 +79,18 @@
             // 
             // F_TelaMuseu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
+            ClientSize = new Size(896, 588);
             ControlBox = false;
             Controls.Add(btnVoltarMuseu);
             Controls.Add(lblTextoMuseu2);
             Controls.Add(lblTextoMuseu1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;

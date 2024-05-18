@@ -41,11 +41,11 @@
             lblTexto2.Anchor = AnchorStyles.None;
             lblTexto2.AutoSize = true;
             lblTexto2.BackColor = SystemColors.Desktop;
-            lblTexto2.Font = new Font("Roboto Bk", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTexto2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTexto2.ForeColor = SystemColors.Window;
             lblTexto2.Location = new Point(232, 117);
             lblTexto2.Name = "lblTexto2";
-            lblTexto2.Size = new Size(325, 58);
+            lblTexto2.Size = new Size(417, 69);
             lblTexto2.TabIndex = 0;
             lblTexto2.Text = "O que deseja?";
             lblTexto2.TextAlign = ContentAlignment.MiddleCenter;
@@ -54,7 +54,7 @@
             // 
             btnMuseu.Anchor = AnchorStyles.Bottom;
             btnMuseu.BackgroundImage = (Image)resources.GetObject("btnMuseu.BackgroundImage");
-            btnMuseu.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMuseu.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnMuseu.ForeColor = Color.Black;
             btnMuseu.Location = new Point(85, 205);
             btnMuseu.Name = "btnMuseu";
@@ -66,7 +66,7 @@
             // 
             // btnVoltar1
             // 
-            btnVoltar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltar1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVoltar1.Location = new Point(85, 45);
             btnVoltar1.Name = "btnVoltar1";
             btnVoltar1.Size = new Size(73, 32);
@@ -79,7 +79,7 @@
             // 
             btnLua.Anchor = AnchorStyles.Bottom;
             btnLua.BackgroundImage = (Image)resources.GetObject("btnLua.BackgroundImage");
-            btnLua.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLua.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLua.ForeColor = Color.Black;
             btnLua.Location = new Point(304, 205);
             btnLua.Name = "btnLua";
@@ -92,7 +92,7 @@
             // btnQuestionario
             // 
             btnQuestionario.Anchor = AnchorStyles.Bottom;
-            btnQuestionario.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnQuestionario.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuestionario.ForeColor = Color.Black;
             btnQuestionario.Image = (Image)resources.GetObject("btnQuestionario.Image");
             btnQuestionario.Location = new Point(520, 205);
@@ -105,7 +105,7 @@
             // 
             // F_OqueDeseja
             // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
@@ -119,6 +119,7 @@
             Controls.Add(lblTexto2);
             Font = new Font("Microsoft Sans Serif", 8.25F);
             ForeColor = SystemColors.ControlText;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;

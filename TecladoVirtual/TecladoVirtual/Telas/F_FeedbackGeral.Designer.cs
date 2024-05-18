@@ -93,71 +93,76 @@
             // 
             // lblNumeroVisitante
             // 
+            lblNumeroVisitante.Anchor = AnchorStyles.None;
             lblNumeroVisitante.AutoSize = true;
             lblNumeroVisitante.Location = new Point(234, 279);
             lblNumeroVisitante.Name = "lblNumeroVisitante";
             lblNumeroVisitante.Size = new Size(17, 20);
             lblNumeroVisitante.TabIndex = 15;
             lblNumeroVisitante.Text = "0";
+            lblNumeroVisitante.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNumeroAcertos
             // 
+            lblNumeroAcertos.Anchor = AnchorStyles.Right;
             lblNumeroAcertos.AutoSize = true;
             lblNumeroAcertos.Location = new Point(669, 279);
             lblNumeroAcertos.Name = "lblNumeroAcertos";
             lblNumeroAcertos.Size = new Size(17, 20);
             lblNumeroAcertos.TabIndex = 16;
             lblNumeroAcertos.Text = "0";
+            lblNumeroAcertos.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNome
             // 
+            lblNome.Anchor = AnchorStyles.None;
             lblNome.AutoSize = true;
             lblNome.Location = new Point(201, 139);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(50, 20);
             lblNome.TabIndex = 17;
             lblNome.Text = "Nome";
+            lblNome.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblIdade
             // 
+            lblIdade.Anchor = AnchorStyles.None;
             lblIdade.AutoSize = true;
             lblIdade.Location = new Point(366, 139);
             lblIdade.Name = "lblIdade";
             lblIdade.Size = new Size(47, 20);
             lblIdade.TabIndex = 18;
             lblIdade.Text = "idade";
+            lblIdade.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblMedia
             // 
+            lblMedia.Anchor = AnchorStyles.None;
             lblMedia.AutoSize = true;
             lblMedia.Location = new Point(514, 139);
             lblMedia.Name = "lblMedia";
             lblMedia.Size = new Size(51, 20);
             lblMedia.TabIndex = 19;
             lblMedia.Text = "Media";
+            lblMedia.TextAlign = ContentAlignment.MiddleCenter;
             lblMedia.Click += label3_Click;
             // 
             // F_FeedbackGeral
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-
             ClientSize = new Size(896, 588);
+            ControlBox = false;
             Controls.Add(lblMedia);
             Controls.Add(lblIdade);
             Controls.Add(lblNome);
-
-
-            ControlBox = false;
-
-            
             Controls.Add(lblNumeroAcertos);
             Controls.Add(lblNumeroVisitante);
-
             Controls.Add(lblAcertos);
             Controls.Add(lblVisitantes);
             Controls.Add(lblTextoFeedbackGeral);
             Controls.Add(btnRetornar);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;

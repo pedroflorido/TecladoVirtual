@@ -62,26 +62,25 @@
             // 
             // lblNumeroAcerto
             // 
+            lblNumeroAcerto.Anchor = AnchorStyles.None;
             lblNumeroAcerto.AutoSize = true;
             lblNumeroAcerto.Location = new Point(468, 279);
             lblNumeroAcerto.Name = "lblNumeroAcerto";
             lblNumeroAcerto.Size = new Size(17, 20);
             lblNumeroAcerto.TabIndex = 12;
             lblNumeroAcerto.Text = "0";
+            lblNumeroAcerto.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // F_Feedback
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-
             ClientSize = new Size(784, 441);
             ControlBox = false;
-
-            
             Controls.Add(lblNumeroAcerto);
-
             Controls.Add(btnAvancarFeedbackGeral);
             Controls.Add(lblTextoFeedback);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;

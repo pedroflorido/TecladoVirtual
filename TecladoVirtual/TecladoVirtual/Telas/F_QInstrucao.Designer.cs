@@ -39,11 +39,11 @@
             lblTextoInstrucao.Anchor = AnchorStyles.None;
             lblTextoInstrucao.AutoSize = true;
             lblTextoInstrucao.BackColor = Color.Transparent;
-            lblTextoInstrucao.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoInstrucao.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoInstrucao.ForeColor = SystemColors.Window;
-            lblTextoInstrucao.Location = new Point(32, 30);
+            lblTextoInstrucao.Location = new Point(37, 40);
             lblTextoInstrucao.Name = "lblTextoInstrucao";
-            lblTextoInstrucao.Size = new Size(709, 261);
+            lblTextoInstrucao.Size = new Size(891, 324);
             lblTextoInstrucao.TabIndex = 0;
             lblTextoInstrucao.Text = resources.GetString("lblTextoInstrucao.Text");
             lblTextoInstrucao.TextAlign = ContentAlignment.MiddleCenter;
@@ -52,10 +52,11 @@
             // btnVoltarInstrucao
             // 
             btnVoltarInstrucao.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnVoltarInstrucao.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarInstrucao.Location = new Point(61, 344);
+            btnVoltarInstrucao.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltarInstrucao.Location = new Point(70, 459);
+            btnVoltarInstrucao.Margin = new Padding(3, 4, 3, 4);
             btnVoltarInstrucao.Name = "btnVoltarInstrucao";
-            btnVoltarInstrucao.Size = new Size(85, 37);
+            btnVoltarInstrucao.Size = new Size(97, 49);
             btnVoltarInstrucao.TabIndex = 1;
             btnVoltarInstrucao.Text = "VOLTAR";
             btnVoltarInstrucao.UseVisualStyleBackColor = true;
@@ -64,10 +65,11 @@
             // btnAvancarInstrucao
             // 
             btnAvancarInstrucao.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAvancarInstrucao.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAvancarInstrucao.Location = new Point(631, 344);
+            btnAvancarInstrucao.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancarInstrucao.Location = new Point(721, 459);
+            btnAvancarInstrucao.Margin = new Padding(3, 4, 3, 4);
             btnAvancarInstrucao.Name = "btnAvancarInstrucao";
-            btnAvancarInstrucao.Size = new Size(85, 37);
+            btnAvancarInstrucao.Size = new Size(97, 49);
             btnAvancarInstrucao.TabIndex = 2;
             btnAvancarInstrucao.Text = "AVANÇAR";
             btnAvancarInstrucao.UseVisualStyleBackColor = true;
@@ -75,15 +77,17 @@
             // 
             // F_QInstrucao
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
+            ClientSize = new Size(896, 588);
             ControlBox = false;
             Controls.Add(btnAvancarInstrucao);
             Controls.Add(btnVoltarInstrucao);
             Controls.Add(lblTextoInstrucao);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;

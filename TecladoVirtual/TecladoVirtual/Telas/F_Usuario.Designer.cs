@@ -45,117 +45,65 @@
             // 
             // lblTextoUsuario
             // 
-            lblTextoUsuario.Anchor = AnchorStyles.None;
-            lblTextoUsuario.AutoSize = true;
+            resources.ApplyResources(lblTextoUsuario, "lblTextoUsuario");
             lblTextoUsuario.BackColor = Color.Transparent;
-            lblTextoUsuario.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoUsuario.ForeColor = SystemColors.Window;
-            lblTextoUsuario.Location = new Point(287, 117);
             lblTextoUsuario.Name = "lblTextoUsuario";
-            lblTextoUsuario.Size = new Size(384, 62);
-            lblTextoUsuario.TabIndex = 0;
-            lblTextoUsuario.Text = "Para salvar suas respostas, \r\ninforme-nos seu Nome e Idade";
-            lblTextoUsuario.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNomeUsuario
             // 
-            lblNomeUsuario.Anchor = AnchorStyles.None;
-            lblNomeUsuario.AutoSize = true;
+            resources.ApplyResources(lblNomeUsuario, "lblNomeUsuario");
             lblNomeUsuario.BackColor = Color.Transparent;
-            lblNomeUsuario.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNomeUsuario.ForeColor = SystemColors.Window;
-            lblNomeUsuario.Location = new Point(272, 253);
             lblNomeUsuario.Name = "lblNomeUsuario";
-            lblNomeUsuario.Size = new Size(70, 25);
-            lblNomeUsuario.TabIndex = 1;
-            lblNomeUsuario.Text = "Nome:";
             lblNomeUsuario.Click += label1_Click;
             // 
             // tbxNome
             // 
-            tbxNome.Anchor = AnchorStyles.None;
-            tbxNome.Location = new Point(343, 248);
-            tbxNome.Margin = new Padding(3, 4, 3, 4);
+            resources.ApplyResources(tbxNome, "tbxNome");
             tbxNome.Name = "tbxNome";
-            tbxNome.Size = new Size(260, 27);
-            tbxNome.TabIndex = 2;
             tbxNome.Click += textBox1_TextChanged;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
+            resources.ApplyResources(label1, "label1");
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Window;
-            label1.Location = new Point(275, 299);
             label1.Name = "label1";
-            label1.Size = new Size(67, 25);
-            label1.TabIndex = 5;
-            label1.Text = "Idade:";
             // 
             // tbxIdade
             // 
-            tbxIdade.Anchor = AnchorStyles.None;
-            tbxIdade.Location = new Point(343, 295);
-            tbxIdade.Margin = new Padding(3, 5, 3, 5);
-            tbxIdade.MaxLength = 3;
+            resources.ApplyResources(tbxIdade, "tbxIdade");
             tbxIdade.Name = "tbxIdade";
-            tbxIdade.Size = new Size(260, 27);
-            tbxIdade.TabIndex = 6;
             tbxIdade.Click += textBox1_TextChanged;
             // 
             // btnVoltarInstrucao
             // 
-            btnVoltarInstrucao.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnVoltarInstrucao.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarInstrucao.Location = new Point(78, 459);
-            btnVoltarInstrucao.Margin = new Padding(3, 4, 3, 4);
+            resources.ApplyResources(btnVoltarInstrucao, "btnVoltarInstrucao");
             btnVoltarInstrucao.Name = "btnVoltarInstrucao";
-            btnVoltarInstrucao.Size = new Size(97, 49);
-            btnVoltarInstrucao.TabIndex = 7;
-            btnVoltarInstrucao.Text = "VOLTAR";
             btnVoltarInstrucao.UseVisualStyleBackColor = true;
             btnVoltarInstrucao.Click += btnVoltarInstrucao_Click;
             // 
             // btnAvancarInstrucao
             // 
-            btnAvancarInstrucao.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAvancarInstrucao.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAvancarInstrucao.Location = new Point(721, 459);
-            btnAvancarInstrucao.Margin = new Padding(3, 4, 3, 4);
+            resources.ApplyResources(btnAvancarInstrucao, "btnAvancarInstrucao");
             btnAvancarInstrucao.Name = "btnAvancarInstrucao";
-            btnAvancarInstrucao.Size = new Size(97, 49);
-            btnAvancarInstrucao.TabIndex = 8;
-            btnAvancarInstrucao.Text = "AVANÇAR";
             btnAvancarInstrucao.UseVisualStyleBackColor = true;
             btnAvancarInstrucao.Click += btnAvancarInstrucao_Click;
             // 
             // btnLIMPARnome
             // 
-            btnLIMPARnome.Anchor = AnchorStyles.None;
+            resources.ApplyResources(btnLIMPARnome, "btnLIMPARnome");
             btnLIMPARnome.BackColor = SystemColors.Info;
-            btnLIMPARnome.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLIMPARnome.Location = new Point(621, 247);
-            btnLIMPARnome.Margin = new Padding(3, 4, 3, 4);
             btnLIMPARnome.Name = "btnLIMPARnome";
-            btnLIMPARnome.Size = new Size(86, 31);
-            btnLIMPARnome.TabIndex = 9;
-            btnLIMPARnome.Text = "LIMPAR";
             btnLIMPARnome.UseVisualStyleBackColor = false;
             btnLIMPARnome.Click += btnLIMPARnome_Click;
             // 
             // btnLIMPARidade
             // 
-            btnLIMPARidade.Anchor = AnchorStyles.None;
+            resources.ApplyResources(btnLIMPARidade, "btnLIMPARidade");
             btnLIMPARidade.BackColor = SystemColors.Info;
-            btnLIMPARidade.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLIMPARidade.Location = new Point(621, 293);
-            btnLIMPARidade.Margin = new Padding(3, 4, 3, 4);
             btnLIMPARidade.Name = "btnLIMPARidade";
-            btnLIMPARidade.Size = new Size(86, 31);
-            btnLIMPARidade.TabIndex = 10;
-            btnLIMPARidade.Text = "LIMPAR";
             btnLIMPARidade.UseVisualStyleBackColor = false;
             btnLIMPARidade.Click += btnLIMPARidade_Click;
             // 
@@ -163,40 +111,25 @@
             // 
             alertaPainel.BackColor = SystemColors.Info;
             alertaPainel.Controls.Add(label2);
-            alertaPainel.Location = new Point(490, 28);
+            resources.ApplyResources(alertaPainel, "alertaPainel");
             alertaPainel.Name = "alertaPainel";
-            alertaPainel.Size = new Size(263, 99);
-            alertaPainel.TabIndex = 11;
-            alertaPainel.Visible = false;
             // 
             // label2
             // 
-            label2.AutoSize = true;
+            resources.ApplyResources(label2, "label2");
             label2.BackColor = SystemColors.Info;
-            label2.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(5, 24);
             label2.Name = "label2";
-            label2.Size = new Size(255, 54);
-            label2.TabIndex = 0;
-            label2.Text = "Todos os campos devem \r\n        ser Preenchidos!";
             label2.Click += label2_Click;
             // 
             // F_Usuario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowText;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
             ControlBox = false;
-
-
-            Controls.Add(alertaPainel);
-
+            Controls.Add(btnAvancarInstrucao);
             Controls.Add(btnLIMPARidade);
             Controls.Add(btnLIMPARnome);
-            Controls.Add(btnAvancarInstrucao);
             Controls.Add(btnVoltarInstrucao);
             Controls.Add(tbxIdade);
             Controls.Add(label1);
@@ -204,12 +137,11 @@
             Controls.Add(lblNomeUsuario);
             Controls.Add(lblTextoUsuario);
             Controls.Add(alertaPainel);
-            Margin = new Padding(3, 4, 3, 4);
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "F_Usuario";
-            Text = "F_Usuario";
             Load += F_Usuario_Load;
             alertaPainel.ResumeLayout(false);
             alertaPainel.PerformLayout();

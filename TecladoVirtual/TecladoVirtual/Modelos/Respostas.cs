@@ -22,6 +22,13 @@ namespace TecladoVirtual.Modelos
             verificarResposta();
         }
 
+        internal VerificarAcertos VerificarAcertos
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
         private void verificarResposta()
         {

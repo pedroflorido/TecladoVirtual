@@ -395,10 +395,12 @@
             Controls.Add(btnDois);
             Controls.Add(btnUm);
             Controls.Add(btnSpace);
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "F_Teclado";
+            TopMost = true;
             ResumeLayout(false);
         }
 

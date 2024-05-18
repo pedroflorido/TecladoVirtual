@@ -25,7 +25,23 @@ namespace TecladoVirtual.Modelos
             Pessoa usuario = new Pessoa(nome, idade);
             this.usuario = usuario;
         }
-        
+
+        public Pessoa Pessoa
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal Respostas Respostas
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void executar()
         {
             usuario.setRespostas(p1, p2, p3, p4, p5);

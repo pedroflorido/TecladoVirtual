@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TecladoVirtual.Modelos.Controle">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <AssociationLine Name="Pessoa" Type="TecladoVirtual.Modelos.Pessoa" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="5.562" />
+        <Point X="7.625" Y="5.562" />
+        <Point X="7.625" Y="3.106" />
+        <Point X="8.5" Y="3.106" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CIAAAIAAAAAAAAAEAAAAEAAAAAEgAAQEgAAAAACAQAA=</HashCode>
+      <FileName>Modelos\Controle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Pessoa" />
+      <Property Name="Respostas" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TecladoVirtual.Modelos.Estatica">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAIgAAAA=</HashCode>
+      <FileName>Modelos\Estatica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TecladoVirtual.Modelos.Pessoa">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAIAgAAAAAAAAAAAAQAAAAAAEACBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelos\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TecladoVirtual.Modelos.Respostas">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAIAAAAAAAAQDAQAAAAAAAAAACA=</HashCode>
+      <FileName>Modelos\Respostas.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="VerificarAcertos" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TecladoVirtual.Modelos.VerificarAcertos">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAECAAAAAAAAABAIAAAAAIAAAAAEAA=</HashCode>
+      <FileName>Modelos\VerificarAcertos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

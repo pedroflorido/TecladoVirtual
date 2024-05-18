@@ -14,6 +14,7 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_Usuario : Form
     {
+        F_Teclado teclado;
         public F_Usuario()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace TecladoVirtual.Telas
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            F_Teclado teclado = new F_Teclado(this);
+            teclado = new F_Teclado(this);
             teclado.Show();
 
         }
@@ -62,6 +63,7 @@ namespace TecladoVirtual.Telas
                     }
                     else
                     {
+                        teclado.Close();
                         Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
                         this.Close();
                         F_Perguntas1 p1 = new F_Perguntas1();
