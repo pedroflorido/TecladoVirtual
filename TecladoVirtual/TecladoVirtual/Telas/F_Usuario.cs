@@ -41,7 +41,10 @@ namespace TecladoVirtual.Telas
 
         private void btnVoltarInstrucao_Click(object sender, EventArgs e)
         {
-            
+            if(teclado != null)
+            {
+                teclado.Close();
+            }
             F_QInstrucao instrucao = new F_QInstrucao();
             instrucao.Show();
             this.Close();
@@ -63,7 +66,10 @@ namespace TecladoVirtual.Telas
                     }
                     else
                     {
-                        teclado.Close();
+                        if (teclado != null)
+                        {
+                            teclado.Close();
+                        }
                         Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
                         this.Close();
                         F_Perguntas1 p1 = new F_Perguntas1();

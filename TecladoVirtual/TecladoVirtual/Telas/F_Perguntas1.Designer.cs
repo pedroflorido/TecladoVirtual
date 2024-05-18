@@ -35,6 +35,9 @@
             btnFalso1 = new Button();
             btnFalso2 = new Button();
             btnVerdadeiro1 = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblPergunta1
@@ -137,12 +140,33 @@
             btnVerdadeiro1.UseVisualStyleBackColor = false;
             btnVerdadeiro1.Click += btnVerdadeiro1_Click;
             // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(547, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(202, 107);
+            panel1.TabIndex = 8;
+            panel1.Visible = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Symbol", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(3, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(197, 62);
+            label1.TabIndex = 0;
+            label1.Text = "Responda Todas\r\n as perguntas!";
+            // 
             // F_Perguntas1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 441);
             ControlBox = false;
+            Controls.Add(panel1);
             Controls.Add(btnFalso2);
             Controls.Add(btnFalso1);
             Controls.Add(btnVerdadeiro1);
@@ -158,6 +182,8 @@
             Name = "F_Perguntas1";
             Text = "F_Perguntas1";
             Load += F_Perguntas1_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -171,5 +197,7 @@
         private Button btnFalso1;
         private Button btnFalso2;
         private Button btnVerdadeiro1;
+        private Panel panel1;
+        private Label label1;
     }
 }
