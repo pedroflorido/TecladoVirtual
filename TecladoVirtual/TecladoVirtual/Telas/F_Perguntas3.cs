@@ -50,12 +50,16 @@ namespace TecladoVirtual.Telas
         {
             Estatica.controle.ReceberP5(true);
             p5 = true;
+            btnVerdadeiro5.BackColor = Color.Green;
+            btnFalso5.BackColor = Color.DimGray;
         }
 
         private void btnFalso5_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP5(false);
             p5 = true;
+            btnVerdadeiro5.BackColor = Color.DimGray;
+            btnFalso5.BackColor = Color.Red;
         }
     }
 }

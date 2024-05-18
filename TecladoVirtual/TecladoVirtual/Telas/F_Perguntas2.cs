@@ -45,25 +45,33 @@ namespace TecladoVirtual.Telas
         {
             Estatica.controle.ReceberP3(true);
             p3 = true;
-           
+            btnVerdadeiro3.BackColor = Color.Green;
+            btnFalso3.BackColor = Color.DimGray;
+
         }
 
         private void btnFalso3_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP3(false);
             p3 = true;
+            btnVerdadeiro3.BackColor = Color.DimGray;
+            btnFalso3.BackColor = Color.Red;
         }
 
         private void btnVerdadeiro4_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP4(true);
             p4 = true;
+            btnVerdadeiro4.BackColor = Color.Green;
+            btnFalso4.BackColor = Color.DimGray;
         }
 
         private void btnFalso4_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP4(false);
             p4 = true;
+            btnVerdadeiro4.BackColor = Color.DimGray;
+            btnFalso4.BackColor = Color.Red;
         }
     }
 }

@@ -153,7 +153,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = SystemColors.Control;
             label1.Font = new Font("Segoe UI Symbol", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(192, 0, 0);
             label1.Location = new Point(3, 19);
             label1.Name = "label1";
             label1.Size = new Size(197, 62);
