@@ -30,6 +30,7 @@ namespace TecladoVirtual
         private void button1_Click_1(object sender, EventArgs e)
         {   //btnClear
             u.tbxNome.Text = "";
+            u.tbxIdade.Text = "";
         }
         
         private void btnUm_Click(object sender, EventArgs e)

@@ -32,6 +32,9 @@
             btnFinalizarPerguntas = new Button();
             btnVerdadeiro5 = new Button();
             btnFalso5 = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblPergunta3
@@ -88,12 +91,35 @@
             btnFalso5.UseVisualStyleBackColor = false;
             btnFalso5.Click += btnFalso5_Click;
             // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(570, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(202, 107);
+            panel1.TabIndex = 14;
+            panel1.Visible = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.Control;
+            label1.Font = new Font("Segoe UI Symbol", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(192, 0, 0);
+            label1.Location = new Point(3, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(197, 62);
+            label1.TabIndex = 0;
+            label1.Text = "Responda Todas\r\n as perguntas!";
+            // 
             // F_Perguntas3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(686, 331);
             ControlBox = false;
+            Controls.Add(panel1);
             Controls.Add(btnFalso5);
             Controls.Add(btnVerdadeiro5);
             Controls.Add(btnFinalizarPerguntas);
@@ -105,6 +131,8 @@
             Name = "F_Perguntas3";
             Text = "F_Perguntas3";
             Load += F_Perguntas3_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -115,5 +143,7 @@
         private Button btnFinalizarPerguntas;
         private Button btnVerdadeiro5;
         private Button btnFalso5;
+        private Panel panel1;
+        private Label label1;
     }
 }

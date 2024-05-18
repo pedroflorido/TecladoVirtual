@@ -11,8 +11,10 @@ using TecladoVirtual.Modelos;
 
 namespace TecladoVirtual.Telas
 {
+    
     public partial class F_Perguntas3 : Form
     {
+        Boolean p5 = false; //variavel para verificacao de resposta
         int verificaSeRespondeu = 0;
        
         public F_Perguntas3()
@@ -24,17 +26,17 @@ namespace TecladoVirtual.Telas
 
         private void btnFinalizarPerguntas_Click(object sender, EventArgs e)
         {
-            if (verificaSeRespondeu > 1)
-            {
-                verificaSeRespondeu = 0;
-            }
-            else if (verificaSeRespondeu == 1)
+            if (p5)
             {
                     Estatica.controle.executar();
 
                     F_Feedback fedbacks = new F_Feedback();
                     fedbacks.Show();
                     this.Close();
+            }
+            else
+            {
+                panel1.Visible = true;
             }
 
         }
@@ -47,13 +49,17 @@ namespace TecladoVirtual.Telas
         private void btnVerdadeiro5_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP5(true);
-            verificaSeRespondeu++;
+            p5 = true;
+            btnVerdadeiro5.BackColor = Color.Green;
+            btnFalso5.BackColor = Color.DimGray;
         }
 
         private void btnFalso5_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP5(false);
-            verificaSeRespondeu++;
+            p5 = true;
+            btnVerdadeiro5.BackColor = Color.DimGray;
+            btnFalso5.BackColor = Color.Red;
         }
     }
 }

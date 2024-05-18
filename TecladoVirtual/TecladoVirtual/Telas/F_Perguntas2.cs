@@ -13,7 +13,8 @@ namespace TecladoVirtual.Telas
 {
     public partial class F_Perguntas2 : Form
     {
-        int verificaSeRespondeu = 0;
+        Boolean p3 = false;
+        Boolean p4 = false;//variavel para verificacao de resposta
         public F_Perguntas2()
         {
             InitializeComponent();
@@ -23,15 +24,15 @@ namespace TecladoVirtual.Telas
 
         private void btnAvancarPerguntas2_Click(object sender, EventArgs e)
         {
-            if(verificaSeRespondeu > 3)
+            if(p3 && p4)
             {
-                verificaSeRespondeu = 0;
-            }
-            if (verificaSeRespondeu == 2)
-            { 
                 F_Perguntas3 p3 = new F_Perguntas3();
                 p3.Show();
                 this.Close();
+            }
+            else
+            {
+                panel1.Visible = true;
             }
         }
 
@@ -43,25 +44,34 @@ namespace TecladoVirtual.Telas
         private void btnVerdadeiro3_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP3(true);
-            verificaSeRespondeu++;
+            p3 = true;
+            btnVerdadeiro3.BackColor = Color.Green;
+            btnFalso3.BackColor = Color.DimGray;
+
         }
 
         private void btnFalso3_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP3(false);
-            verificaSeRespondeu++;
+            p3 = true;
+            btnVerdadeiro3.BackColor = Color.DimGray;
+            btnFalso3.BackColor = Color.Red;
         }
 
         private void btnVerdadeiro4_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP4(true);
-            verificaSeRespondeu++;
+            p4 = true;
+            btnVerdadeiro4.BackColor = Color.Green;
+            btnFalso4.BackColor = Color.DimGray;
         }
 
         private void btnFalso4_Click(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP4(false);
-            verificaSeRespondeu++;
+            p4 = true;
+            btnVerdadeiro4.BackColor = Color.DimGray;
+            btnFalso4.BackColor = Color.Red;
         }
     }
 }
