@@ -34,6 +34,9 @@
             btnVoltar1 = new Button();
             btnLua = new Button();
             btnQuestionario = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // lblTexto2
@@ -43,9 +46,9 @@
             lblTexto2.BackColor = SystemColors.Desktop;
             lblTexto2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTexto2.ForeColor = SystemColors.Window;
-            lblTexto2.Location = new Point(232, 117);
+            lblTexto2.Location = new Point(226, 45);
             lblTexto2.Name = "lblTexto2";
-            lblTexto2.Size = new Size(417, 69);
+            lblTexto2.Size = new Size(337, 55);
             lblTexto2.TabIndex = 0;
             lblTexto2.Text = "O que deseja?";
             lblTexto2.TextAlign = ContentAlignment.MiddleCenter;
@@ -56,17 +59,16 @@
             btnMuseu.BackgroundImage = (Image)resources.GetObject("btnMuseu.BackgroundImage");
             btnMuseu.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnMuseu.ForeColor = Color.Black;
-            btnMuseu.Location = new Point(85, 205);
+            btnMuseu.Location = new Point(82, 205);
             btnMuseu.Name = "btnMuseu";
             btnMuseu.Size = new Size(180, 170);
             btnMuseu.TabIndex = 1;
-            btnMuseu.Text = "Conheça o\r\nMuseu";
             btnMuseu.UseVisualStyleBackColor = true;
             btnMuseu.Click += btnMuseu_Click;
             // 
             // btnVoltar1
             // 
-            btnVoltar1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVoltar1.Location = new Point(85, 45);
             btnVoltar1.Name = "btnVoltar1";
             btnVoltar1.Size = new Size(73, 32);
@@ -85,7 +87,6 @@
             btnLua.Name = "btnLua";
             btnLua.Size = new Size(180, 170);
             btnLua.TabIndex = 5;
-            btnLua.Text = "Viagem do \r\nHomem à Lua";
             btnLua.UseVisualStyleBackColor = true;
             btnLua.Click += btnLua_Click;
             // 
@@ -95,23 +96,68 @@
             btnQuestionario.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuestionario.ForeColor = Color.Black;
             btnQuestionario.Image = (Image)resources.GetObject("btnQuestionario.Image");
-            btnQuestionario.Location = new Point(520, 205);
+            btnQuestionario.Location = new Point(518, 205);
             btnQuestionario.Name = "btnQuestionario";
             btnQuestionario.Size = new Size(180, 170);
             btnQuestionario.TabIndex = 6;
-            btnQuestionario.Text = "Questionário";
             btnQuestionario.UseVisualStyleBackColor = true;
             btnQuestionario.Click += btnQuestionario_Click;
             // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Bottom;
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.Desktop;
+            label1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.Window;
+            label1.Location = new Point(114, 169);
+            label1.Name = "label1";
+            label1.Size = new Size(119, 33);
+            label1.TabIndex = 7;
+            label1.Text = "MUSEU";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Bottom;
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.Desktop;
+            label2.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Window;
+            label2.Location = new Point(358, 169);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 33);
+            label2.TabIndex = 8;
+            label2.Text = "LUA";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Bottom;
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.Desktop;
+            label3.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Window;
+            label3.Location = new Point(489, 169);
+            label3.Name = "label3";
+            label3.Size = new Size(238, 33);
+            label3.TabIndex = 9;
+            label3.Text = "QUESTIONÁRIO";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // F_OqueDeseja
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(784, 441);
             ControlBox = false;
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btnQuestionario);
             Controls.Add(btnLua);
             Controls.Add(btnVoltar1);
@@ -137,5 +183,8 @@
         private Button btnVoltar1;
         private Button btnLua;
         private Button btnQuestionario;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }
