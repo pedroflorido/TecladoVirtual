@@ -42,9 +42,9 @@
             lblTextoInstrucao.BackColor = Color.Transparent;
             lblTextoInstrucao.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoInstrucao.ForeColor = SystemColors.Window;
-            lblTextoInstrucao.Location = new Point(-7, 30);
+            lblTextoInstrucao.Location = new Point(15, 30);
             lblTextoInstrucao.Name = "lblTextoInstrucao";
-            lblTextoInstrucao.Size = new Size(807, 231);
+            lblTextoInstrucao.Size = new Size(762, 231);
             lblTextoInstrucao.TabIndex = 0;
             lblTextoInstrucao.Text = resources.GetString("lblTextoInstrucao.Text");
             lblTextoInstrucao.TextAlign = ContentAlignment.MiddleCenter;
