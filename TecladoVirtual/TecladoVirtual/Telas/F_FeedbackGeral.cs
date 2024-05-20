@@ -71,7 +71,7 @@ namespace TecladoVirtual.Telas
 
         private void btnRetornar_Click(object sender, EventArgs e)
         {
-            
+            timer.Stop();
             F_TelaPrincipal telaPriicipal = new F_TelaPrincipal();
             telaPriicipal.Show();
             this.Close();
