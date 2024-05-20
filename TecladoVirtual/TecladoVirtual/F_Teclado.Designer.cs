@@ -76,6 +76,7 @@
             resources.ApplyResources(btnSpace, "btnSpace");
             btnSpace.Name = "btnSpace";
             btnSpace.UseVisualStyleBackColor = true;
+            btnSpace.Click += btnSpace_Click;
             // 
             // btnUm
             // 

@@ -14,7 +14,7 @@ namespace TecladoVirtual
     public partial class F_Teclado : Form
     {
         F_Usuario u;
-        
+
         public F_Teclado(F_Usuario u)
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace TecladoVirtual
 
         private void button1_Click(object sender, EventArgs e)
         {   //btnSpace
-            u.tbxNome.Text += " ";
+            this.u.tbxNome.Text += " ";
 
         }
 
@@ -32,7 +32,7 @@ namespace TecladoVirtual
             u.tbxNome.Text = "";
             u.tbxIdade.Text = "";
         }
-        
+
         private void btnUm_Click(object sender, EventArgs e)
         {
             u.tbxIdade.Text += "1";
@@ -98,7 +98,7 @@ namespace TecladoVirtual
         }
 
         private void btnR_Click(object sender, EventArgs e)
-        {   
+        {
             u.tbxNome.Text += "R";
         }
 
@@ -118,7 +118,7 @@ namespace TecladoVirtual
         }
 
         private void btnI_Click(object sender, EventArgs e)
-        {   
+        {
             u.tbxNome.Text += "I";
         }
 
@@ -163,7 +163,7 @@ namespace TecladoVirtual
         }
 
         private void btnJ_Click(object sender, EventArgs e)
-        {   
+        {
             u.tbxNome.Text += "J";
         }
 
@@ -222,6 +222,9 @@ namespace TecladoVirtual
             u.tbxNome.Text += "    ";
         }
 
-       
+        private void btnSpace_Click(object sender, EventArgs e)
+        {
+            this.u.tbxNome.Text += " ";
+        }
     }
 }

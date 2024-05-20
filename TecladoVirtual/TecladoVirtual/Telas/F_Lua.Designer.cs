@@ -44,12 +44,12 @@
             lblTextoLua.BackColor = Color.Transparent;
             lblTextoLua.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoLua.ForeColor = SystemColors.Window;
-            lblTextoLua.Location = new Point(67, 9);
+            lblTextoLua.Location = new Point(-92, 9);
             lblTextoLua.Name = "lblTextoLua";
             lblTextoLua.Size = new Size(968, 330);
             lblTextoLua.TabIndex = 0;
             lblTextoLua.Text = resources.GetString("lblTextoLua.Text");
-            lblTextoLua.TextAlign = ContentAlignment.MiddleLeft;
+            lblTextoLua.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnVoltarLua
             // 
@@ -68,9 +68,9 @@
             pictureBox1.Anchor = AnchorStyles.Bottom;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Location = new Point(388, 252);
+            pictureBox1.Location = new Point(386, 210);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(178, 129);
+            pictureBox1.Size = new Size(250, 190);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
@@ -79,9 +79,9 @@
             pictureBox2.Anchor = AnchorStyles.Bottom;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox2.Location = new Point(204, 252);
+            pictureBox2.Location = new Point(130, 210);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(178, 129);
+            pictureBox2.Size = new Size(250, 190);
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 

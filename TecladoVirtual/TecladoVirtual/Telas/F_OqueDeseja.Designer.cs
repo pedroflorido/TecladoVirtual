@@ -43,14 +43,14 @@
             // 
             lblTexto2.Anchor = AnchorStyles.None;
             lblTexto2.AutoSize = true;
-            lblTexto2.BackColor = SystemColors.Desktop;
-            lblTexto2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTexto2.BackColor = Color.Transparent;
+            lblTexto2.Font = new Font("Roboto Bk", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTexto2.ForeColor = SystemColors.Window;
-            lblTexto2.Location = new Point(226, 45);
+            lblTexto2.Location = new Point(207, 45);
             lblTexto2.Name = "lblTexto2";
-            lblTexto2.Size = new Size(337, 55);
+            lblTexto2.Size = new Size(373, 58);
             lblTexto2.TabIndex = 0;
-            lblTexto2.Text = "O que deseja?";
+            lblTexto2.Text = "O QUE DESEJA?";
             lblTexto2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnMuseu
@@ -59,7 +59,7 @@
             btnMuseu.BackgroundImage = (Image)resources.GetObject("btnMuseu.BackgroundImage");
             btnMuseu.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnMuseu.ForeColor = Color.Black;
-            btnMuseu.Location = new Point(82, 205);
+            btnMuseu.Location = new Point(81, 205);
             btnMuseu.Name = "btnMuseu";
             btnMuseu.Size = new Size(180, 170);
             btnMuseu.TabIndex = 1;
@@ -83,7 +83,7 @@
             btnLua.BackgroundImage = (Image)resources.GetObject("btnLua.BackgroundImage");
             btnLua.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLua.ForeColor = Color.Black;
-            btnLua.Location = new Point(304, 205);
+            btnLua.Location = new Point(303, 205);
             btnLua.Name = "btnLua";
             btnLua.Size = new Size(180, 170);
             btnLua.TabIndex = 5;
@@ -96,7 +96,7 @@
             btnQuestionario.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnQuestionario.ForeColor = Color.Black;
             btnQuestionario.Image = (Image)resources.GetObject("btnQuestionario.Image");
-            btnQuestionario.Location = new Point(518, 205);
+            btnQuestionario.Location = new Point(524, 205);
             btnQuestionario.Name = "btnQuestionario";
             btnQuestionario.Size = new Size(180, 170);
             btnQuestionario.TabIndex = 6;
@@ -107,12 +107,12 @@
             // 
             label1.Anchor = AnchorStyles.Bottom;
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.Desktop;
-            label1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Roboto Bk", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Window;
             label1.Location = new Point(114, 169);
             label1.Name = "label1";
-            label1.Size = new Size(119, 33);
+            label1.Size = new Size(114, 35);
             label1.TabIndex = 7;
             label1.Text = "MUSEU";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -122,12 +122,12 @@
             // 
             label2.Anchor = AnchorStyles.Bottom;
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.Desktop;
-            label2.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Roboto Bk", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Window;
             label2.Location = new Point(358, 169);
             label2.Name = "label2";
-            label2.Size = new Size(71, 33);
+            label2.Size = new Size(70, 35);
             label2.TabIndex = 8;
             label2.Text = "LUA";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -136,12 +136,12 @@
             // 
             label3.Anchor = AnchorStyles.Bottom;
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.Desktop;
-            label3.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Roboto Bk", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(489, 169);
+            label3.Location = new Point(504, 169);
             label3.Name = "label3";
-            label3.Size = new Size(238, 33);
+            label3.Size = new Size(220, 35);
             label3.TabIndex = 9;
             label3.Text = "QUESTIONÁRIO";
             label3.TextAlign = ContentAlignment.MiddleCenter;

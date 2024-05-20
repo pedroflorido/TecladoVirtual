@@ -95,7 +95,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(570, 12);
+            panel1.Location = new Point(520, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(202, 107);
             panel1.TabIndex = 14;
@@ -109,7 +109,7 @@
             label1.ForeColor = Color.FromArgb(192, 0, 0);
             label1.Location = new Point(3, 19);
             label1.Name = "label1";
-            label1.Size = new Size(197, 62);
+            label1.Size = new Size(164, 50);
             label1.TabIndex = 0;
             label1.Text = "Responda Todas\r\n as perguntas!";
             // 

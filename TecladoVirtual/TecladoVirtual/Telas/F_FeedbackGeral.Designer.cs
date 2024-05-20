@@ -37,6 +37,7 @@
             lblNome = new Label();
             lblIdade = new Label();
             lblMedia = new Label();
+            lblPolíticadeRespeito = new Label();
             SuspendLayout();
             // 
             // btnRetornar
@@ -151,12 +152,25 @@
             lblMedia.TextAlign = ContentAlignment.MiddleCenter;
             lblMedia.Click += label3_Click;
             // 
+            // lblPolíticadeRespeito
+            // 
+            lblPolíticadeRespeito.Anchor = AnchorStyles.None;
+            lblPolíticadeRespeito.AutoSize = true;
+            lblPolíticadeRespeito.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPolíticadeRespeito.Location = new Point(65, 283);
+            lblPolíticadeRespeito.Name = "lblPolíticadeRespeito";
+            lblPolíticadeRespeito.Size = new Size(308, 84);
+            lblPolíticadeRespeito.TabIndex = 20;
+            lblPolíticadeRespeito.Text = "Não esqueça de selecionar o botão\r\nretornar, por favor! \r\nNossa política preza que todos \r\ncolaborem com os próximos visitantes!";
+            lblPolíticadeRespeito.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // F_FeedbackGeral
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 441);
             ControlBox = false;
+            Controls.Add(lblPolíticadeRespeito);
             Controls.Add(lblMedia);
             Controls.Add(lblIdade);
             Controls.Add(lblNome);
@@ -188,5 +202,6 @@
         public Label lblNome;
         public Label lblIdade;
         public Label lblMedia;
+        private Label lblPolíticadeRespeito;
     }
 }

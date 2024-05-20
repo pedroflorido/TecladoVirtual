@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Perguntas1));
             lblPergunta1 = new Label();
             lblPergunta2 = new Label();
             btnAvancarPerguntas1 = new Button();
@@ -37,6 +38,7 @@
             btnVerdadeiro1 = new Button();
             panel1 = new Panel();
             label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -144,7 +146,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(547, 12);
+            panel1.Location = new Point(524, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(202, 107);
             panel1.TabIndex = 8;
@@ -156,11 +158,26 @@
             label1.BackColor = SystemColors.Control;
             label1.Font = new Font("Segoe UI Symbol", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(192, 0, 0);
-            label1.Location = new Point(3, 19);
+            label1.Location = new Point(3, 16);
             label1.Name = "label1";
-            label1.Size = new Size(197, 62);
+            label1.Size = new Size(164, 50);
             label1.TabIndex = 0;
             label1.Text = "Responda Todas\r\n as perguntas!";
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Top;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(203, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(318, 168);
+            label2.TabIndex = 9;
+            label2.Text = resources.GetString("label2.Text");
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Click += label2_Click;
             // 
             // F_Perguntas1
             // 
@@ -168,6 +185,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(686, 331);
             ControlBox = false;
+            Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(btnFalso2);
             Controls.Add(btnFalso1);
@@ -200,5 +218,6 @@
         private Button btnVerdadeiro1;
         private Panel panel1;
         private Label label1;
+        private Label label2;
     }
 }

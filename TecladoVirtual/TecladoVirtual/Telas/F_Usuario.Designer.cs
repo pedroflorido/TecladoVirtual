@@ -40,6 +40,7 @@
             btnLIMPARidade = new Button();
             alertaPainel = new Panel();
             label2 = new Label();
+            lblInstrucaoTelaUsuario = new Label();
             alertaPainel.SuspendLayout();
             SuspendLayout();
             // 
@@ -109,9 +110,9 @@
             // 
             // alertaPainel
             // 
+            resources.ApplyResources(alertaPainel, "alertaPainel");
             alertaPainel.BackColor = SystemColors.Info;
             alertaPainel.Controls.Add(label2);
-            resources.ApplyResources(alertaPainel, "alertaPainel");
             alertaPainel.Name = "alertaPainel";
             // 
             // label2
@@ -121,12 +122,20 @@
             label2.Name = "label2";
             label2.Click += label2_Click;
             // 
+            // lblInstrucaoTelaUsuario
+            // 
+            resources.ApplyResources(lblInstrucaoTelaUsuario, "lblInstrucaoTelaUsuario");
+            lblInstrucaoTelaUsuario.BackColor = Color.Transparent;
+            lblInstrucaoTelaUsuario.ForeColor = SystemColors.Window;
+            lblInstrucaoTelaUsuario.Name = "lblInstrucaoTelaUsuario";
+            // 
             // F_Usuario
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowText;
             ControlBox = false;
+            Controls.Add(lblInstrucaoTelaUsuario);
             Controls.Add(btnAvancarInstrucao);
             Controls.Add(btnLIMPARidade);
             Controls.Add(btnLIMPARnome);
@@ -162,5 +171,6 @@
         private Button btnLIMPARidade;
         private Panel alertaPainel;
         private Label label2;
+        private Label lblInstrucaoTelaUsuario;
     }
 }

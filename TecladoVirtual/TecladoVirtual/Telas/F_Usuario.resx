@@ -127,13 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblTextoUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
   <data name="lblTextoUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 65</value>
+    <value>201, 120</value>
   </data>
   <data name="lblTextoUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 62</value>
+    <value>373, 58</value>
   </data>
   <data name="lblTextoUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -155,7 +155,7 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTextoUsuario.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="lblNomeUsuario.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -164,13 +164,13 @@ informe-nos seu Nome e Idade</value>
     <value>True</value>
   </data>
   <data name="lblNomeUsuario.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="lblNomeUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 201</value>
+    <value>194, 208</value>
   </data>
   <data name="lblNomeUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 25</value>
+    <value>60, 20</value>
   </data>
   <data name="lblNomeUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -188,20 +188,16 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblNomeUsuario.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="tbxNome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="tbxNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 196</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tbxNome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>256, 204</value>
   </data>
   <data name="tbxNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 27</value>
+    <value>228, 23</value>
   </data>
   <data name="tbxNome.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -216,7 +212,7 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbxNome.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -225,13 +221,13 @@ informe-nos seu Nome e Idade</value>
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 247</value>
+    <value>196, 242</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 25</value>
+    <value>60, 20</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -249,22 +245,23 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tbxIdade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="tbxIdade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 243</value>
+    <value>256, 239</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbxIdade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="tbxIdade.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="tbxIdade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 27</value>
+    <value>228, 23</value>
   </data>
   <data name="tbxIdade.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -279,22 +276,19 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbxIdade.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnVoltarInstrucao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
   <data name="btnVoltarInstrucao.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+    <value>Roboto Bk, 9pt</value>
   </data>
   <data name="btnVoltarInstrucao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 411</value>
-  </data>
-  <data name="btnVoltarInstrucao.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>38, 421</value>
   </data>
   <data name="btnVoltarInstrucao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 49</value>
+    <value>85, 37</value>
   </data>
   <data name="btnVoltarInstrucao.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -312,22 +306,19 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnVoltarInstrucao.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnAvancarInstrucao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="btnAvancarInstrucao.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
+    <value>Roboto Bk, 9pt</value>
   </data>
   <data name="btnAvancarInstrucao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 411</value>
-  </data>
-  <data name="btnAvancarInstrucao.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>616, 421</value>
   </data>
   <data name="btnAvancarInstrucao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 49</value>
+    <value>85, 37</value>
   </data>
   <data name="btnAvancarInstrucao.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -345,7 +336,7 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAvancarInstrucao.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnLIMPARnome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -354,13 +345,10 @@ informe-nos seu Nome e Idade</value>
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="btnLIMPARnome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 195</value>
-  </data>
-  <data name="btnLIMPARnome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>499, 203</value>
   </data>
   <data name="btnLIMPARnome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
+    <value>75, 23</value>
   </data>
   <data name="btnLIMPARnome.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -378,7 +366,7 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLIMPARnome.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnLIMPARidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -387,13 +375,10 @@ informe-nos seu Nome e Idade</value>
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="btnLIMPARidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>471, 241</value>
-  </data>
-  <data name="btnLIMPARidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>499, 238</value>
   </data>
   <data name="btnLIMPARidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 31</value>
+    <value>75, 23</value>
   </data>
   <data name="btnLIMPARidade.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -411,7 +396,49 @@ informe-nos seu Nome e Idade</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLIMPARidade.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="alertaPainel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>alertaPainel</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="alertaPainel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 30</value>
+  </data>
+  <data name="alertaPainel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="alertaPainel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 74</value>
+  </data>
+  <data name="alertaPainel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="alertaPainel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.Name" xml:space="preserve">
+    <value>alertaPainel</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -420,10 +447,10 @@ informe-nos seu Nome e Idade</value>
     <value>Segoe UI Emoji, 12pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 24</value>
+    <value>4, 18</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 54</value>
+    <value>207, 42</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -444,35 +471,49 @@ informe-nos seu Nome e Idade</value>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="alertaPainel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 30</value>
+  <data name="lblInstrucaoTelaUsuario.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="alertaPainel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 99</value>
+  <data name="lblInstrucaoTelaUsuario.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt, style=Bold, Italic</value>
   </data>
-  <data name="alertaPainel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="lblInstrucaoTelaUsuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 28</value>
   </data>
-  <data name="alertaPainel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="lblInstrucaoTelaUsuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>621, 150</value>
   </data>
-  <data name="&gt;&gt;alertaPainel.Name" xml:space="preserve">
-    <value>alertaPainel</value>
+  <data name="lblInstrucaoTelaUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;alertaPainel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblInstrucaoTelaUsuario.Text" xml:space="preserve">
+    <value>Após selecionar o campo de nome ou o campo idade, 
+um teclado irá aparecer para auxiliar no preenchimento dos campos!
+
+Caso queira apagar o que digitou, basta selecionar o botão LIMPAR 
+em um dos campos que deseja apagar o escrito, ou selecione o botão 
+CLEAR do próprio teclado.</value>
   </data>
-  <data name="&gt;&gt;alertaPainel.Parent" xml:space="preserve">
+  <data name="lblInstrucaoTelaUsuario.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblInstrucaoTelaUsuario.Name" xml:space="preserve">
+    <value>lblInstrucaoTelaUsuario</value>
+  </data>
+  <data name="&gt;&gt;lblInstrucaoTelaUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInstrucaoTelaUsuario.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;alertaPainel.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;lblInstrucaoTelaUsuario.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4317,10 +4358,7 @@ informe-nos seu Nome e Idade</value>
     <value>Zoom</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>646, 473</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+    <value>738, 468</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>F_Usuario</value>

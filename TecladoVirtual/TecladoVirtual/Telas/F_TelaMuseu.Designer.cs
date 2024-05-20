@@ -39,11 +39,11 @@
             lblTextoMuseu1.Anchor = AnchorStyles.None;
             lblTextoMuseu1.AutoSize = true;
             lblTextoMuseu1.BackColor = Color.Transparent;
-            lblTextoMuseu1.Font = new Font("Arial Narrow", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTextoMuseu1.Font = new Font("Arial Narrow", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTextoMuseu1.ForeColor = SystemColors.Window;
             lblTextoMuseu1.Location = new Point(12, 9);
             lblTextoMuseu1.Name = "lblTextoMuseu1";
-            lblTextoMuseu1.Size = new Size(719, 124);
+            lblTextoMuseu1.Size = new Size(865, 148);
             lblTextoMuseu1.TabIndex = 0;
             lblTextoMuseu1.Text = resources.GetString("lblTextoMuseu1.Text");
             lblTextoMuseu1.TextAlign = ContentAlignment.MiddleLeft;
@@ -54,11 +54,11 @@
             lblTextoMuseu2.Anchor = AnchorStyles.None;
             lblTextoMuseu2.AutoSize = true;
             lblTextoMuseu2.BackColor = Color.Transparent;
-            lblTextoMuseu2.Font = new Font("Arial Narrow", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTextoMuseu2.Font = new Font("Arial Narrow", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTextoMuseu2.ForeColor = SystemColors.Window;
             lblTextoMuseu2.Location = new Point(12, 157);
             lblTextoMuseu2.Name = "lblTextoMuseu2";
-            lblTextoMuseu2.Size = new Size(687, 225);
+            lblTextoMuseu2.Size = new Size(918, 297);
             lblTextoMuseu2.TabIndex = 1;
             lblTextoMuseu2.Text = resources.GetString("lblTextoMuseu2.Text");
             lblTextoMuseu2.TextAlign = ContentAlignment.MiddleLeft;

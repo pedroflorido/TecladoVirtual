@@ -70,10 +70,18 @@ namespace TecladoVirtual.Telas
                         {
                             teclado.Close();
                         }
-                        Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
-                        this.Close();
-                        F_Perguntas1 p1 = new F_Perguntas1();
-                        p1.Show();
+                        if (this.tbxNome.Text != "" && this.tbxIdade.Text != "")
+                        {
+                            Estatica.controle = new Controle(this.tbxNome.Text, Convert.ToInt32(this.tbxIdade.Text));
+                            this.Close();
+                            F_Perguntas1 p1 = new F_Perguntas1();
+                            p1.Show();
+
+                        }
+                        else
+                        {
+                            alertaPainel.Visible = true;
+                        }
                     }
                 }
                 catch (Exception err)

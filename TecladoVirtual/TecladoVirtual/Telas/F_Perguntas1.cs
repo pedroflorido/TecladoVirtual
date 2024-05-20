@@ -14,8 +14,8 @@ namespace TecladoVirtual.Telas
     public partial class F_Perguntas1 : Form
     {
 
-           Boolean p1 = false;
-           Boolean p2 = false;//variavel para verificacao de resposta
+        Boolean p1 = false;
+        Boolean p2 = false;//variavel para verificacao de resposta
         public F_Perguntas1()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace TecladoVirtual.Telas
 
         private void btnAvancarPerguntas1_Click(object sender, EventArgs e)
         {
-           if(p1 && p2)
+            if (p1 && p2)
             {
                 F_Perguntas2 p2 = new F_Perguntas2();
                 p2.Show();
@@ -40,8 +40,8 @@ namespace TecladoVirtual.Telas
             {
                 panel1.Visible = true;
             }
-                
-            
+
+
         }
 
         private void F_Perguntas1_Load(object sender, EventArgs e)
@@ -94,6 +94,11 @@ namespace TecladoVirtual.Telas
         private void btnVerdadeiro2_CheckStateChanged(object sender, EventArgs e)
         {
             Estatica.controle.ReceberP2(true);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

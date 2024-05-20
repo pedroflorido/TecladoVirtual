@@ -42,7 +42,7 @@
             lblTextoInstrucao.BackColor = Color.Transparent;
             lblTextoInstrucao.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoInstrucao.ForeColor = SystemColors.Window;
-            lblTextoInstrucao.Location = new Point(-29, 30);
+            lblTextoInstrucao.Location = new Point(-7, 30);
             lblTextoInstrucao.Name = "lblTextoInstrucao";
             lblTextoInstrucao.Size = new Size(807, 231);
             lblTextoInstrucao.TabIndex = 0;
@@ -79,11 +79,11 @@
             lblBOASORTE.Anchor = AnchorStyles.None;
             lblBOASORTE.AutoSize = true;
             lblBOASORTE.BackColor = Color.Transparent;
-            lblBOASORTE.Font = new Font("Roboto Bk", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBOASORTE.Font = new Font("Roboto Bk", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBOASORTE.ForeColor = SystemColors.Window;
-            lblBOASORTE.Location = new Point(310, 356);
+            lblBOASORTE.Location = new Point(250, 323);
             lblBOASORTE.Name = "lblBOASORTE";
-            lblBOASORTE.Size = new Size(129, 25);
+            lblBOASORTE.Size = new Size(293, 58);
             lblBOASORTE.TabIndex = 3;
             lblBOASORTE.Text = "BOA SORTE!";
             lblBOASORTE.TextAlign = ContentAlignment.MiddleCenter;
