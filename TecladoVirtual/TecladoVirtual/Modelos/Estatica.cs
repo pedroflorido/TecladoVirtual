@@ -8,6 +8,7 @@ namespace TecladoVirtual.Modelos
 {
     internal static class Estatica
     {
+        public static List<Pessoa> listaPessoas = new List<Pessoa>();
         public static Controle controle;
         public static double mediaGeral;
         public static int numeroDePessoas;
