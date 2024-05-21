@@ -24,6 +24,7 @@ namespace TecladoVirtual.Modelos
         {
             Pessoa usuario = new Pessoa(nome, idade);
             this.usuario = usuario;
+           
         }
 
         public Pessoa Pessoa
@@ -49,6 +50,8 @@ namespace TecladoVirtual.Modelos
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
             pessoa = Estatica.numeroDePessoas;
             mensagem = verificarAcertos.ToString();
+            this.usuario.setMedia = mensagem;
+            Estatica.listaPessoas.Add(this.usuario);
         }
 
         public void ReceberP1(bool p1)

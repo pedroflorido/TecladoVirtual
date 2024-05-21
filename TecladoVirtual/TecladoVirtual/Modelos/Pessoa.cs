@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace TecladoVirtual.Modelos
 {
-     public class Pessoa
+    public class Pessoa
     {
         private String _nome;
         private int _idade;
-        private Boolean[] _respostas = {false, false , false , false , false};
+        private string media;
+        private Boolean[] _respostas = { false, false, false, false, false };
 
         public Pessoa(string nome, int idade)
         {
@@ -33,6 +34,6 @@ namespace TecladoVirtual.Modelos
         }
         public string getNome { get => _nome; }
         public int getIdade { get => _idade; }
-
+        public string setMedia { set => media = value; }
     }
 }
