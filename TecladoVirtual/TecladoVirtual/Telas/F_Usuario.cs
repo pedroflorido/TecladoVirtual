@@ -34,8 +34,11 @@ namespace TecladoVirtual.Telas
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            teclado = new F_Teclado(this);
-            teclado.Show();
+            if (teclado == null) 
+            {
+                teclado = new F_Teclado(this);
+                teclado.Show();
+            }
 
         }
 

@@ -22,14 +22,6 @@ namespace TecladoVirtual.Modelos
             verificarResposta();
         }
 
-        internal VerificarAcertos VerificarAcertos
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         private void verificarResposta()
         {
             for (int cont = 0; cont < perguntas.Length; cont++)
@@ -37,7 +29,7 @@ namespace TecladoVirtual.Modelos
                 if (perguntas[cont] == usuario.getRespostas()[cont])
                 {
                     acertos[cont] += 1;
-                    
+                    Estatica.Somaacertos[cont] += 1;
                 }
                 else
                 {
@@ -45,8 +37,11 @@ namespace TecladoVirtual.Modelos
                    
                 }
             }
+           
         
         }
+
+        
        
     }
 }

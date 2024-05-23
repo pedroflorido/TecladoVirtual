@@ -10,7 +10,7 @@ namespace TecladoVirtual.Modelos
 {
     internal class VerificarAcertos
     {
-        public int[] _acertos;
+        int[] _acertos;
         int[] _erros;
         double resutadoAcertos = 0;
         double resutadoErros = 0;
@@ -29,6 +29,7 @@ namespace TecladoVirtual.Modelos
             for (int cont = 0;  cont < _acertos.Length; cont++)
             {
                 resutadoAcertos += _acertos[cont];
+               
             }
             for(int cont = 0; cont < _erros.Length; cont++)
             {
@@ -44,6 +45,7 @@ namespace TecladoVirtual.Modelos
             Estatica.totaldeAcertos += Convert.ToInt32(resutadoAcertos); 
             Estatica.numeroDePessoas += Convert.ToInt32(resutadoAcertos + resutadoErros) / 5;
             Estatica.mediaGeral = Estatica.totaldeAcertos * 100 / Estatica.numeroDePessoas /5;
+            MediaDasPerguntas mediaDasPerguntas = new MediaDasPerguntas();
         }
         public override string ToString()
         {
