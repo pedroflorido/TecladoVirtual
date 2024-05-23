@@ -34,9 +34,10 @@ namespace TecladoVirtual.Telas
 
             lblNumeroVisitante.Text = Convert.ToString(Estatica.numeroDePessoas);
             lblNumeroAcertos.Text = Convert.ToString(Estatica.mediaGeral) + "%";
-            lblNome.Text = "Nome: "+ Estatica.controle.usuario.getNome;
-            lblIdade.Text = Convert.ToString(Estatica.controle.usuario.getIdade) +" Anos";
-            lblMedia.Text = Convert.ToString(Estatica.controle.mensagem) + "%";
+            lblNome.Text = "Nome: "+ Estatica.controle.getNome;
+            lblIdade.Text = Convert.ToString(Estatica.controle.getIdade) +" Anos";
+            lblMedia.Text = Convert.ToString(Estatica.controle.setMedia) + "%";
+            lblMediaDasPerguntas.Text = Estatica.MediaDasPerguntasMensagem;
 
 
             //temporizador para voltar a tela inicial

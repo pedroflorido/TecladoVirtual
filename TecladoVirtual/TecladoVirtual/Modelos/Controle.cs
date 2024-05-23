@@ -9,49 +9,25 @@ using TecladoVirtual.Telas;
 
 namespace TecladoVirtual.Modelos
 {
-    public class Controle 
+    public class Controle : Pessoa
     {
-        public string mensagem;
-        public int pessoa;
-        public Pessoa usuario;
         bool p1;
         bool p2;
         bool p3;
         bool p4;
         bool p5;
 
-        public Controle(String nome, int idade)
-        {
-            Pessoa usuario = new Pessoa(nome, idade);
-            this.usuario = usuario;
-           
-        }
-
-        public Pessoa Pessoa
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        internal Respostas Respostas
-        {
-            get => default;
-            set
-            {
-            }
+        public Controle(String nome, int idade) : base(nome,idade)
+        { 
         }
 
         public void executar()
         {
-            usuario.setRespostas(p1, p2, p3, p4, p5);
-            Respostas respostas = new Respostas(usuario);
+            this.setRespostas(p1, p2, p3, p4, p5);
+            Respostas respostas = new Respostas(this);
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
-            pessoa = Estatica.numeroDePessoas;
-            mensagem = verificarAcertos.ToString();
-            this.usuario.setMedia = mensagem;
-            Estatica.listaPessoas.Add(this.usuario);
+            this.setMedia = verificarAcertos.ToString();
+            Estatica.listaPessoas.Add(this);
         }
 
         public void ReceberP1(bool p1)
@@ -75,11 +51,6 @@ namespace TecladoVirtual.Modelos
         {
             this.p5 = p5;
         }
-            
-        
-
-        
-       
 
     }
 }
