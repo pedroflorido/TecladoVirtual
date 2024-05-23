@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecladoVirtual", "TecladoVirtual\TecladoVirtual.csproj", "{DD9845E9-EA15-4A55-8120-372B32CF4967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TecladoVirtual", "TecladoVirtual\TecladoVirtual.csproj", "{DD9845E9-EA15-4A55-8120-372B32CF4967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tecladoVirtual.Teste", "tecladoVirtual.Teste\tecladoVirtual.Teste.csproj", "{498FB6B0-E106-4070-92CB-4E66C89E759A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DD9845E9-EA15-4A55-8120-372B32CF4967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD9845E9-EA15-4A55-8120-372B32CF4967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD9845E9-EA15-4A55-8120-372B32CF4967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498FB6B0-E106-4070-92CB-4E66C89E759A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498FB6B0-E106-4070-92CB-4E66C89E759A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498FB6B0-E106-4070-92CB-4E66C89E759A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498FB6B0-E106-4070-92CB-4E66C89E759A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
