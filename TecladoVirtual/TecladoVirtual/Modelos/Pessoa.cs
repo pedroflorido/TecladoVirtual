@@ -13,6 +13,7 @@ namespace TecladoVirtual.Modelos
         private string media;
         private string mensagemDeAcertosEerros = "Parabens vc acertou as perguntas: ";
         private Boolean[] _respostas = { false, false, false, false, false };
+        private Boolean[] _satifacao;
 
         public Pessoa(string nome, int idade)
         {
@@ -28,6 +29,14 @@ namespace TecladoVirtual.Modelos
             _respostas[3] = p4;
             _respostas[4] = p5;
         }
+        public void setSatisfacao(Boolean s1, Boolean s2, Boolean s3, Boolean s4, Boolean s5)
+        {
+            _satifacao[0] = s1;
+            _satifacao[1] = s2;
+            _satifacao[2] = s3;
+            _satifacao[3] = s4;
+            _satifacao[4] = s5;
+        }
 
         public Boolean[] getRespostas()
         {
@@ -37,5 +46,6 @@ namespace TecladoVirtual.Modelos
         public int getIdade { get => _idade; }
         public string setMedia { set => media = value; get => media;}
         public string setMensagemDeAcertosEerros { get => mensagemDeAcertosEerros; set => mensagemDeAcertosEerros = value; }
+        public bool[] setSatifacao { get => _satifacao;}
     }
 }
