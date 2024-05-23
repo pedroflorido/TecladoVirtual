@@ -46,7 +46,7 @@
             lblTexto2.BackColor = Color.Transparent;
             lblTexto2.Font = new Font("Roboto Bk", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTexto2.ForeColor = SystemColors.Window;
-            lblTexto2.Location = new Point(207, 45);
+            lblTexto2.Location = new Point(215, 65);
             lblTexto2.Name = "lblTexto2";
             lblTexto2.Size = new Size(373, 58);
             lblTexto2.TabIndex = 0;
@@ -56,51 +56,65 @@
             // btnMuseu
             // 
             btnMuseu.Anchor = AnchorStyles.Bottom;
+            btnMuseu.BackColor = Color.Transparent;
             btnMuseu.BackgroundImage = (Image)resources.GetObject("btnMuseu.BackgroundImage");
+            btnMuseu.FlatAppearance.BorderSize = 3;
+            btnMuseu.FlatStyle = FlatStyle.Flat;
             btnMuseu.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMuseu.ForeColor = Color.Black;
-            btnMuseu.Location = new Point(81, 205);
+            btnMuseu.ForeColor = SystemColors.Window;
+            btnMuseu.Location = new Point(89, 244);
             btnMuseu.Name = "btnMuseu";
             btnMuseu.Size = new Size(180, 170);
             btnMuseu.TabIndex = 1;
-            btnMuseu.UseVisualStyleBackColor = true;
+            btnMuseu.UseVisualStyleBackColor = false;
             btnMuseu.Click += btnMuseu_Click;
             // 
             // btnVoltar1
             // 
-            btnVoltar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltar1.BackColor = Color.Transparent;
+            btnVoltar1.FlatAppearance.BorderSize = 3;
+            btnVoltar1.FlatStyle = FlatStyle.Flat;
+            btnVoltar1.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltar1.ForeColor = SystemColors.Window;
             btnVoltar1.Location = new Point(85, 45);
             btnVoltar1.Name = "btnVoltar1";
-            btnVoltar1.Size = new Size(73, 32);
+            btnVoltar1.Size = new Size(150, 80);
             btnVoltar1.TabIndex = 4;
             btnVoltar1.Text = "VOLTAR";
-            btnVoltar1.UseVisualStyleBackColor = true;
+            btnVoltar1.UseVisualStyleBackColor = false;
             btnVoltar1.Click += btnVoltar1_Click;
             // 
             // btnLua
             // 
             btnLua.Anchor = AnchorStyles.Bottom;
+            btnLua.BackColor = Color.Transparent;
             btnLua.BackgroundImage = (Image)resources.GetObject("btnLua.BackgroundImage");
+            btnLua.BackgroundImageLayout = ImageLayout.Center;
+            btnLua.FlatAppearance.BorderSize = 3;
+            btnLua.FlatStyle = FlatStyle.Flat;
             btnLua.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLua.ForeColor = Color.Black;
-            btnLua.Location = new Point(303, 205);
+            btnLua.ForeColor = SystemColors.Window;
+            btnLua.Location = new Point(311, 244);
             btnLua.Name = "btnLua";
             btnLua.Size = new Size(180, 170);
             btnLua.TabIndex = 5;
-            btnLua.UseVisualStyleBackColor = true;
+            btnLua.UseVisualStyleBackColor = false;
             btnLua.Click += btnLua_Click;
             // 
             // btnQuestionario
             // 
             btnQuestionario.Anchor = AnchorStyles.Bottom;
+            btnQuestionario.BackColor = Color.Transparent;
+            btnQuestionario.BackgroundImage = (Image)resources.GetObject("btnQuestionario.BackgroundImage");
+            btnQuestionario.FlatAppearance.BorderSize = 3;
+            btnQuestionario.FlatStyle = FlatStyle.Flat;
             btnQuestionario.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnQuestionario.ForeColor = Color.Black;
-            btnQuestionario.Image = (Image)resources.GetObject("btnQuestionario.Image");
-            btnQuestionario.Location = new Point(524, 205);
+            btnQuestionario.ForeColor = SystemColors.Window;
+            btnQuestionario.Location = new Point(532, 244);
             btnQuestionario.Name = "btnQuestionario";
             btnQuestionario.Size = new Size(180, 170);
             btnQuestionario.TabIndex = 6;
-            btnQuestionario.UseVisualStyleBackColor = true;
+            btnQuestionario.UseVisualStyleBackColor = false;
             btnQuestionario.Click += btnQuestionario_Click;
             // 
             // label1
@@ -110,7 +124,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Roboto Bk", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Window;
-            label1.Location = new Point(114, 169);
+            label1.Location = new Point(122, 208);
             label1.Name = "label1";
             label1.Size = new Size(114, 35);
             label1.TabIndex = 7;
@@ -125,7 +139,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Roboto Bk", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Window;
-            label2.Location = new Point(358, 169);
+            label2.Location = new Point(366, 208);
             label2.Name = "label2";
             label2.Size = new Size(70, 35);
             label2.TabIndex = 8;
@@ -139,7 +153,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Roboto Bk", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(504, 169);
+            label3.Location = new Point(512, 208);
             label3.Name = "label3";
             label3.Size = new Size(220, 35);
             label3.TabIndex = 9;
@@ -153,7 +167,7 @@
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
+            ClientSize = new Size(800, 480);
             ControlBox = false;
             Controls.Add(label3);
             Controls.Add(label2);

@@ -33,57 +33,95 @@
             btnVoltarLua = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            btnAvancarObra2 = new Button();
+            lblInfo2Lua1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblTextoLua
             // 
-            lblTextoLua.Anchor = AnchorStyles.None;
             lblTextoLua.AutoSize = true;
             lblTextoLua.BackColor = Color.Transparent;
-            lblTextoLua.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoLua.Font = new Font("Roboto Bk", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoLua.ForeColor = SystemColors.Window;
-            lblTextoLua.Location = new Point(-92, 9);
+            lblTextoLua.Location = new Point(55, 9);
             lblTextoLua.Name = "lblTextoLua";
-            lblTextoLua.Size = new Size(968, 330);
+            lblTextoLua.Size = new Size(932, 336);
             lblTextoLua.TabIndex = 0;
             lblTextoLua.Text = resources.GetString("lblTextoLua.Text");
-            lblTextoLua.TextAlign = ContentAlignment.MiddleCenter;
+            lblTextoLua.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btnVoltarLua
             // 
-            btnVoltarLua.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnVoltarLua.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnVoltarLua.Location = new Point(631, 344);
+            btnVoltarLua.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnVoltarLua.BackColor = Color.Transparent;
+            btnVoltarLua.FlatAppearance.BorderSize = 3;
+            btnVoltarLua.FlatStyle = FlatStyle.Flat;
+            btnVoltarLua.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVoltarLua.ForeColor = SystemColors.Window;
+            btnVoltarLua.Location = new Point(88, 372);
             btnVoltarLua.Name = "btnVoltarLua";
-            btnVoltarLua.Size = new Size(85, 37);
+            btnVoltarLua.Size = new Size(150, 80);
             btnVoltarLua.TabIndex = 3;
             btnVoltarLua.Text = "VOLTAR";
-            btnVoltarLua.UseVisualStyleBackColor = true;
+            btnVoltarLua.UseVisualStyleBackColor = false;
             btnVoltarLua.Click += btnVoltarLua_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Bottom;
+            pictureBox1.Anchor = AnchorStyles.Left;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Location = new Point(386, 210);
+            pictureBox1.Location = new Point(88, 232);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 190);
+            pictureBox1.Size = new Size(290, 220);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Bottom;
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox2.Location = new Point(130, 210);
+            pictureBox2.ErrorImage = null;
+            pictureBox2.InitialImage = null;
+            pictureBox2.Location = new Point(433, 9);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(250, 190);
+            pictureBox2.Size = new Size(300, 210);
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
+            // 
+            // btnAvancarObra2
+            // 
+            btnAvancarObra2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnAvancarObra2.BackColor = Color.Transparent;
+            btnAvancarObra2.FlatAppearance.BorderSize = 3;
+            btnAvancarObra2.FlatStyle = FlatStyle.Flat;
+            btnAvancarObra2.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancarObra2.ForeColor = SystemColors.Window;
+            btnAvancarObra2.Location = new Point(583, 372);
+            btnAvancarObra2.Name = "btnAvancarObra2";
+            btnAvancarObra2.Size = new Size(150, 80);
+            btnAvancarObra2.TabIndex = 6;
+            btnAvancarObra2.Text = "AVANÇAR";
+            btnAvancarObra2.UseVisualStyleBackColor = false;
+            // 
+            // lblInfo2Lua1
+            // 
+            lblInfo2Lua1.Anchor = AnchorStyles.None;
+            lblInfo2Lua1.AutoSize = true;
+            lblInfo2Lua1.BackColor = Color.Transparent;
+            lblInfo2Lua1.Font = new Font("Roboto Bk", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblInfo2Lua1.ForeColor = SystemColors.Window;
+            lblInfo2Lua1.Location = new Point(157, 245);
+            lblInfo2Lua1.Name = "lblInfo2Lua1";
+            lblInfo2Lua1.Size = new Size(839, 294);
+            lblInfo2Lua1.TabIndex = 7;
+            lblInfo2Lua1.Text = resources.GetString("lblInfo2Lua1.Text");
+            lblInfo2Lua1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // F_Lua
             // 
@@ -91,12 +129,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
+            ClientSize = new Size(800, 480);
             ControlBox = false;
+            Controls.Add(btnAvancarObra2);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Controls.Add(btnVoltarLua);
             Controls.Add(lblTextoLua);
+            Controls.Add(pictureBox1);
+            Controls.Add(lblInfo2Lua1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
@@ -116,5 +156,7 @@
         private Button btnVoltarLua;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Button btnAvancarObra2;
+        private Label lblInfo2Lua1;
     }
 }

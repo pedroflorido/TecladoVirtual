@@ -130,7 +130,7 @@
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
   <data name="lblTextoUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 120</value>
+    <value>232, 126</value>
   </data>
   <data name="lblTextoUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 58</value>
@@ -167,7 +167,7 @@ informe-nos seu Nome e Idade</value>
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="lblNomeUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 208</value>
+    <value>225, 214</value>
   </data>
   <data name="lblNomeUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
@@ -194,7 +194,7 @@ informe-nos seu Nome e Idade</value>
     <value>None</value>
   </data>
   <data name="tbxNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 204</value>
+    <value>287, 210</value>
   </data>
   <data name="tbxNome.Size" type="System.Drawing.Size, System.Drawing">
     <value>228, 23</value>
@@ -224,7 +224,7 @@ informe-nos seu Nome e Idade</value>
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 242</value>
+    <value>227, 248</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
@@ -251,7 +251,7 @@ informe-nos seu Nome e Idade</value>
     <value>None</value>
   </data>
   <data name="tbxIdade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 239</value>
+    <value>287, 245</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbxIdade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -285,7 +285,7 @@ informe-nos seu Nome e Idade</value>
     <value>Roboto Bk, 9pt</value>
   </data>
   <data name="btnVoltarInstrucao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 421</value>
+    <value>38, 433</value>
   </data>
   <data name="btnVoltarInstrucao.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 37</value>
@@ -315,7 +315,7 @@ informe-nos seu Nome e Idade</value>
     <value>Roboto Bk, 9pt</value>
   </data>
   <data name="btnAvancarInstrucao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 421</value>
+    <value>678, 433</value>
   </data>
   <data name="btnAvancarInstrucao.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 37</value>
@@ -345,7 +345,7 @@ informe-nos seu Nome e Idade</value>
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="btnLIMPARnome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 203</value>
+    <value>530, 209</value>
   </data>
   <data name="btnLIMPARnome.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -375,7 +375,7 @@ informe-nos seu Nome e Idade</value>
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="btnLIMPARidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 238</value>
+    <value>530, 244</value>
   </data>
   <data name="btnLIMPARidade.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -400,45 +400,6 @@ informe-nos seu Nome e Idade</value>
   </data>
   <data name="alertaPainel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>alertaPainel</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="alertaPainel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 30</value>
-  </data>
-  <data name="alertaPainel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="alertaPainel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 74</value>
-  </data>
-  <data name="alertaPainel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="alertaPainel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;alertaPainel.Name" xml:space="preserve">
-    <value>alertaPainel</value>
-  </data>
-  <data name="&gt;&gt;alertaPainel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;alertaPainel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;alertaPainel.ZOrder" xml:space="preserve">
-    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -470,6 +431,33 @@ informe-nos seu Nome e Idade</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="alertaPainel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>558, 30</value>
+  </data>
+  <data name="alertaPainel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="alertaPainel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 74</value>
+  </data>
+  <data name="alertaPainel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="alertaPainel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.Name" xml:space="preserve">
+    <value>alertaPainel</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;alertaPainel.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="lblInstrucaoTelaUsuario.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4358,7 +4346,7 @@ CLEAR do próprio teclado.</value>
     <value>Zoom</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>738, 468</value>
+    <value>800, 480</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>F_Usuario</value>

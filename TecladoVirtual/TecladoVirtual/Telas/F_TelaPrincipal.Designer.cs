@@ -40,7 +40,7 @@
             lblTextoPrincipal.BackColor = Color.Transparent;
             lblTextoPrincipal.Font = new Font("Roboto Bk", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoPrincipal.ForeColor = SystemColors.Window;
-            lblTextoPrincipal.Location = new Point(-19, 102);
+            lblTextoPrincipal.Location = new Point(-10, 53);
             lblTextoPrincipal.Name = "lblTextoPrincipal";
             lblTextoPrincipal.Size = new Size(826, 290);
             lblTextoPrincipal.TabIndex = 0;
@@ -50,16 +50,19 @@
             // btnAvancar1
             // 
             btnAvancar1.Anchor = AnchorStyles.Bottom;
-            btnAvancar1.FlatAppearance.BorderColor = SystemColors.MenuText;
-            btnAvancar1.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAvancar1.ForeColor = SystemColors.ControlText;
-            btnAvancar1.Location = new Point(352, 349);
+            btnAvancar1.BackColor = Color.Transparent;
+            btnAvancar1.FlatAppearance.BorderColor = SystemColors.Window;
+            btnAvancar1.FlatAppearance.BorderSize = 3;
+            btnAvancar1.FlatStyle = FlatStyle.Flat;
+            btnAvancar1.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancar1.ForeColor = SystemColors.Window;
+            btnAvancar1.Location = new Point(328, 373);
             btnAvancar1.Margin = new Padding(3, 2, 3, 2);
             btnAvancar1.Name = "btnAvancar1";
-            btnAvancar1.Size = new Size(85, 37);
+            btnAvancar1.Size = new Size(150, 80);
             btnAvancar1.TabIndex = 1;
             btnAvancar1.Text = "AVANÇAR";
-            btnAvancar1.UseVisualStyleBackColor = true;
+            btnAvancar1.UseVisualStyleBackColor = false;
             btnAvancar1.Click += btn1_Click;
             // 
             // F_TelaPrincipal
@@ -69,7 +72,7 @@
             BackColor = Color.Black;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(784, 441);
+            ClientSize = new Size(800, 480);
             Controls.Add(btnAvancar1);
             Controls.Add(lblTextoPrincipal);
             FormBorderStyle = FormBorderStyle.None;

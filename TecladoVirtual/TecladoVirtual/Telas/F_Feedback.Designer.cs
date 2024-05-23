@@ -37,10 +37,10 @@
             // 
             lblTextoFeedback.Anchor = AnchorStyles.None;
             lblTextoFeedback.AutoSize = true;
-            lblTextoFeedback.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedback.Location = new Point(208, 107);
+            lblTextoFeedback.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTextoFeedback.Location = new Point(148, 124);
             lblTextoFeedback.Name = "lblTextoFeedback";
-            lblTextoFeedback.Size = new Size(416, 75);
+            lblTextoFeedback.Size = new Size(524, 99);
             lblTextoFeedback.TabIndex = 0;
             lblTextoFeedback.Text = "Parabéns por concluir nosso questionário!\r\n\r\nVocê acertou:";
             lblTextoFeedback.TextAlign = ContentAlignment.MiddleCenter;
@@ -49,11 +49,12 @@
             // 
             btnAvancarFeedbackGeral.Anchor = AnchorStyles.None;
             btnAvancarFeedbackGeral.BackColor = Color.FromArgb(64, 64, 64);
-            btnAvancarFeedbackGeral.Font = new Font("Roboto Bk", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancarFeedbackGeral.FlatStyle = FlatStyle.Flat;
+            btnAvancarFeedbackGeral.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancarFeedbackGeral.ForeColor = SystemColors.Window;
-            btnAvancarFeedbackGeral.Location = new Point(374, 308);
+            btnAvancarFeedbackGeral.Location = new Point(331, 345);
             btnAvancarFeedbackGeral.Name = "btnAvancarFeedbackGeral";
-            btnAvancarFeedbackGeral.Size = new Size(85, 37);
+            btnAvancarFeedbackGeral.Size = new Size(150, 80);
             btnAvancarFeedbackGeral.TabIndex = 11;
             btnAvancarFeedbackGeral.Text = "AVANÇAR";
             btnAvancarFeedbackGeral.UseVisualStyleBackColor = false;
@@ -63,10 +64,10 @@
             // 
             lblNumeroAcerto.Anchor = AnchorStyles.None;
             lblNumeroAcerto.AutoSize = true;
-            lblNumeroAcerto.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNumeroAcerto.Location = new Point(410, 209);
+            lblNumeroAcerto.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumeroAcerto.Location = new Point(395, 244);
             lblNumeroAcerto.Name = "lblNumeroAcerto";
-            lblNumeroAcerto.Size = new Size(32, 37);
+            lblNumeroAcerto.Size = new Size(31, 33);
             lblNumeroAcerto.TabIndex = 12;
             lblNumeroAcerto.Text = "0";
             lblNumeroAcerto.TextAlign = ContentAlignment.MiddleCenter;
@@ -75,7 +76,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(686, 331);
+            ClientSize = new Size(800, 480);
             ControlBox = false;
             Controls.Add(lblNumeroAcerto);
             Controls.Add(btnAvancarFeedbackGeral);
