@@ -33,7 +33,7 @@
             btnVoltarLua = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            btnAvancarObra2 = new Button();
+            btnAvancarLua2 = new Button();
             lblInfo2Lua1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -94,20 +94,21 @@
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
-            // btnAvancarObra2
+            // btnAvancarLua2
             // 
-            btnAvancarObra2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAvancarObra2.BackColor = Color.Transparent;
-            btnAvancarObra2.FlatAppearance.BorderSize = 3;
-            btnAvancarObra2.FlatStyle = FlatStyle.Flat;
-            btnAvancarObra2.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAvancarObra2.ForeColor = SystemColors.Window;
-            btnAvancarObra2.Location = new Point(583, 372);
-            btnAvancarObra2.Name = "btnAvancarObra2";
-            btnAvancarObra2.Size = new Size(150, 80);
-            btnAvancarObra2.TabIndex = 6;
-            btnAvancarObra2.Text = "AVANÇAR";
-            btnAvancarObra2.UseVisualStyleBackColor = false;
+            btnAvancarLua2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnAvancarLua2.BackColor = Color.Transparent;
+            btnAvancarLua2.FlatAppearance.BorderSize = 3;
+            btnAvancarLua2.FlatStyle = FlatStyle.Flat;
+            btnAvancarLua2.Font = new Font("Roboto Bk", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAvancarLua2.ForeColor = SystemColors.Window;
+            btnAvancarLua2.Location = new Point(583, 372);
+            btnAvancarLua2.Name = "btnAvancarLua2";
+            btnAvancarLua2.Size = new Size(150, 80);
+            btnAvancarLua2.TabIndex = 6;
+            btnAvancarLua2.Text = "AVANÇAR";
+            btnAvancarLua2.UseVisualStyleBackColor = false;
+            btnAvancarLua2.Click += btnAvancarLua2_Click;
             // 
             // lblInfo2Lua1
             // 
@@ -131,7 +132,7 @@
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 480);
             ControlBox = false;
-            Controls.Add(btnAvancarObra2);
+            Controls.Add(btnAvancarLua2);
             Controls.Add(pictureBox2);
             Controls.Add(btnVoltarLua);
             Controls.Add(lblTextoLua);
@@ -156,7 +157,7 @@
         private Button btnVoltarLua;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button btnAvancarObra2;
+        private Button btnAvancarLua2;
         private Label lblInfo2Lua1;
     }
 }
