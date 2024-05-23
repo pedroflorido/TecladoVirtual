@@ -47,10 +47,9 @@
             btnRetornar.BackColor = Color.FromArgb(64, 64, 64);
             btnRetornar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRetornar.ForeColor = SystemColors.Window;
-            btnRetornar.Location = new Point(433, 440);
-            btnRetornar.Margin = new Padding(3, 4, 3, 4);
+            btnRetornar.Location = new Point(379, 330);
             btnRetornar.Name = "btnRetornar";
-            btnRetornar.Size = new Size(97, 49);
+            btnRetornar.Size = new Size(85, 37);
             btnRetornar.TabIndex = 11;
             btnRetornar.Text = "RETORNAR";
             btnRetornar.UseVisualStyleBackColor = false;
@@ -61,9 +60,9 @@
             lblTextoFeedbackGeral.Anchor = AnchorStyles.None;
             lblTextoFeedbackGeral.AutoSize = true;
             lblTextoFeedbackGeral.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTextoFeedbackGeral.Location = new Point(245, 52);
+            lblTextoFeedbackGeral.Location = new Point(214, 39);
             lblTextoFeedbackGeral.Name = "lblTextoFeedbackGeral";
-            lblTextoFeedbackGeral.Size = new Size(534, 42);
+            lblTextoFeedbackGeral.Size = new Size(415, 33);
             lblTextoFeedbackGeral.TabIndex = 12;
             lblTextoFeedbackGeral.Text = "RELATÓRIO DE RESPOSTAS";
             lblTextoFeedbackGeral.TextAlign = ContentAlignment.MiddleCenter;
@@ -73,9 +72,9 @@
             lblVisitantes.Anchor = AnchorStyles.None;
             lblVisitantes.AutoSize = true;
             lblVisitantes.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblVisitantes.Location = new Point(245, 221);
+            lblVisitantes.Location = new Point(214, 166);
             lblVisitantes.Name = "lblVisitantes";
-            lblVisitantes.Size = new Size(165, 39);
+            lblVisitantes.Size = new Size(133, 31);
             lblVisitantes.TabIndex = 13;
             lblVisitantes.Text = "Visitantes";
             lblVisitantes.TextAlign = ContentAlignment.MiddleCenter;
@@ -86,9 +85,9 @@
             lblAcertos.Anchor = AnchorStyles.None;
             lblAcertos.AutoSize = true;
             lblAcertos.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAcertos.Location = new Point(549, 221);
+            lblAcertos.Location = new Point(480, 166);
             lblAcertos.Name = "lblAcertos";
-            lblAcertos.Size = new Size(184, 39);
+            lblAcertos.Size = new Size(149, 31);
             lblAcertos.TabIndex = 14;
             lblAcertos.Text = "Acertos(%)";
             lblAcertos.TextAlign = ContentAlignment.MiddleCenter;
@@ -98,9 +97,9 @@
             lblNumeroVisitante.Anchor = AnchorStyles.None;
             lblNumeroVisitante.AutoSize = true;
             lblNumeroVisitante.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNumeroVisitante.Location = new Point(288, 279);
+            lblNumeroVisitante.Location = new Point(252, 209);
             lblNumeroVisitante.Name = "lblNumeroVisitante";
-            lblNumeroVisitante.Size = new Size(38, 46);
+            lblNumeroVisitante.Size = new Size(32, 37);
             lblNumeroVisitante.TabIndex = 15;
             lblNumeroVisitante.Text = "0";
             lblNumeroVisitante.TextAlign = ContentAlignment.MiddleCenter;
@@ -110,9 +109,9 @@
             lblNumeroAcertos.Anchor = AnchorStyles.None;
             lblNumeroAcertos.AutoSize = true;
             lblNumeroAcertos.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNumeroAcertos.Location = new Point(638, 279);
+            lblNumeroAcertos.Location = new Point(558, 209);
             lblNumeroAcertos.Name = "lblNumeroAcertos";
-            lblNumeroAcertos.Size = new Size(38, 46);
+            lblNumeroAcertos.Size = new Size(32, 37);
             lblNumeroAcertos.TabIndex = 16;
             lblNumeroAcertos.Text = "0";
             lblNumeroAcertos.TextAlign = ContentAlignment.MiddleCenter;
@@ -122,9 +121,9 @@
             lblNome.Anchor = AnchorStyles.None;
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNome.Location = new Point(245, 139);
+            lblNome.Location = new Point(214, 104);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(90, 37);
+            lblNome.Size = new Size(70, 30);
             lblNome.TabIndex = 17;
             lblNome.Text = "Nome";
             lblNome.TextAlign = ContentAlignment.MiddleCenter;
@@ -134,9 +133,9 @@
             lblIdade.Anchor = AnchorStyles.None;
             lblIdade.AutoSize = true;
             lblIdade.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblIdade.Location = new Point(445, 139);
+            lblIdade.Location = new Point(389, 104);
             lblIdade.Name = "lblIdade";
-            lblIdade.Size = new Size(84, 37);
+            lblIdade.Size = new Size(64, 30);
             lblIdade.TabIndex = 18;
             lblIdade.Text = "idade";
             lblIdade.TextAlign = ContentAlignment.MiddleCenter;
@@ -146,9 +145,9 @@
             lblMedia.Anchor = AnchorStyles.None;
             lblMedia.AutoSize = true;
             lblMedia.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMedia.Location = new Point(638, 139);
+            lblMedia.Location = new Point(558, 104);
             lblMedia.Name = "lblMedia";
-            lblMedia.Size = new Size(92, 37);
+            lblMedia.Size = new Size(71, 30);
             lblMedia.TabIndex = 19;
             lblMedia.Text = "Media";
             lblMedia.TextAlign = ContentAlignment.MiddleCenter;
@@ -159,9 +158,9 @@
             lblPolíticadeRespeito.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblPolíticadeRespeito.AutoSize = true;
             lblPolíticadeRespeito.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblPolíticadeRespeito.Location = new Point(74, 377);
+            lblPolíticadeRespeito.Location = new Point(65, 283);
             lblPolíticadeRespeito.Name = "lblPolíticadeRespeito";
-            lblPolíticadeRespeito.Size = new Size(383, 112);
+            lblPolíticadeRespeito.Size = new Size(308, 84);
             lblPolíticadeRespeito.TabIndex = 20;
             lblPolíticadeRespeito.Text = "Não esqueça de selecionar o botão\r\nretornar, por favor! \r\nNossa política preza que todos \r\ncolaborem com os próximos visitantes!";
             lblPolíticadeRespeito.TextAlign = ContentAlignment.MiddleLeft;
@@ -170,17 +169,17 @@
             // 
             lblMediaDasPerguntas.Anchor = AnchorStyles.None;
             lblMediaDasPerguntas.AutoSize = true;
-            lblMediaDasPerguntas.Location = new Point(288, 413);
+            lblMediaDasPerguntas.Location = new Point(252, 310);
             lblMediaDasPerguntas.Name = "lblMediaDasPerguntas";
-            lblMediaDasPerguntas.Size = new Size(148, 20);
+            lblMediaDasPerguntas.Size = new Size(117, 15);
             lblMediaDasPerguntas.TabIndex = 21;
             lblMediaDasPerguntas.Text = "media das perguntas";
             // 
             // F_FeedbackGeral
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 588);
+            ClientSize = new Size(784, 441);
             ControlBox = false;
             Controls.Add(lblMediaDasPerguntas);
             Controls.Add(lblPolíticadeRespeito);
@@ -194,7 +193,6 @@
             Controls.Add(lblTextoFeedbackGeral);
             Controls.Add(btnRetornar);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;

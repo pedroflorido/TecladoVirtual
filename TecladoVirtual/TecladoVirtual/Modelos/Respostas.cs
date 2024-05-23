@@ -30,6 +30,7 @@ namespace TecladoVirtual.Modelos
                 {
                     acertos[cont] += 1;
                     Estatica.Somaacertos[cont] += 1;
+                    Estatica.controle.setMensagemDeAcertosEerros += cont +1+ " | ";
                 }
                 else
                 {
