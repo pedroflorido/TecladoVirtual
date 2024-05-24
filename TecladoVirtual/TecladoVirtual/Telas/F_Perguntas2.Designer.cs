@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Perguntas2));
             lblPergunta3 = new Label();
             lblPergunta4 = new Label();
             btnVerdadeiro3 = new Button();
@@ -36,8 +37,10 @@
             btnFalso4 = new Button();
             btnAvancarPerguntas2 = new Button();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             label1 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblPergunta3
@@ -45,7 +48,7 @@
             lblPergunta3.Anchor = AnchorStyles.None;
             lblPergunta3.AutoSize = true;
             lblPergunta3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPergunta3.Location = new Point(110, 46);
+            lblPergunta3.Location = new Point(167, 121);
             lblPergunta3.Name = "lblPergunta3";
             lblPergunta3.Size = new Size(494, 58);
             lblPergunta3.TabIndex = 1;
@@ -57,7 +60,7 @@
             lblPergunta4.Anchor = AnchorStyles.None;
             lblPergunta4.AutoSize = true;
             lblPergunta4.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblPergunta4.Location = new Point(61, 147);
+            lblPergunta4.Location = new Point(118, 222);
             lblPergunta4.Name = "lblPergunta4";
             lblPergunta4.Size = new Size(592, 58);
             lblPergunta4.TabIndex = 2;
@@ -70,7 +73,7 @@
             btnVerdadeiro3.BackColor = Color.DimGray;
             btnVerdadeiro3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVerdadeiro3.ForeColor = Color.PaleGreen;
-            btnVerdadeiro3.Location = new Point(172, 107);
+            btnVerdadeiro3.Location = new Point(229, 182);
             btnVerdadeiro3.Name = "btnVerdadeiro3";
             btnVerdadeiro3.Size = new Size(85, 37);
             btnVerdadeiro3.TabIndex = 6;
@@ -84,7 +87,7 @@
             btnVerdadeiro4.BackColor = Color.DimGray;
             btnVerdadeiro4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnVerdadeiro4.ForeColor = Color.PaleGreen;
-            btnVerdadeiro4.Location = new Point(172, 208);
+            btnVerdadeiro4.Location = new Point(229, 283);
             btnVerdadeiro4.Name = "btnVerdadeiro4";
             btnVerdadeiro4.Size = new Size(85, 37);
             btnVerdadeiro4.TabIndex = 7;
@@ -98,7 +101,7 @@
             btnFalso3.BackColor = Color.DimGray;
             btnFalso3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFalso3.ForeColor = Color.LightCoral;
-            btnFalso3.Location = new Point(461, 107);
+            btnFalso3.Location = new Point(518, 182);
             btnFalso3.Name = "btnFalso3";
             btnFalso3.Size = new Size(85, 37);
             btnFalso3.TabIndex = 8;
@@ -112,7 +115,7 @@
             btnFalso4.BackColor = Color.DimGray;
             btnFalso4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnFalso4.ForeColor = Color.LightCoral;
-            btnFalso4.Location = new Point(461, 208);
+            btnFalso4.Location = new Point(518, 283);
             btnFalso4.Name = "btnFalso4";
             btnFalso4.Size = new Size(85, 37);
             btnFalso4.TabIndex = 9;
@@ -126,7 +129,7 @@
             btnAvancarPerguntas2.BackColor = Color.FromArgb(64, 64, 64);
             btnAvancarPerguntas2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAvancarPerguntas2.ForeColor = SystemColors.Window;
-            btnAvancarPerguntas2.Location = new Point(315, 247);
+            btnAvancarPerguntas2.Location = new Point(372, 322);
             btnAvancarPerguntas2.Name = "btnAvancarPerguntas2";
             btnAvancarPerguntas2.Size = new Size(85, 37);
             btnAvancarPerguntas2.TabIndex = 10;
@@ -137,30 +140,46 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(508, 12);
+            panel1.Location = new Point(553, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(202, 107);
             panel1.TabIndex = 11;
             panel1.Visible = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(89, 68);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(35, 32);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.Control;
-            label1.Font = new Font("Segoe UI Symbol", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Roboto Bk", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(192, 0, 0);
-            label1.Location = new Point(3, 19);
+            label1.Location = new Point(20, 19);
             label1.Name = "label1";
-            label1.Size = new Size(164, 50);
+            label1.Size = new Size(172, 46);
             label1.TabIndex = 0;
-            label1.Text = "Responda Todas\r\n as perguntas!";
+            label1.Text = "RESPONDA TODAS\r\nAS PERGUNTAS!";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // F_Perguntas2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(686, 331);
+            ClientSize = new Size(800, 480);
             ControlBox = false;
             Controls.Add(panel1);
             Controls.Add(btnAvancarPerguntas2);
@@ -179,6 +198,7 @@
             Load += F_Perguntas2_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -194,5 +214,6 @@
         private Button btnAvancarPerguntas2;
         private Panel panel1;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }

@@ -13,7 +13,7 @@ namespace TecladoVirtual.Modelos
         private string media;
         private string mensagemDeAcertosEerros = "Parabens vc acertou as perguntas: ";
         private Boolean[] _respostas = { false, false, false, false, false };
-        private Boolean[] _satifacao;
+        private Boolean[] _satifacao = { false, false, false, false, false };
 
         public Pessoa(string nome, int idade)
         {

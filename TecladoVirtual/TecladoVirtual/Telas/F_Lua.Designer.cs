@@ -73,10 +73,10 @@
             pictureBox1.Anchor = AnchorStyles.Left;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Location = new Point(88, 232);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(290, 220);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
@@ -85,12 +85,12 @@
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.BorderStyle = BorderStyle.Fixed3D;
             pictureBox2.ErrorImage = null;
             pictureBox2.InitialImage = null;
             pictureBox2.Location = new Point(433, 9);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(300, 210);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
