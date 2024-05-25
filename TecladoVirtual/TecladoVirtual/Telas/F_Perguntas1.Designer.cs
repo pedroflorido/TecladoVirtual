@@ -37,11 +37,11 @@
             btnFalso2 = new Button();
             btnVerdadeiro1 = new Button();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
+            pbIconAlertPerguntas1 = new PictureBox();
             label1 = new Label();
             lblTextoInstrucaoPerguntas1 = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbIconAlertPerguntas1).BeginInit();
             SuspendLayout();
             // 
             // lblPergunta1
@@ -162,7 +162,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel1.BackColor = Color.Transparent;
-            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(pbIconAlertPerguntas1);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(575, 12);
             panel1.Name = "panel1";
@@ -170,17 +170,17 @@
             panel1.TabIndex = 8;
             panel1.Visible = false;
             // 
-            // pictureBox1
+            // pbIconAlertPerguntas1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(71, 60);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
+            pbIconAlertPerguntas1.Anchor = AnchorStyles.None;
+            pbIconAlertPerguntas1.BackColor = Color.Transparent;
+            pbIconAlertPerguntas1.Image = (Image)resources.GetObject("pbIconAlertPerguntas1.Image");
+            pbIconAlertPerguntas1.Location = new Point(71, 60);
+            pbIconAlertPerguntas1.Name = "pbIconAlertPerguntas1";
+            pbIconAlertPerguntas1.Size = new Size(35, 32);
+            pbIconAlertPerguntas1.SizeMode = PictureBoxSizeMode.Zoom;
+            pbIconAlertPerguntas1.TabIndex = 10;
+            pbIconAlertPerguntas1.TabStop = false;
             // 
             // label1
             // 
@@ -236,7 +236,7 @@
             Load += F_Perguntas1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbIconAlertPerguntas1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -253,6 +253,6 @@
         private Panel panel1;
         private Label label1;
         private Label lblTextoInstrucaoPerguntas1;
-        private PictureBox pictureBox1;
+        private PictureBox pbIconAlertPerguntas1;
     }
 }
