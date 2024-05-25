@@ -37,14 +37,14 @@
             lblTextoSatisfacao = new Label();
             lblTexto2Satisfacao = new Label();
             button1 = new Button();
-            pictureBoxSatisfacao = new PictureBox();
-            label1 = new Label();
+            pbIconRocketSatisfacao = new PictureBox();
+            lblErroAvisoSatisfacao = new Label();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
+            pbIconAlertSatisfacao = new PictureBox();
             lblPolíticadeRespeito = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxSatisfacao).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbIconRocketSatisfacao).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbIconAlertSatisfacao).BeginInit();
             SuspendLayout();
             // 
             // btnMUITORUIM
@@ -57,7 +57,7 @@
             btnMUITORUIM.ForeColor = SystemColors.Window;
             btnMUITORUIM.Image = (Image)resources.GetObject("btnMUITORUIM.Image");
             btnMUITORUIM.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMUITORUIM.Location = new Point(425, 225);
+            btnMUITORUIM.Location = new Point(585, 26);
             btnMUITORUIM.Name = "btnMUITORUIM";
             btnMUITORUIM.Size = new Size(180, 60);
             btnMUITORUIM.TabIndex = 0;
@@ -75,7 +75,7 @@
             btnRUIM.ForeColor = SystemColors.Window;
             btnRUIM.Image = (Image)resources.GetObject("btnRUIM.Image");
             btnRUIM.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRUIM.Location = new Point(230, 305);
+            btnRUIM.Location = new Point(585, 92);
             btnRUIM.Name = "btnRUIM";
             btnRUIM.Size = new Size(180, 60);
             btnRUIM.TabIndex = 1;
@@ -92,7 +92,7 @@
             btnREGULAR.ForeColor = SystemColors.Window;
             btnREGULAR.Image = (Image)resources.GetObject("btnREGULAR.Image");
             btnREGULAR.ImageAlign = ContentAlignment.MiddleLeft;
-            btnREGULAR.Location = new Point(230, 225);
+            btnREGULAR.Location = new Point(585, 158);
             btnREGULAR.Name = "btnREGULAR";
             btnREGULAR.Size = new Size(180, 60);
             btnREGULAR.TabIndex = 2;
@@ -109,7 +109,7 @@
             btnBOM.ForeColor = SystemColors.Window;
             btnBOM.Image = (Image)resources.GetObject("btnBOM.Image");
             btnBOM.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBOM.Location = new Point(35, 305);
+            btnBOM.Location = new Point(585, 224);
             btnBOM.Name = "btnBOM";
             btnBOM.Size = new Size(180, 60);
             btnBOM.TabIndex = 3;
@@ -126,7 +126,7 @@
             btnMUITOBOM.ForeColor = SystemColors.Window;
             btnMUITOBOM.Image = (Image)resources.GetObject("btnMUITOBOM.Image");
             btnMUITOBOM.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMUITOBOM.Location = new Point(35, 225);
+            btnMUITOBOM.Location = new Point(585, 290);
             btnMUITOBOM.Name = "btnMUITOBOM";
             btnMUITOBOM.Size = new Size(180, 60);
             btnMUITOBOM.TabIndex = 4;
@@ -140,7 +140,7 @@
             lblTextoSatisfacao.BackColor = Color.Transparent;
             lblTextoSatisfacao.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTextoSatisfacao.ForeColor = SystemColors.Window;
-            lblTextoSatisfacao.Location = new Point(12, 26);
+            lblTextoSatisfacao.Location = new Point(12, 53);
             lblTextoSatisfacao.Name = "lblTextoSatisfacao";
             lblTextoSatisfacao.Size = new Size(445, 165);
             lblTextoSatisfacao.TabIndex = 5;
@@ -153,7 +153,7 @@
             lblTexto2Satisfacao.BackColor = Color.Transparent;
             lblTexto2Satisfacao.Font = new Font("Roboto Bk", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTexto2Satisfacao.ForeColor = SystemColors.Window;
-            lblTexto2Satisfacao.Location = new Point(35, 417);
+            lblTexto2Satisfacao.Location = new Point(106, 417);
             lblTexto2Satisfacao.Name = "lblTexto2Satisfacao";
             lblTexto2Satisfacao.Size = new Size(424, 33);
             lblTexto2Satisfacao.TabIndex = 6;
@@ -175,55 +175,56 @@
             button1.Text = "RETORNAR";
             button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBoxSatisfacao
+            // pbIconRocketSatisfacao
             // 
-            pictureBoxSatisfacao.Anchor = AnchorStyles.None;
-            pictureBoxSatisfacao.BackColor = Color.Transparent;
-            pictureBoxSatisfacao.ErrorImage = null;
-            pictureBoxSatisfacao.Image = (Image)resources.GetObject("pictureBoxSatisfacao.Image");
-            pictureBoxSatisfacao.InitialImage = null;
-            pictureBoxSatisfacao.Location = new Point(465, 386);
-            pictureBoxSatisfacao.Name = "pictureBoxSatisfacao";
-            pictureBoxSatisfacao.Size = new Size(64, 64);
-            pictureBoxSatisfacao.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBoxSatisfacao.TabIndex = 8;
-            pictureBoxSatisfacao.TabStop = false;
+            pbIconRocketSatisfacao.Anchor = AnchorStyles.None;
+            pbIconRocketSatisfacao.BackColor = Color.Transparent;
+            pbIconRocketSatisfacao.ErrorImage = null;
+            pbIconRocketSatisfacao.Image = (Image)resources.GetObject("pbIconRocketSatisfacao.Image");
+            pbIconRocketSatisfacao.InitialImage = null;
+            pbIconRocketSatisfacao.Location = new Point(536, 386);
+            pbIconRocketSatisfacao.Name = "pbIconRocketSatisfacao";
+            pbIconRocketSatisfacao.Size = new Size(64, 64);
+            pbIconRocketSatisfacao.SizeMode = PictureBoxSizeMode.AutoSize;
+            pbIconRocketSatisfacao.TabIndex = 8;
+            pbIconRocketSatisfacao.TabStop = false;
             // 
-            // label1
+            // lblErroAvisoSatisfacao
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Roboto Bk", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(192, 0, 0);
-            label1.Location = new Point(25, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(157, 69);
-            label1.TabIndex = 9;
-            label1.Text = "SELECIONE UMA\r\nDAS OPÇÕES\r\nDE SATISFAÇÃO";
+            lblErroAvisoSatisfacao.Anchor = AnchorStyles.None;
+            lblErroAvisoSatisfacao.AutoSize = true;
+            lblErroAvisoSatisfacao.Font = new Font("Roboto Bk", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblErroAvisoSatisfacao.ForeColor = Color.FromArgb(192, 0, 0);
+            lblErroAvisoSatisfacao.Location = new Point(25, 0);
+            lblErroAvisoSatisfacao.Name = "lblErroAvisoSatisfacao";
+            lblErroAvisoSatisfacao.Size = new Size(157, 69);
+            lblErroAvisoSatisfacao.TabIndex = 9;
+            lblErroAvisoSatisfacao.Text = "SELECIONE UMA\r\nDAS OPÇÕES AO\r\nLADO!";
+            lblErroAvisoSatisfacao.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel1.BackColor = Color.Transparent;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(565, 26);
+            panel1.Controls.Add(pbIconAlertSatisfacao);
+            panel1.Controls.Add(lblErroAvisoSatisfacao);
+            panel1.Location = new Point(379, 26);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 100);
             panel1.TabIndex = 10;
             panel1.Visible = false;
             // 
-            // pictureBox1
+            // pbIconAlertSatisfacao
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(80, 68);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
+            pbIconAlertSatisfacao.Anchor = AnchorStyles.None;
+            pbIconAlertSatisfacao.BackColor = Color.Transparent;
+            pbIconAlertSatisfacao.Image = (Image)resources.GetObject("pbIconAlertSatisfacao.Image");
+            pbIconAlertSatisfacao.Location = new Point(80, 68);
+            pbIconAlertSatisfacao.Name = "pbIconAlertSatisfacao";
+            pbIconAlertSatisfacao.Size = new Size(35, 32);
+            pbIconAlertSatisfacao.SizeMode = PictureBoxSizeMode.Zoom;
+            pbIconAlertSatisfacao.TabIndex = 11;
+            pbIconAlertSatisfacao.TabStop = false;
             // 
             // lblPolíticadeRespeito
             // 
@@ -232,12 +233,12 @@
             lblPolíticadeRespeito.BackColor = Color.Transparent;
             lblPolíticadeRespeito.Font = new Font("Roboto Bk", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblPolíticadeRespeito.ForeColor = SystemColors.Window;
-            lblPolíticadeRespeito.Location = new Point(511, 185);
+            lblPolíticadeRespeito.Location = new Point(35, 250);
             lblPolíticadeRespeito.Name = "lblPolíticadeRespeito";
             lblPolíticadeRespeito.Size = new Size(254, 138);
             lblPolíticadeRespeito.TabIndex = 21;
             lblPolíticadeRespeito.Text = "Não esqueça de \r\nselecionar o botão \r\nretornar, por favor! \r\nNossa política preza \r\nque todos colaborem \r\ncom os próximos visitantes!";
-            lblPolíticadeRespeito.TextAlign = ContentAlignment.MiddleCenter;
+            lblPolíticadeRespeito.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // F_Satisfacao
             // 
@@ -247,7 +248,8 @@
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 480);
             ControlBox = false;
-            Controls.Add(pictureBoxSatisfacao);
+            Controls.Add(panel1);
+            Controls.Add(pbIconRocketSatisfacao);
             Controls.Add(button1);
             Controls.Add(lblTexto2Satisfacao);
             Controls.Add(lblTextoSatisfacao);
@@ -256,7 +258,6 @@
             Controls.Add(btnREGULAR);
             Controls.Add(btnRUIM);
             Controls.Add(btnMUITORUIM);
-            Controls.Add(panel1);
             Controls.Add(lblPolíticadeRespeito);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
@@ -264,10 +265,10 @@
             MinimizeBox = false;
             Name = "F_Satisfacao";
             Text = "F_Satisfacao";
-            ((System.ComponentModel.ISupportInitialize)pictureBoxSatisfacao).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbIconRocketSatisfacao).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbIconAlertSatisfacao).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -282,10 +283,10 @@
         private Label lblTextoSatisfacao;
         private Label lblTexto2Satisfacao;
         private Button button1;
-        private PictureBox pictureBoxSatisfacao;
-        private Label label1;
+        private PictureBox pbIconRocketSatisfacao;
+        private Label lblErroAvisoSatisfacao;
         private Panel panel1;
-        private PictureBox pictureBox1;
+        private PictureBox pbIconAlertSatisfacao;
         private Label lblPolíticadeRespeito;
     }
 }
