@@ -26,6 +26,13 @@ namespace TecladoVirtual.Telas
             this.Close();
         }
 
+        private void btnAvancarLua2_Click(object sender, EventArgs e)
+        {
+            F_Lua2 f_lua2 = new F_Lua2();
+            f_lua2.Show();
+            this.Close();
+        }
+
         private void F_Lua_Load(object sender, EventArgs e)
         {
 
