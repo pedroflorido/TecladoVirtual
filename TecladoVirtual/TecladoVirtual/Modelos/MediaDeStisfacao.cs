@@ -8,19 +8,20 @@ namespace TecladoVirtual.Modelos
 {
     internal class MediaDeStisfacao
     {
-        int[] somasDosVotos;
+        
         public MediaDeStisfacao()
         {
             mediaDeStisfacao();
+           
         }
 
         private void mediaDeStisfacao()
         {
-            for(int cont = 0; cont < Estatica.controle.setSatifacao.Length; cont++)
+            for(int cont = 0; cont < Estatica.controle.getSatifacao.Length; cont++)
             {
-                if (Estatica.controle.setSatifacao[cont])
+                if (Estatica.controle.getSatifacao[cont])
                 {
-                    somasDosVotos[cont] += 1;
+                    Estatica.somasDosVotos[cont] += 1;
                 }
             }
             CalculoMedia();
@@ -28,10 +29,21 @@ namespace TecladoVirtual.Modelos
 
         private void CalculoMedia()
         {
-            for(int cont = 0; cont < somasDosVotos.Length; cont++)
+            for(int cont = 0; cont < Estatica.somasDosVotos.Length; cont++)
             {
-                Estatica.mediaDasSastifacoes[cont] = somasDosVotos[cont] * 100 / Estatica.numeroDePessoas;
+                Estatica.mediaDasSastifacoes[cont] = Estatica.somasDosVotos[cont] * 100 / Estatica.numeroDePessoas;
+               
             }
+           atribuirResposta();
+        }
+        private void atribuirResposta()
+        {
+            Estatica.MediaDassatisfacaoMensagem = 
+            "Opnião: Muito Ruim -   " + Estatica.mediaDasSastifacoes[0].ToString("F2") + "%" + "\n" +
+            "Opnião: Ruim       -   " + Estatica.mediaDasSastifacoes[1].ToString("F2") + "%" + "\n" +
+            "Opnião: Regular    -   " + Estatica.mediaDasSastifacoes[2].ToString("F2") + "%" + "\n" +
+            "Opnião: Bom        -   " + Estatica.mediaDasSastifacoes[3].ToString("F2") + "%" + "\n" +
+            "Opnião: Muito Bom  -   " + Estatica.mediaDasSastifacoes[4].ToString("F2") + "%" + "\n";
         }
     }
 }

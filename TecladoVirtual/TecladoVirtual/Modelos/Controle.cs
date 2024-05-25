@@ -36,6 +36,7 @@ namespace TecladoVirtual.Modelos
             VerificarAcertos verificarAcertos = new VerificarAcertos(respostas.acertos,respostas.erros);
             this.setMedia = verificarAcertos.ToString();
             Estatica.listaPessoas.Add(this);
+
         }
 
         //----------------------------------//----------------------------

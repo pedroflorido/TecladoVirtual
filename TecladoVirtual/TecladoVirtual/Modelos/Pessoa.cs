@@ -46,6 +46,6 @@ namespace TecladoVirtual.Modelos
         public int getIdade { get => _idade; }
         public string setMedia { set => media = value; get => media;}
         public string setMensagemDeAcertosEerros { get => mensagemDeAcertosEerros; set => mensagemDeAcertosEerros = value; }
-        public bool[] setSatifacao { get => _satifacao;}
+        public bool[] getSatifacao { get => _satifacao;}
     }
 }

@@ -15,7 +15,7 @@ namespace tecladoVirtual.Teste
         [Test]
         public void Test1()
         {
-            Assert.Pass(Convert.ToString(Estatica.mediaDasSastifacoes[0]));
+            Assert.Equals(Convert.ToString(Estatica.mediaDasSastifacoes[0]),100);
             
         }
     }

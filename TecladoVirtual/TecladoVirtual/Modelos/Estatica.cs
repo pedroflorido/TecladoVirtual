@@ -16,7 +16,8 @@ namespace TecladoVirtual.Modelos
         public static double[] mediaDasPerguntas = { 0, 0, 0, 0, 0 };
         public static double[] mediaDasSastifacoes = { 0, 0, 0, 0, 0 };
         public static int[] Somaacertos = { 0, 0, 0, 0, 0};
+        public static int[] somasDosVotos = { 0, 0, 0, 0, 0 };
         public static string MediaDasPerguntasMensagem;
-        
+        public static string MediaDassatisfacaoMensagem;
     }
 }

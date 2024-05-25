@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "F_RelatoriaSatisfacao";
+            lblRelatorio = new Label();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // lblRelatorio
+            // 
+            lblRelatorio.AutoSize = true;
+            lblRelatorio.Location = new Point(109, 133);
+            lblRelatorio.Name = "lblRelatorio";
+            lblRelatorio.Size = new Size(161, 20);
+            lblRelatorio.TabIndex = 0;
+            lblRelatorio.Text = "Relatorio de satisfacao";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(343, 315);
+            button1.Name = "button1";
+            button1.Size = new Size(82, 47);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // F_RelatoriaSatisfacao
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(660, 450);
+            Controls.Add(button1);
+            Controls.Add(lblRelatorio);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "F_RelatoriaSatisfacao";
+            Text = "F_RelatoriaSatisfacao";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblRelatorio;
+        private Button button1;
     }
 }
